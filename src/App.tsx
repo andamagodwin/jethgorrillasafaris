@@ -1,11 +1,11 @@
-
 import './App.css'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <>
-      <h1 className='bg-red-500'>Welcome home</h1>
+      <Hero />
     </>
   )
 }
