@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Montserrat', 'system-ui', 'sans-serif'],
+        cursive: ['Dancing Script', 'cursive'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 1s ease-out',
