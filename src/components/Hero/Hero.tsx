@@ -13,8 +13,8 @@ const Hero = () => {
 
     return (
         <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
-            {/* Video Background */}
-            <div className="absolute top-0 left-0 w-full h-full z-[1]">
+            {/* Video Background with Fixed Parallax */}
+            <div className="fixed top-0 left-0 w-full h-screen z-[1]">
                 <video
                     ref={videoRef}
                     className="w-full h-full object-cover object-center"
@@ -34,9 +34,10 @@ const Hero = () => {
             <div className="relative z-[3] w-full max-w-7xl px-8 md:px-16 flex flex-col items-center text-center gap-16">
                 <div className="flex flex-col items-center gap-6 animate-fade-in-up">
                     {/* Hero Title */}
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight">
-                        Discover the Wild Beauty of
-                        <span className="bg-gradient-to-r from-amber-500 to-red-500 bg-clip-text text-transparent inline-block"> Africa</span>
+                    <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight">
+                        Discover the Wild Beauty of Uganda
+                        {/* <span className="bg-gradient-to-r from-amber-500 to-red-500 bg-clip-text text-transparent inline-block"> Uganda</span> */}
+                        <span> </span>
                     </h1>
 
                     {/* Hero Subtitle */}
