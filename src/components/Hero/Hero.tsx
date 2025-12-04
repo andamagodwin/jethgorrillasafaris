@@ -48,8 +48,9 @@ const Hero = () => {
 
                     {/* Hero Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
-                        <button className="group relative px-10 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-amber-500 to-red-500 text-white uppercase tracking-wider overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(245,158,11,0.5)] shadow-[0_10px_30px_rgba(245,158,11,0.4)]">
-                            <span className="relative z-10">Explore Safaris</span>
+                        <button className="group relative px-10 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white uppercase tracking-wider overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(16,185,129,0.3)] shadow-[0_10px_30px_rgba(16,185,129,0.2)] flex items-center justify-center gap-3">
+                            <img src="/icons/gorilla.png" alt="Gorilla" className="w-6 h-6 relative z-10" />
+                            <span className="relative z-10">Lets Goooo</span>
                             <div className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-[3] transition-transform duration-600 origin-center"></div>
                         </button>
 
