@@ -629,7 +629,11 @@ const MagicBento: React.FC<BentoProps> = ({
                                 enableMagnetism={enableMagnetism}
                             >
                                 <div className="card__header flex justify-between items-start gap-3 relative text-white">
-                                    <span className="text-5xl">{card.icon}</span>
+                                    {card.icon?.startsWith('/') ? (
+                                        <img src={card.icon} alt={card.title} className="w-12 h-12 object-contain" />
+                                    ) : (
+                                        <span className="text-5xl">{card.icon}</span>
+                                    )}
                                 </div>
                                 <div className="card__content flex flex-col relative text-white">
                                     <h3 className={`card__title font-bold text-xl m-0 mb-2 ${textAutoHide ? 'text-clamp-1' : ''}`}>
