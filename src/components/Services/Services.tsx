@@ -51,7 +51,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="relative bg-gradient-to-b from-white to-gray-50 py-16 px-6 md:px-12 lg:px-20 z-10">
+        <section id="services" className="relative bg-gradient-to-b from-white to-gray-50 py-16 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">

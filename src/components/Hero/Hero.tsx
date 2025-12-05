@@ -14,7 +14,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative w-full h-screen overflow-hidden flex items-center justify-center">
+        <section id="hero" className="relative w-full h-screen overflow-hidden flex items-center justify-center">
             {/* Video Background with Fixed Parallax */}
             <div className="fixed top-0 left-0 w-full h-screen z-[1]">
                 <video

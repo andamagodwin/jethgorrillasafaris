@@ -9,7 +9,7 @@ const images = [
 
 const About = () => {
     return (
-        <section className="relative bg-white -mt-1 z-10">
+        <section id="about" className="relative bg-white -mt-1 z-10">
             {/* Content */}
             <div className="relative pt-24 md:pt-32 pb-20 px-6 md:px-12 lg:px-20">
                 <div className="max-w-7xl mx-auto">

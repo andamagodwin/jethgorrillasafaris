@@ -14,18 +14,37 @@ const Header = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '#' },
+        { name: 'Home', href: '#hero' },
         { name: 'About', href: '#about' },
         { name: 'Services', href: '#services' },
         { name: 'Gallery', href: '#gallery' },
         { name: 'Contact', href: '#contact' }
     ];
 
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const targetId = href.replace('#', '');
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const headerOffset = 80;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+
+            setIsMobileMenuOpen(false);
+        }
+    };
+
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-white/95 backdrop-blur-md shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <nav className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -57,6 +76,7 @@ const Header = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
+                                onClick={(e) => handleNavClick(e, link.href)}
                                 className={`font-semibold transition-colors duration-300 hover:text-emerald-500 ${isScrolled ? 'text-gray-900' : 'text-white'
                                     }`}
                             >
@@ -110,7 +130,7 @@ const Header = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                onClick={() => setIsMobileMenuOpen(false)}
+                                onClick={(e) => handleNavClick(e, link.href)}
                                 className="block py-2 text-gray-900 font-semibold hover:text-emerald-500 transition-colors duration-300"
                             >
                                 {link.name}

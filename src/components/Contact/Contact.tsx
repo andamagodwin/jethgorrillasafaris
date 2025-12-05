@@ -24,7 +24,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="relative bg-gradient-to-b from-gray-50 to-white py-20 px-6 md:px-12 lg:px-20 z-10">
+        <section id="contact" className="relative bg-gradient-to-b from-gray-50 to-white py-20 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
