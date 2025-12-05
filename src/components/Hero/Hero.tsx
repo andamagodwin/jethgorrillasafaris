@@ -48,10 +48,16 @@ const Hero = () => {
 
                     {/* Hero Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
-                        <button className="group relative px-10 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white uppercase tracking-wider overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(16,185,129,0.3)] shadow-[0_10px_30px_rgba(16,185,129,0.2)] flex items-center justify-center gap-3">
+                        <button className="group relative px-10 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white uppercase tracking-wider overflow-hidden transition-all duration-300 hover:scale-95 shadow-[0_10px_30px_rgba(16,185,129,0.2)] flex items-center justify-center gap-3 h-16 border border-emerald-400/30">
+                            {/* Animated Bubbles */}
+                            <div className="absolute right-32 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-emerald-900"></div>
+                            <div className="absolute right-2 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-32 h-32 rounded-full group-hover:scale-150 duration-500 bg-emerald-800"></div>
+                            <div className="absolute -right-12 top-4 group-hover:top-1 group-hover:right-2 z-0 w-24 h-24 rounded-full group-hover:scale-150 duration-500 bg-teal-700"></div>
+                            <div className="absolute right-20 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-16 h-16 rounded-full group-hover:scale-150 duration-500 bg-teal-600"></div>
+
+                            {/* Content */}
                             <img src="/icons/gorilla.png" alt="Gorilla" className="w-6 h-6 relative z-10" />
                             <span className="relative z-10">Lets Goooo</span>
-                            <div className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-[3] transition-transform duration-600 origin-center"></div>
                         </button>
 
                         <button className="group relative px-10 py-4 text-lg font-semibold rounded-full bg-white/10 text-white border-2 border-white/30 backdrop-blur-md uppercase tracking-wider transition-all duration-300 hover:-translate-y-1 hover:bg-white/20 hover:border-white/50">
