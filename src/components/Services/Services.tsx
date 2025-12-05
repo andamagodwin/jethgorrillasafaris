@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 const services = [
     {
-        id: 1,
+        id: "gorilla-trekking",
         title: "Gorilla Trekking",
         description: "Experience the thrill of encountering mountain gorillas in their natural habitat. Our expert guides will lead you through the lush forests of Bwindi Impenetrable National Park.",
         icon: "🦍",
@@ -8,7 +10,7 @@ const services = [
         price: "From $1,500"
     },
     {
-        id: 2,
+        id: "wildlife-safari",
         title: "Wildlife Safari",
         description: "Explore Uganda's diverse wildlife across multiple national parks. Spot lions, elephants, leopards, and more on guided game drives.",
         icon: "🦁",
@@ -16,7 +18,7 @@ const services = [
         price: "From $2,000"
     },
     {
-        id: 3,
+        id: "bird-watching",
         title: "Bird Watching Tours",
         description: "Discover over 1,000 bird species in Uganda's rich ecosystems. Perfect for both amateur and experienced birders.",
         icon: "🦜",
@@ -24,7 +26,7 @@ const services = [
         price: "From $1,200"
     },
     {
-        id: 4,
+        id: "chimpanzee-tracking",
         title: "Chimpanzee Tracking",
         description: "Track our closest relatives in Kibale Forest. Watch them play, feed, and interact in their natural environment.",
         icon: "🐵",
@@ -32,7 +34,7 @@ const services = [
         price: "From $1,000"
     },
     {
-        id: 5,
+        id: "cultural-tours",
         title: "Cultural Tours",
         description: "Immerse yourself in Uganda's rich cultural heritage. Visit local communities and experience traditional customs.",
         icon: "🎭",
@@ -40,7 +42,7 @@ const services = [
         price: "From $800"
     },
     {
-        id: 6,
+        id: "adventure-activities",
         title: "Adventure Activities",
         description: "White water rafting on the Nile, hiking the Rwenzori Mountains, and more thrilling outdoor adventures.",
         icon: "🏔️",
@@ -105,9 +107,11 @@ const Services = () => {
                             </div>
 
                             {/* CTA Button */}
-                            <button className="w-full py-3 px-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-                                Learn More
-                            </button>
+                            <Link to={`/services/${service.id}`}>
+                                <button className="w-full py-3 px-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                    Learn More
+                                </button>
+                            </Link>
 
                             {/* Hover Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>

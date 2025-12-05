@@ -1,4 +1,5 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,20 +8,29 @@ import Gallery from './components/Gallery'
 import Services from './components/Services'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ServiceDetail from './components/ServiceDetail'
 
 function App() {
-
-  return (
+  const HomePage = () => (
     <>
-      <Header />
       <Hero />
       <About />
       <WhyUs />
       <Gallery />
       <Services />
       <Contact />
-      <Footer />
     </>
+  );
+
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services/:serviceId" element={<ServiceDetail />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
