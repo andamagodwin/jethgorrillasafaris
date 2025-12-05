@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './components/Hero'
 import About from './components/About'
+import WhyUs from './components/WhyUs'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Hero />
       <About />
+      <WhyUs />
     </>
   )
 }

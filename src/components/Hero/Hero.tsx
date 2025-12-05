@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
+import VariableProximity from '../VariableProximity';
 
 const Hero = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         if (videoRef.current) {
@@ -33,12 +35,18 @@ const Hero = () => {
             {/* Hero Content */}
             <div className="relative z-[3] w-full max-w-7xl px-8 md:px-16 flex flex-col items-center text-center gap-16">
                 <div className="flex flex-col items-center gap-6 animate-fade-in-up">
-                    {/* Hero Title */}
-                    <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight">
-                        Discover the Wild Beauty of Uganda
-                        {/* <span className="bg-gradient-to-r from-amber-500 to-red-500 bg-clip-text text-transparent inline-block"> Uganda</span> */}
-                        <span> </span>
-                    </h1>
+                    {/* Hero Title with Interactive Effect */}
+                    <div ref={containerRef} style={{ position: 'relative' }}>
+                        <VariableProximity
+                            label="Discover the Wild Beauty of Uganda"
+                            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight"
+                            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                            containerRef={containerRef}
+                            radius={150}
+                            falloff="linear"
+                        />
+                    </div>
 
                     {/* Hero Subtitle */}
                     <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl leading-relaxed font-light">
