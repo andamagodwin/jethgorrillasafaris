@@ -53,7 +53,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="relative bg-gradient-to-b from-white to-gray-50 py-16 px-6 md:px-12 lg:px-20 z-10">
+        <section id="services" className="relative bg-black py-16 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -63,10 +63,10 @@ const Services = () => {
                     >
                         Our Services
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
                         Tailored Safari Experiences
                     </h2>
-                    <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">
                         Choose from our curated selection of safari packages, each designed to give you an unforgettable adventure in Uganda's wild beauty.
                     </p>
                 </div>
@@ -76,7 +76,7 @@ const Services = () => {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                            className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 transition-all duration-200 hover:-translate-y-2 border border-white/10 hover:border-emerald-500/50"
                         >
                             {/* Icon */}
                             <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
@@ -84,24 +84,24 @@ const Services = () => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                            <h3 className="text-2xl font-bold text-white mb-3">
                                 {service.title}
                             </h3>
 
                             {/* Description */}
-                            <p className="text-gray-600 mb-6 leading-relaxed">
+                            <p className="text-gray-300 mb-6 leading-relaxed">
                                 {service.description}
                             </p>
 
                             {/* Details */}
-                            <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
+                            <div className="flex items-center justify-between text-sm text-gray-400 mb-6">
                                 <span className="flex items-center gap-2">
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                     {service.duration}
                                 </span>
-                                <span className="font-semibold text-emerald-600">
+                                <span className="font-semibold text-emerald-400">
                                     {service.price}
                                 </span>
                             </div>
@@ -114,20 +114,12 @@ const Services = () => {
                             </Link>
 
                             {/* Hover Gradient Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-teal-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-teal-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                         </div>
                     ))}
                 </div>
 
-                {/* Bottom CTA */}
-                <div className="text-center mt-16">
-                    <p className="text-gray-600 mb-6 text-lg">
-                        Can't find what you're looking for? We create custom safari experiences tailored to your preferences.
-                    </p>
-                    <button className="px-12 py-4 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg">
-                        Request Custom Safari
-                    </button>
-                </div>
+
             </div>
         </section>
     );

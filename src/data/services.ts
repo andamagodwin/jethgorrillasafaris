@@ -144,10 +144,10 @@ export const services: Service[] = [
         icon: "🦜",
         duration: "4-8 Days",
         price: "From $1,200",
-        heroImage: "https://images.pexels.com/photos/469676/pexels-photo-469676.jpeg",
+        heroImage: "https://images.pexels.com/photos/27040793/pexels-photo-27040793.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/469676/pexels-photo-469676.jpeg",
-            "https://images.pexels.com/photos/913652/pexels-photo-913652.jpeg"
+            "https://images.pexels.com/photos/1142995/pexels-photo-1142995.jpeg",
+            "https://images.pexels.com/photos/33773537/pexels-photo-33773537.jpeg"
         ],
         itinerary: [
             {

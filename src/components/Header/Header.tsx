@@ -83,9 +83,6 @@ const Header = () => {
                                 {link.name}
                             </a>
                         ))}
-                        <button className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-                            Book Safari
-                        </button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -136,9 +133,6 @@ const Header = () => {
                                 {link.name}
                             </a>
                         ))}
-                        <button className="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300">
-                            Book Safari
-                        </button>
                     </div>
                 </div>
             </nav>
