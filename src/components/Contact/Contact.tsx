@@ -24,10 +24,10 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="relative bg-gradient-to-b from-gray-50 to-white py-20 px-6 md:px-12 lg:px-20 z-10">
+        <section id="contact" className="relative bg-gradient-to-b from-gray-50 to-white py-12 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-10">
                     <span
                         className="bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent font-semibold text-5xl tracking-wide mb-4 inline-block"
                         style={{ fontFamily: "'Dancing Script', cursive" }}
@@ -44,7 +44,7 @@ const Contact = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Contact Form */}
-                    <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+                    <div className="rounded-2xl p-8 md:p-10">
                         <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             {/* Name */}
@@ -149,7 +149,7 @@ const Contact = () => {
                     {/* Contact Information */}
                     <div className="space-y-8">
                         {/* Contact Cards */}
-                        <div className="bg-white rounded-2xl shadow-xl p-8">
+                        <div className="rounded-2xl p-8">
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
 
                             {/* Phone */}
@@ -197,7 +197,7 @@ const Contact = () => {
                         </div>
 
                         {/* Social Media */}
-                        <div className="bg-white rounded-2xl shadow-xl p-8">
+                        <div className="rounded-2xl p-8">
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">Follow Us</h3>
                             <div className="flex gap-4">
                                 <a href="#" className="w-12 h-12 bg-gray-100 hover:bg-gradient-to-br hover:from-emerald-500 hover:to-teal-600 rounded-lg flex items-center justify-center transition-all duration-300 group">
@@ -224,7 +224,7 @@ const Contact = () => {
                         </div>
 
                         {/* Business Hours */}
-                        <div className="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl shadow-xl p-8 text-white">
+                        <div className="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl p-8 text-white">
                             <h3 className="text-2xl font-bold mb-6">Business Hours</h3>
                             <div className="space-y-3">
                                 <div className="flex justify-between">
