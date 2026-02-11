@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -12,6 +15,27 @@ const Header = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    useEffect(() => {
+        // Handle hash navigation after route change
+        if (location.hash) {
+            setTimeout(() => {
+                const targetId = location.hash.replace('#', '');
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 100);
+        }
+    }, [location]);
 
     const navLinks = [
         { name: 'Home', href: '#hero' },
@@ -23,20 +47,39 @@ const Header = () => {
 
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
-        const targetId = href.replace('#', '');
-        const targetElement = document.getElementById(targetId);
+        setIsMobileMenuOpen(false);
 
-        if (targetElement) {
-            const headerOffset = 80;
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        // Check if we're on the home page
+        if (location.pathname !== '/') {
+            // Navigate to home page with hash
+            navigate(`/${href}`);
+        } else {
+            // We're already on home, just scroll to section
+            const targetId = href.replace('#', '');
+            const targetElement = document.getElementById(targetId);
 
+            if (targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    };
+
+    const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        if (location.pathname !== '/') {
+            navigate('/');
+        } else {
             window.scrollTo({
-                top: offsetPosition,
+                top: 0,
                 behavior: 'smooth'
             });
-
-            setIsMobileMenuOpen(false);
         }
     };
 
@@ -50,7 +93,7 @@ const Header = () => {
             <nav className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-3 group">
+                    <a href="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
                         <img
                             src="/logo-no-txt.png"
                             alt="Eyre Gorilla Adventures Ltd Logo"
@@ -79,7 +122,7 @@ const Header = () => {
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
-                                className={`font-semibold transition-colors duration-300 hover:text-yellow-500 ${isScrolled ? 'text-gray-900' : 'text-white'
+                                className={`font-semibold text-xs transition-colors duration-300 hover:text-yellow-500 ${isScrolled ? 'text-gray-900' : 'text-white'
                                     }`}
                             >
                                 {link.name}
@@ -130,7 +173,7 @@ const Header = () => {
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
-                                className="block py-2 text-gray-900 font-semibold hover:text-emerald-500 transition-colors duration-300"
+                                className="block py-2 text-gray-900 font-semibold hover:text-yellow-500 transition-colors duration-300"
                             >
                                 {link.name}
                             </a>
