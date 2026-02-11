@@ -58,7 +58,7 @@ const Services = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <span
-                        className="bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent font-semibold text-5xl tracking-wide mb-4 inline-block"
+                        className="bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent font-semibold text-5xl tracking-wide mb-4 inline-block"
                         style={{ fontFamily: "'Dancing Script', cursive" }}
                     >
                         Our Services
@@ -76,7 +76,7 @@ const Services = () => {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 transition-all duration-200 hover:-translate-y-2 border border-white/10 hover:border-emerald-500/50"
+                            className="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 transition-all duration-200 hover:-translate-y-2 border border-white/10 hover:border-yellow-500/50"
                         >
                             {/* Icon */}
                             <div className="mb-3 transform group-hover:scale-110 transition-transform duration-300">
@@ -108,13 +108,13 @@ const Services = () => {
 
                             {/* CTA Button */}
                             <Link to={`/services/${service.id}`}>
-                                <button className="w-full py-2.5 px-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+                                <button className="w-full py-2.5 px-4 bg-gradient-to-r from-yellow-500 to-red-600 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
                                     Learn More
                                 </button>
                             </Link>
 
                             {/* Hover Gradient Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-teal-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-red-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                         </div>
                     ))}
                 </div>

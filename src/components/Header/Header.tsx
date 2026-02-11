@@ -51,21 +51,23 @@ const Header = () => {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <a href="#" className="flex items-center gap-3 group">
-                        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                            <span className="text-2xl">🦍</span>
-                        </div>
+                        <img
+                            src="/logo-no-txt.png"
+                            alt="Eyre Gorilla Adventures Ltd Logo"
+                            className="w-24 h-24 object-contain transform group-hover:scale-110 transition-transform duration-300"
+                        />
                         <div className="flex flex-col">
                             <span
-                                className={`font-bold text-xl transition-colors duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'
+                                className={`font-bold text-lg transition-colors duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'
                                     }`}
                             >
-                                Jeth Gorilla Safaris
+                                Eyre Gorilla Adventures Ltd
                             </span>
                             <span
                                 className={`text-xs transition-colors duration-300 ${isScrolled ? 'text-gray-600' : 'text-gray-200'
                                     }`}
                             >
-                                Discover Uganda's Wild Beauty
+                                Uncovering Hidden Gems
                             </span>
                         </div>
                     </a>
@@ -77,7 +79,7 @@ const Header = () => {
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
-                                className={`font-semibold transition-colors duration-300 hover:text-emerald-500 ${isScrolled ? 'text-gray-900' : 'text-white'
+                                className={`font-semibold transition-colors duration-300 hover:text-yellow-500 ${isScrolled ? 'text-gray-900' : 'text-white'
                                     }`}
                             >
                                 {link.name}

@@ -46,7 +46,7 @@ const WhyUs = () => {
                 {/* Section Header */}
                 <div className="text-center mb-10">
                     <span
-                        className="bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent font-semibold text-5xl tracking-wide mb-6 inline-block"
+                        className="bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent font-semibold text-5xl tracking-wide mb-6 inline-block"
                         style={{ fontFamily: "'Dancing Script', cursive" }}
                     >
                         Why Travel With Us

@@ -129,7 +129,7 @@ const ServiceDetail = () => {
                                 {service.itinerary.map((day) => (
                                     <div key={day.day} className="flex gap-6">
                                         <div className="flex-shrink-0">
-                                            <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold">
+                                            <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
                                                 {day.day}
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@ const ServiceDetail = () => {
                                 <ul className="space-y-3">
                                     {service.inclusions.map((item, index) => (
                                         <li key={index} className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span className="text-gray-700">{item}</span>
@@ -213,7 +213,7 @@ const ServiceDetail = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                             placeholder="John Doe"
                                         />
                                     </div>
@@ -229,7 +229,7 @@ const ServiceDetail = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                             placeholder="john@example.com"
                                         />
                                     </div>
@@ -245,7 +245,7 @@ const ServiceDetail = () => {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                             placeholder="+256 123 456 789"
                                         />
                                     </div>
@@ -260,7 +260,7 @@ const ServiceDetail = () => {
                                             value={formData.travelers}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                         >
                                             {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
                                                 <option key={num} value={num}>{num} {num === 1 ? 'Person' : 'People'}</option>
@@ -279,7 +279,7 @@ const ServiceDetail = () => {
                                             value={formData.date}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                         />
                                     </div>
 
@@ -300,7 +300,7 @@ const ServiceDetail = () => {
 
                                     <button
                                         type="submit"
-                                        className="w-full py-4 px-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-semibold rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                                        className="w-full py-4 px-6 bg-gradient-to-r from-yellow-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                                     >
                                         Request Booking
                                     </button>

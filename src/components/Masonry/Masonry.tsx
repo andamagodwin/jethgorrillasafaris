@@ -308,7 +308,7 @@ const Masonry: React.FC<MasonryProps> = ({
                     <div className="relative max-w-7xl max-h-[90vh] p-4">
                         <button
                             onClick={closeModal}
-                            className="absolute -top-12 right-0 text-white hover:text-emerald-500 transition-colors duration-200 text-4xl font-light z-10"
+                            className="absolute -top-12 right-0 text-white hover:text-yellow-500 transition-colors duration-200 text-4xl font-light z-10"
                             aria-label="Close modal"
                         >
                             ×
