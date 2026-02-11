@@ -480,7 +480,7 @@ const useMobileDetection = () => {
 
 const MagicBento: React.FC<BentoProps> = ({
     textAutoHide = true,
-    enableStars = true,
+    enableStars: _enableStars = true,
     enableSpotlight = true,
     enableBorderGlow = true,
     disableAnimations = false,
