@@ -1,6 +1,7 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { getServiceById } from '../../data/services';
+import emailjs from '@emailjs/browser';
 
 const ServiceDetail = () => {
     const { serviceId } = useParams<{ serviceId: string }>();
@@ -15,6 +16,9 @@ const ServiceDetail = () => {
         date: '',
         message: ''
     });
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     if (!service) {
         return (
@@ -36,11 +40,62 @@ const ServiceDetail = () => {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Booking request:', formData, 'Service:', service.title);
-        // Handle booking submission here
-        alert(`Thank you! We'll contact you soon about your ${service.title} booking.`);
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        try {
+            // EmailJS credentials from environment variables
+            // Temporarily logging to debug
+            console.log('Service ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+            console.log('Booking Template ID:', import.meta.env.VITE_EMAILJS_BOOKING_TEMPLATE_ID);
+            console.log('Public Key:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+            const result = await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
+                import.meta.env.VITE_EMAILJS_BOOKING_TEMPLATE_ID || 'template_xmbf09r',
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    phone: formData.phone,
+                    tour_interest: service.title,
+                    travelers: formData.travelers,
+                    preferred_date: formData.date,
+                    message: formData.message || 'No special requests',
+                    to_email: 'info@eyregorillaadventures.com',
+                },
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY'
+            );
+
+            console.log('Booking request sent successfully:', result);
+            setSubmitStatus('success');
+
+            // Reset form
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                travelers: '2',
+                date: '',
+                message: ''
+            });
+
+            // Clear success message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus('idle');
+            }, 5000);
+        } catch (error) {
+            console.error('Booking request failed:', error);
+            setSubmitStatus('error');
+
+            // Clear error message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus('idle');
+            }, 5000);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -300,10 +355,29 @@ const ServiceDetail = () => {
 
                                     <button
                                         type="submit"
-                                        className="w-full py-4 px-6 bg-gradient-to-r from-yellow-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                                        disabled={isSubmitting}
+                                        className={`w-full py-4 px-6 bg-gradient-to-r from-yellow-500 to-red-600 text-white font-semibold rounded-lg transition-all duration-300 ${
+                                            isSubmitting
+                                                ? 'opacity-50 cursor-not-allowed'
+                                                : 'hover:shadow-xl hover:scale-105'
+                                        }`}
                                     >
-                                        Request Booking
+                                        {isSubmitting ? 'Sending Request...' : 'Request Booking'}
                                     </button>
+
+                                    {/* Success Message */}
+                                    {submitStatus === 'success' && (
+                                        <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm">
+                                            Thank you for your booking request! We'll contact you within 24 hours to confirm your {service.title} experience.
+                                        </div>
+                                    )}
+
+                                    {/* Error Message */}
+                                    {submitStatus === 'error' && (
+                                        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
+                                            Sorry, something went wrong. Please try again or contact us directly at info@eyregorillaadventures.com
+                                        </div>
+                                    )}
 
                                     <p className="text-sm text-gray-500 text-center">
                                         We'll contact you within 24 hours to confirm your booking
