@@ -90,24 +90,24 @@ const Header = () => {
                 : 'bg-transparent'
                 }`}
         >
-            <nav className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+            <nav className="max-w-7xl mx-auto px-4 md:px-12 lg:px-20">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
-                    <a href="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
+                    <a href="/" onClick={handleLogoClick} className="flex items-center gap-2 md:gap-3 group flex-shrink-0">
                         <img
                             src="/logo-no-txt.png"
                             alt="Eyre Gorilla Adventures Ltd Logo"
-                            className="w-24 h-24 object-contain transform group-hover:scale-110 transition-transform duration-300"
+                            className="w-14 h-14 md:w-24 md:h-24 object-contain transform group-hover:scale-110 transition-transform duration-300"
                         />
-                        <div className="flex flex-col">
+                        <div className="flex flex-col min-w-0">
                             <span
-                                className={`font-bold text-lg transition-colors duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'
+                                className={`font-bold text-xs md:text-lg transition-colors duration-300 leading-tight ${isScrolled ? 'text-gray-900' : 'text-white'
                                     }`}
                             >
                                 Eyre Gorilla Adventures Ltd
                             </span>
                             <span
-                                className={`text-xs transition-colors duration-300 ${isScrolled ? 'text-gray-600' : 'text-gray-200'
+                                className={`text-[10px] md:text-xs transition-colors duration-300 ${isScrolled ? 'text-gray-600' : 'text-gray-200'
                                     }`}
                             >
                                 Uncovering Hidden Gems
