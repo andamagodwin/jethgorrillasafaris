@@ -506,9 +506,9 @@ const MagicBento: React.FC<BentoProps> = ({
             --glow-intensity: 0;
             --glow-radius: 200px;
             --glow-color: ${glowColor};
-            --border-color: rgba(16, 185, 129, 0.2);
-            --background-dark: #1f2937;
-            --white: hsl(0, 0%, 100%);
+            --border-color: rgba(0, 0, 0, 0.05);
+            --background-light: #ffffff;
+            --dark-text: #111827;
           }
           
           .card-responsive {
@@ -555,7 +555,7 @@ const MagicBento: React.FC<BentoProps> = ({
           }
           
           .card--border-glow:hover {
-            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2), 0 0 30px rgba(${glowColor}, 0.2);
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.1), 0 0 30px rgba(${glowColor}, 0.1);
           }
           
           .particle::before {
@@ -601,15 +601,15 @@ const MagicBento: React.FC<BentoProps> = ({
             )}
 
             <BentoCardGrid gridRef={gridRef}>
-                <div className="card-responsive grid gap-4">
+                <div className="card-responsive grid gap-4 text-gray-900">
                     {cardsData.map((card, index) => {
-                        const baseClassName = `card flex flex-col justify-between relative aspect-[3/2] min-h-[180px] w-full max-w-full p-6 rounded-2xl border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,0,0,0.3)] ${enableBorderGlow ? 'card--border-glow' : ''
+                        const baseClassName = `card flex flex-col justify-between relative aspect-[3/2] min-h-[180px] w-full max-w-full p-6 rounded-2xl border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,0,0,0.1)] ${enableBorderGlow ? 'card--border-glow' : ''
                             }`;
 
                         const cardStyle = {
-                            backgroundColor: card.color || 'var(--background-dark)',
+                            backgroundColor: card.color === '#0f0f0f' ? 'var(--background-light)' : (card.color || 'var(--background-light)'),
                             borderColor: 'var(--border-color)',
-                            color: 'var(--white)',
+                            color: 'var(--dark-text)',
                             '--glow-x': '50%',
                             '--glow-y': '50%',
                             '--glow-intensity': '0',
@@ -628,19 +628,19 @@ const MagicBento: React.FC<BentoProps> = ({
                                 clickEffect={clickEffect}
                                 enableMagnetism={enableMagnetism}
                             >
-                                <div className="card__header flex justify-between items-start gap-3 relative text-white">
+                                <div className="card__header flex justify-between items-start gap-3 relative text-gray-900">
                                     {card.icon?.startsWith('/') ? (
                                         <img src={card.icon} alt={card.title} className="w-12 h-12 object-contain" />
                                     ) : (
                                         <span className="text-5xl">{card.icon}</span>
                                     )}
                                 </div>
-                                <div className="card__content flex flex-col relative text-white">
+                                <div className="card__content flex flex-col relative text-gray-900">
                                     <h3 className={`card__title font-bold text-xl m-0 mb-2 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                                         {card.title}
                                     </h3>
                                     <p
-                                        className={`card__description text-sm leading-6 opacity-90 text-gray-300 ${textAutoHide ? 'text-clamp-2' : ''}`}
+                                        className={`card__description text-sm leading-6 opacity-90 text-gray-600 ${textAutoHide ? 'text-clamp-2' : ''}`}
                                     >
                                         {card.description}
                                     </p>

@@ -41,7 +41,7 @@ const features = [
 
 const WhyUs = () => {
     return (
-        <section className="relative bg-gradient-to-b from-black to-black py-12 px-6 md:px-12 lg:px-20 z-10">
+        <section className="relative bg-zinc-50 py-12 px-6 md:px-12 lg:px-20 z-10 font-sans border-t border-gray-100">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-10">
@@ -51,10 +51,10 @@ const WhyUs = () => {
                     >
                         Why Travel With Us
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 leading-tight">
                         Your Adventure, Our Expertise
                     </h2>
-                    <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">
+                    <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
                         We combine local knowledge, passion for wildlife, and commitment to excellence to create unforgettable safari experiences.
                     </p>
                 </div>
