@@ -58,8 +58,8 @@ const Services = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <span
-                        className="bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent font-semibold text-5xl tracking-wide mb-4 inline-block"
-                        style={{ fontFamily: "'Dancing Script', cursive" }}
+                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block"
+                        style={{ fontFamily: "'Libre Baskerville', serif" }}
                     >
                         Our Services
                     </span>
