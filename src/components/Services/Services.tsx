@@ -6,7 +6,7 @@ const services = [
         title: "Gorilla Trekking",
         description: "Experience the thrill of encountering mountain gorillas in their natural habitat. Our expert guides will lead you through the lush forests of Bwindi Impenetrable National Park.",
         icon: "/icons/gorilla-facing-right.png",
-        image: "/images/image4.jpeg",
+        image: "/images/image3.jpeg",
         duration: "3-7 Days",
         price: "From $1,500"
     },
@@ -15,7 +15,7 @@ const services = [
         title: "Wildlife Safari",
         description: "Explore Uganda's diverse wildlife across multiple national parks. Spot lions, elephants, leopards, and more on guided game drives.",
         icon: "/icons/jeep.png",
-        image: "/images/image5.jpeg",
+        image: "/images/elephant.jpeg",
         duration: "5-10 Days",
         price: "From $2,000"
     },
@@ -24,7 +24,7 @@ const services = [
         title: "Bird Watching Tours",
         description: "Discover over 1,000 bird species in Uganda's rich ecosystems. Perfect for both amateur and experienced birders.",
         icon: "/icons/binocular.png",
-        image: "/images/image6.jpeg",
+        image: "/images/bird.jpeg",
         duration: "4-8 Days",
         price: "From $1,200"
     },
@@ -33,7 +33,7 @@ const services = [
         title: "Chimpanzee Tracking",
         description: "Track our closest relatives in Kibale Forest. Watch them play, feed, and interact in their natural environment.",
         icon: "/icons/monkey.png",
-        image: "/images/image7.jpeg",
+        image: "/images/image5.jpeg",
         duration: "2-5 Days",
         price: "From $1,000"
     },
@@ -42,7 +42,7 @@ const services = [
         title: "Cultural Tours",
         description: "Immerse yourself in Uganda's rich cultural heritage. Visit local communities and experience traditional customs.",
         icon: "/icons/theater.png",
-        image: "/images/image4.jpeg",
+        image: "/images/culture.jpeg",
         duration: "3-6 Days",
         price: "From $800"
     },
@@ -51,7 +51,7 @@ const services = [
         title: "Adventure Activities",
         description: "White water rafting on the Nile, hiking the Rwenzori Mountains, and more thrilling outdoor adventures.",
         icon: "/icons/zipline.png",
-        image: "/images/image5.jpeg",
+        image: "/images/adventure.jpeg",
         duration: "2-7 Days",
         price: "From $900"
     }
