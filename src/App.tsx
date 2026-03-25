@@ -6,6 +6,7 @@ import About from './components/About'
 import WhyUs from './components/WhyUs'
 import Gallery from './components/Gallery'
 import Services from './components/Services'
+import Languages from './components/Languages'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ServiceDetail from './components/ServiceDetail'
@@ -17,6 +18,7 @@ function App() {
       <About />
       <WhyUs />
       <Gallery />
+      <Languages />
       <Services />
       <Contact />
     </>

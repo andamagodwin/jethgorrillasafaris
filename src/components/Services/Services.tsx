@@ -82,57 +82,50 @@ const Services = () => {
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="group relative h-[400px] rounded-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden shadow-lg hover:shadow-2xl"
+                            className="group relative h-[380px] rounded-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden shadow-sm hover:shadow-xl bg-white border border-gray-100"
                         >
                             {/* Background Image */}
                             <div
-                                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                                className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
                                 style={{ backgroundImage: `url(${service.image})` }}
                             />
 
-                            {/* Gradient Overlay for Text Readability */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20 group-hover:from-black/95 transition-colors duration-300" />
+                            {/* Minimalist Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
 
                             {/* Content Container */}
                             <div className="relative h-full p-8 flex flex-col justify-end text-white z-10 font-sans">
-                                {/* Icon */}
-                                <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300 bg-white/10 backdrop-blur-md p-3 rounded-xl w-14 h-14 flex items-center justify-center">
-                                    <img src={service.icon} alt={service.title} className="w-8 h-8 filter brightness-0 invert" />
+                                {/* Title & Icon Row */}
+                                <div className="flex items-center gap-3 mb-3">
+                                    <div className="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-lg border border-white/20">
+                                        <img src={service.icon} alt={service.title} className="w-6 h-6 filter brightness-0 invert" />
+                                    </div>
+                                    <h3 className="text-xl font-bold tracking-tight">
+                                        {service.title}
+                                    </h3>
                                 </div>
 
-                                {/* Title */}
-                                <h3 className="text-2xl font-bold mb-3 tracking-tight group-hover:text-orange-400 transition-colors">
-                                    {service.title}
-                                </h3>
-
                                 {/* Description */}
-                                <p className="text-sm text-gray-200 mb-6 leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all duration-500">
+                                <p className="text-sm text-gray-200 mb-6 leading-relaxed line-clamp-2">
                                     {service.description}
                                 </p>
 
-                                {/* Details Row */}
-                                <div className="flex items-center justify-between text-xs font-semibold mb-6">
-                                    <div className="flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-full border border-white/10">
-                                        <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        {service.duration}
-                                    </div>
-                                    <div className="px-3 py-1.5 bg-emerald-500/20 backdrop-blur-md rounded-full border border-emerald-500/30 text-emerald-400 uppercase tracking-wider">
+                                {/* Footer: Price & Link */}
+                                <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                                    <span className="text-sm font-bold text-orange-400">
                                         {service.price}
-                                    </div>
+                                    </span>
+                                    <Link 
+                                        to={`/services/${service.id}`}
+                                        className="text-xs font-bold uppercase tracking-widest hover:text-orange-400 transition-colors flex items-center gap-2"
+                                    >
+                                        Explore
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                        </svg>
+                                    </Link>
                                 </div>
-
-                                {/* CTA Button */}
-                                <Link to={`/services/${service.id}`} className="block">
-                                    <button className="w-full py-3 bg-white hover:bg-orange-500 text-gray-900 hover:text-white font-bold rounded-xl transition-all duration-300 transform active:scale-95 shadow-lg">
-                                        View Details
-                                    </button>
-                                </Link>
                             </div>
-
-                            {/* Top Accent Line */}
-                            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-orange-500 to-red-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
                         </div>
                     ))}
                 </div>

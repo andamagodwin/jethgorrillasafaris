@@ -52,21 +52,21 @@ const About = () => {
                             /> */}
                             <div className="grid grid-cols-2 gap-4 md:gap-6 w-full max-w-lg">
                                 <div className="space-y-4 md:space-y-6">
-                                    <img 
-                                        src="/images/image1.jpeg" 
-                                        alt="Experience Uganda" 
+                                    <img
+                                        src="/images/image1.jpeg"
+                                        alt="Experience Uganda"
                                         className="w-full h-40 sm:h-52 object-cover rounded-2xl shadow-xl hover:scale-[1.02] transform transition duration-300"
                                     />
-                                    <img 
-                                        src="/images/image3.jpeg" 
-                                        alt="Safari Adventures" 
+                                    <img
+                                        src="/images/image3.jpeg"
+                                        alt="Safari Adventures"
                                         className="w-full h-32 sm:h-44 object-cover rounded-2xl shadow-xl hover:scale-[1.02] transform transition duration-300"
                                     />
                                 </div>
                                 <div className="pt-8 md:pt-12">
-                                    <img 
-                                        src="/images/image2.jpeg" 
-                                        alt="Mountain Gorillas" 
+                                    <img
+                                        src="/images/old-elephant.jpeg"
+                                        alt="Mountain Gorillas"
                                         className="w-full h-56 sm:h-[400px] object-cover rounded-2xl shadow-xl hover:scale-[1.02] transform transition duration-300"
                                     />
                                 </div>
