@@ -109,10 +109,10 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                {/* Footer: Price */}
-                                <div className="mt-auto flex items-center justify-between">
-                                    <span className="text-sm font-bold text-orange-400">
-                                        {service.price}
+                                {/* Footer: View Details indicator or empty space */}
+                                <div className="mt-auto flex items-center justify-end">
+                                    <span className="text-xs font-semibold uppercase tracking-wider text-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        View Details →
                                     </span>
                                 </div>
                                 </div>
