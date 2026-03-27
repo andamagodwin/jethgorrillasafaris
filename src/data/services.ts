@@ -13,6 +13,7 @@ export interface Service {
         description: string;
         accommodation?: string;
         meals?: string;
+        image?: string;
     }[]>;
     inclusions: string[];
     exclusions: string[];
@@ -223,6 +224,150 @@ export const services: Service[] = [
         groupSize: "Flexible group sizes"
     },
     {
+        id: "15-days-best-of-uganda",
+        title: "15 Days Best of Uganda Safari",
+        shortDescription: "This 15-day all-round Uganda safari showcases the very best of the Pearl of Africa, combining wildlife, landscapes, and culture.",
+        fullDescription: "From the mighty waterfalls of Murchison Falls National Park to the primate-rich forests of Kibale National Park and Bwindi Impenetrable National Park, this journey combines wildlife, landscapes, and culture. You will experience rhino tracking, classic game drives, boat safaris, chimpanzee and gorilla trekking, cultural encounters, and relaxation at Lake Bunyonyi and Lake Mburo.",
+        duration: "15 Days",
+        price: "$11,000 for 2 People",
+        heroImage: "https://images.pexels.com/photos/1524628/pexels-photo-1524628.jpeg",
+        gallery: [
+            "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
+            "https://images.pexels.com/photos/3850526/pexels-photo-3850526.jpeg"
+        ],
+        itinerary: {
+            "15 Days": [
+                {
+                    day: 1,
+                    title: "Arrival in Entebbe – Relaxation",
+                    description: "Upon arrival at Entebbe International Airport, you will be warmly welcomed by your safari guide and transferred to your hotel. Depending on arrival time, relax by the shores of Lake Victoria, enjoy the cool breeze, and recover from your journey.\n\nExperience: Relaxation by Lake Victoria, briefing for safari",
+                    accommodation: "Sienna Beach Hotel",
+                    meals: "Dinner"
+                },
+                {
+                    day: 2,
+                    title: "Transfer to Murchison Falls via Ziwa Rhino Sanctuary",
+                    description: "After breakfast, begin your journey to Murchison Falls National Park.\n\nEn route, stop at Ziwa Rhino Sanctuary for a guided rhino tracking experience on foot. This is the only place in Uganda where you can see rhinos in the wild.\n\nContinue to Murchison Falls, entering Uganda’s largest national park with beautiful savannah landscapes and the Nile River cutting through.\n\nExperience: Rhino tracking & scenic drive",
+                    accommodation: "Bamboo Village Safari Lodge",
+                    meals: "Breakfast, Lunch & Dinner"
+                },
+                {
+                    day: 3,
+                    title: "Morning Game Drive & Nile Boat Safari",
+                    description: "Start early with a sunrise game drive on the northern bank of the park. Expect sightings of elephants, lions, giraffes, buffaloes, and various antelope species.\n\nIn the afternoon, enjoy a boat safari along the Nile River to the base of Murchison Falls. Along the way, see large pods of hippos, crocodiles, and abundant birdlife.\n\nOptionally, hike to the top of the falls for a breathtaking view.\n\nExperience: Big game viewing & Nile river cruise",
+                    accommodation: "Bamboo Village Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 4,
+                    title: "Transfer to Kibale National Park",
+                    description: "After breakfast, embark on a scenic drive southwest to Kibale National Park.\n\nThe journey passes through traditional villages, lush countryside, and tea plantations.\n\nExperience: Scenic countryside & tea plantation views",
+                    accommodation: "Turaco Treetops Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 5,
+                    title: "Chimpanzee Trekking & Community Walk",
+                    description: "After briefing, head into the forest for chimpanzee trekking. Kibale is home to one of Africa’s highest concentrations of primates.\n\nWatch chimpanzees swinging through trees, grooming, feeding, and communicating.\n\nIn the afternoon, enjoy a guided community walk, visiting local villages and learning about traditional lifestyles.\n\nExperience: Chimp tracking & cultural interaction",
+                    accommodation: "Turaco Treetops Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 6,
+                    title: "Transfer to Queen Elizabeth National Park",
+                    description: "Drive to Queen Elizabeth National Park, arriving in time for relaxation.\n\nEnjoy views of crater lakes and the Rwenzori Mountains along the way.\n\nExperience: Scenic landscapes & relaxation",
+                    accommodation: "Kikorongo Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 7,
+                    title: "Game Drive & Kazinga Channel Boat Safari",
+                    description: "Early morning game drive in search of lions, elephants, buffaloes, and more.\n\nIn the afternoon, enjoy a boat cruise along the Kazinga Channel, one of Africa’s best wildlife viewing experiences.\n\nExperience: Close-up wildlife viewing by boat",
+                    accommodation: "Kikorongo Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 8,
+                    title: "Transfer to Ishasha Sector – Evening Game Drive",
+                    description: "Drive to Ishasha, the southern sector of Queen Elizabeth National Park.\n\nThis area is famous for its unique tree-climbing lions. Enjoy an evening game drive searching for them.\n\nExperience: Tree-climbing lions",
+                    accommodation: "Enjojo Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 9,
+                    title: "Game Drive & Transfer to Bwindi",
+                    description: "Morning game drive in Ishasha before continuing to Bwindi Impenetrable National Park.\n\nArrive at the lodge surrounded by dense forest.\n\nExperience: Transition from savannah to rainforest",
+                    accommodation: "Gorilla Mist Camp",
+                    meals: "Full Board"
+                },
+                {
+                    day: 10,
+                    title: "Gorilla Trekking & Transfer to Lake Bunyonyi",
+                    description: "Early morning briefing before heading into the forest for gorilla trekking.\n\nOnce you find the gorillas, spend one hour observing them in their natural habitat.\n\nAfterward, transfer to Lake Bunyonyi, one of Africa’s most beautiful lakes.\n\nExperience: Gorilla encounter & scenic lake relaxation",
+                    accommodation: "Keije Resort Bunyonyi",
+                    meals: "Full Board"
+                },
+                {
+                    day: 11,
+                    title: "Lake Bunyonyi Activities",
+                    description: "Enjoy a relaxed day with optional activities such as canoeing, island hopping, swimming, or cultural visits.\n\nExperience: Relaxation & scenic beauty",
+                    accommodation: "Keije Resort Bunyonyi",
+                    meals: "Full Board"
+                },
+                {
+                    day: 12,
+                    title: "Transfer to Lake Mburo National Park",
+                    description: "Drive to Lake Mburo National Park.\n\nIn the evening, enjoy a guided community walk to interact with local people.\n\nExperience: Cultural interaction",
+                    accommodation: "Rwakobo Rock Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 13,
+                    title: "Walking Safari & Boat Safari",
+                    description: "Morning walking safari with a ranger—one of the few parks in Uganda where this is possible.\n\nIn the afternoon, enjoy a boat ride on Lake Mburo with hippos and birds.\n\nExperience: Up-close wildlife encounters on foot",
+                    accommodation: "Rwakobo Rock Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 14,
+                    title: "Return to Kampala – City Tour",
+                    description: "Drive to Kampala.\n\nIn the evening, enjoy a brief city tour including local markets, landmarks, and cultural sites.\n\nExperience: Urban culture & local life",
+                    accommodation: "Hotel in Kampala / Entebbe",
+                    meals: "Full Board"
+                },
+                {
+                    day: 15,
+                    title: "Mabamba Shoebill Tracking & Departure",
+                    description: "Early morning transfer to Mabamba Swamp for a canoe excursion in search of the rare shoebill stork.\n\nReturn and transfer to the airport for departure.\n\nExperience: Unique birding adventure",
+                    meals: "Breakfast"
+                }
+            ]
+        },
+        inclusions: [
+            "Gorilla & chimpanzee trekking permits",
+            "Rhino tracking at Ziwa Rhino Sanctuary",
+            "All accommodations listed above",
+            "All meals as per itinerary",
+            "Private 4x4 safari vehicle & professional guide",
+            "All game drives & boat safaris",
+            "Park entrance fees",
+            "Mabamba canoe experience",
+            "Bottled drinking water"
+        ],
+        exclusions: [
+            "International flights",
+            "Visa fees",
+            "Travel insurance",
+            "Tips & gratuities",
+            "Personal expenses",
+            "Optional activities not listed"
+        ],
+        note: "Package Cost: USD 11,000 total for 2 people sharing (Private safari experience)",
+        bestTime: "June to September, December to February",
+        difficulty: "Moderate",
+        groupSize: "Private safari"
+    },
+    {
         id: "bird-watching",
         title: "Bird Watching Tours",
         shortDescription: "Discover over 1,000 bird species in Uganda's rich ecosystems. Perfect for both amateur and experienced birders.",
@@ -260,32 +405,68 @@ export const services: Service[] = [
     },
     {
         id: "chimpanzee-tracking",
-        title: "Chimpanzee Tracking",
-        shortDescription: "Track our closest relatives in Kibale Forest. Watch them play, feed, and interact in their natural environment.",
-        fullDescription: "Kibale National Park is home to the highest concentration of primates in Africa. Trek through the rainforest to find habituated chimpanzee communities and observe their fascinating behaviors. The park also hosts 12 other primate species, making it a primate lover's dream destination.",
-        duration: "2-5 Days",
-        price: "From $1,000",
-        heroImage: "https://images.pexels.com/photos/46540/hippo-hippopotamus-animal-look-46540.jpeg",
+        title: "Uganda Gorilla & Chimpanzee Safari",
+        shortDescription: "Track chimps in Kibale Forest, gorillas in Bwindi, and explore Queen Elizabeth & Lake Mburo on this complete 7-day primate adventure.",
+        fullDescription: "Kibale Forest is the primate capital of the world, home to over 1,500 chimpanzees. Combined with gorilla trekking at Bwindi Impenetrable Forest, game drives at Queen Elizabeth NP, and island canoeing at Lake Bunyonyi, this 7-day journey is a complete East African safari experience.",
+        duration: "7 Days",
+        price: "From $2,920",
+        heroImage: "/images/chimp.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/46540/hippo-hippopotamus-animal-look-46540.jpeg",
-            "https://images.pexels.com/photos/18115745/pexels-photo-18115745.jpeg"
+            "/images/chimp1.jpg",
+            "/images/chimp2.jpg",
+            "/images/chimp3.jpg",
+            "/images/chimp4.jpg",
+            "/images/chimp5.jpg"
         ],
         itinerary: {
-            "3 Days": [
-                { day: 1, title: "Arrival in Kibale", description: "Transfer to Kibale Forest National Park. Evening nature walk in Bigodi Wetland Sanctuary." },
-                { day: 2, title: "Chimpanzee Tracking", description: "Early morning chimpanzee tracking in Kibale Forest. Afternoon primate walk to spot other monkey species." },
-                { day: 3, title: "Return Journey", description: "Optional morning activity. Transfer back to Kampala or continue to other destinations." }
-            ],
-            "5 Days": [
-                { day: 1, title: "Arrival", description: "Airport pickup and transfer to Kampala." },
-                { day: 2, title: "Drive to Kibale", description: "Scenic drive through tea plantations to Kibale Forest." },
-                { day: 3, title: "Chimpanzee Habituation", description: "Full day Chimpanzee Habituation Experience - spend the entire day following the chimps with researchers." },
-                { day: 4, title: "Bigodi & Queen Elizabeth", description: "Morning swamp walk in Bigodi. Transfer to Queen Elizabeth NP for an evening game drive." },
-                { day: 5, title: "Departure", description: "Morning boat cruise on Kazinga Channel and drive back." }
+            "7 Days": [
+                {
+                    day: 1,
+                    title: "Scenic Drive to the Forest of Kibale",
+                    description: "You will be warmly welcomed at the airport or your hotel by your private guide. After a short briefing, step into your private Land Cruiser and set off to begin your safari adventure.\n\nBegin your journey towards Kibale Forest, traveling through one of Uganda's most scenic regions. The area is well known for its rolling tea plantations, lush countryside, and beautiful crater lakes, offering a striking introduction to western Uganda as you make your way towards the forest.\n\nTransfer Time: 7 hours",
+                    image: "/images/chimp.jpeg"
+                },
+                {
+                    day: 2,
+                    title: "Chimpanzee Trekking at the Primate Capital of the World",
+                    description: "This morning, head into Kibale National Park for an unforgettable chimpanzee trekking experience. Kibale is home to the highest density of chimpanzees in the region — over 1,500 individuals — making it one of the best places in the world to see them in the wild.\n\nWith the guidance of expert trackers, you'll follow signs through the forest until you find one of the habituated chimp families. Once located, you'll spend one hour observing their natural behavior — grooming, feeding, calling loudly through the forest, or moving swiftly through the canopy.\n\nAfter the trek, continue your journey to Queen Elizabeth National Park.\n\nTransfer time: 1–2 hours",
+                    image: "/images/chimp1.jpg"
+                },
+                {
+                    day: 3,
+                    title: "Game Drive and Boat Safari at Kazinga Channel",
+                    description: "Start your morning with a game drive through Queen Elizabeth National Park, one of Uganda's premier wildlife destinations. The park is home to an incredible variety of animals, including lions, elephants, buffaloes, and elusive leopards often seen lounging in the shade.\n\nIn the afternoon, set off on a boat safari along the Kazinga Channel, home to one of the world's largest hippo populations. You'll glide past massive pods of hippos, crocodiles basking on the banks, and large herds of elephants and buffaloes coming to drink. Few places in Africa offer such consistent and close-up encounters with wildlife.\n\nIn the evening, rest in your lodge or continue with a sunset game drive.",
+                    image: "/images/chimp2.jpg"
+                },
+                {
+                    day: 4,
+                    title: "Drive to Gorilla Land and Visit Batwa Community",
+                    description: "Today, we leave the open savannah landscapes behind and journey toward Uganda's ancient montane forests, a dramatic change in scenery and atmosphere. As we travel deeper into the highlands, the environment becomes cooler, greener, and more densely forested — the natural home of the endangered mountain gorillas.\n\nIf time allows, you may choose to take part in a guided walk through the Batwa community. This experience includes visits to basket weavers and a local school, storytelling about Batwa history and present-day life.\n\nTransfer time: 5 hours",
+                    image: "/images/chimp3.jpg"
+                },
+                {
+                    day: 5,
+                    title: "Gorilla Trekking at Bwindi Forest",
+                    description: "Today you'll trek in Bwindi Impenetrable Forest, a UNESCO World Heritage Site that is home to nearly half of the world's remaining mountain gorillas. After a short briefing, set off with your guide into the forest to track one of the habituated gorilla families. Once located, you'll spend one unforgettable hour observing them up close — playing, moving through the trees, and interacting with each other in their natural environment.\n\nAfter the trek, continue your adventure to Lake Bunyonyi, one of the most breathtaking and peaceful places in Uganda. Check in and rest at your lodge, surrounded by the lake's calm waters and dotted islands that create an unforgettable view.\n\nTransfer time: 1–2 hours",
+                    image: "/images/chimp4.jpg"
+                },
+                {
+                    day: 6,
+                    title: "Islands of Lake Bunyonyi",
+                    description: "Start your day at Lake Bunyonyi, one of the most beautiful and serene spots in Uganda. Surrounded by terraced hills and dotted with 29 small islands, this lake is Africa's second deepest — and completely free of crocodiles and hippos, making it ideal for a peaceful experience. Here you will embark on a boat adventure to explore some of these islands, taking in the stunning scenery and getting a glimpse of local life along the lakeshore.\n\nAfterward, begin your journey towards Lake Mburo National Park.\n\nTransfer time: 5 hours",
+                    image: "/images/chimp5.jpg"
+                },
+                {
+                    day: 7,
+                    title: "Walking Safari at Lake Mburo National Park",
+                    description: "Begin the day with a guided walking safari, led by an armed ranger — a unique way to get closer to the animals in Lake Mburo National Park. The park is one of the best places in Uganda to see large herds of zebras and the striking Rothschild's giraffes.\n\nAfter the walk, you'll begin the drive back to Entebbe. Along the way, you'll stop at the Equator for photos and a chance to pick up some local crafts.\n\nTransfer time: 5 hours",
+                    image: "/images/chimp.jpeg"
+                }
             ]
         },
         inclusions: [],
         exclusions: [],
+        note: "Private Safari Cost varies by group size:\n\nBudget Friendly — For 2: $2,920/person · For 4: $2,280/person\nMid Range — For 2: $3,280/person · For 4: $2,580/person\nLuxury Safari — For 2: $3,880/person · For 4: $3,280/person",
         bestTime: "Year-round, best in dry season",
         difficulty: "Moderate",
         groupSize: "Maximum 6 people per group"
