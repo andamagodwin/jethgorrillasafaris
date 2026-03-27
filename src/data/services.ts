@@ -220,6 +220,48 @@ export const services: Service[] = [
                         description: "After an early breakfast, proceed to the park headquarters for a briefing by the rangers. Enter the misty forests of Volcanoes National Park for a once-in-a-lifetime encounter with the mountain gorillas. Spend one magical hour with them. In the afternoon, drive back to Kigali for your departure flight.",
                         meals: "Breakfast & Lunch"
                     }
+                ],
+                "6 Days": [
+                    {
+                        day: 1,
+                        title: "Kigali Airport pick up & City tour",
+                        description: "Upon arrival at Kigali International Airport, you will be picked by one of our experienced Rwanda Gorillas & Chimpanzee Tracking Safari driver/guide who will transfer you to Kigali for a city tour. You will visit many places including Kigali Genocide Memorial and museum, Caplaki craft market, Camp Kigali among others, then drive to your Hotel where you will spend the night.",
+                        accommodation: "FIVE TO FIVE HOTEL / HOTEL DES MILLE COLLINES / KIGALI SERENA HOTEL"
+                    },
+                    {
+                        day: 2,
+                        title: "Depart Kigali – for Nyungwe Forest",
+                        description: "In the morning after your breakfast, drive to Nyungwe Forest National Park. You will visit the King's palace in Nyanza, Ethnographic museum in Butare/Huye and Murambi Genocide memorial with lunch break along the way. Later continue through the forest to Gisakura.",
+                        accommodation: "GISAKURA GUEST HOUSE / NYUNGWE HILL TOP VIEW HOTEL / ONE & ONLY NYUNGWE HOUSE",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 3,
+                        title: "Chimpanzee tracking & Transfer to Kibuye",
+                        description: "Early morning breakfast, then report at the ranger station for Chimpanzee tracking briefing. Explore the forest with a park guide for your chimpanzee experience. Afterwards, you will be driven to Kibuye on Lake Kivu.",
+                        accommodation: "BETHANY HOTEL / MORIAH HILL RESORT / COMORAN LODGE",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 4,
+                        title: "Colobus Monkey Tracking & Transfer to Volcanoes NP",
+                        description: "Go for Angolan Colobus monkey tracking, a rare species found in this part of the forest. Later, transfer northwards to Volcanoes National Park via a western scenic route along the shores of Lake Kivu.",
+                        accommodation: "MUHABURA HOTEL / DAVICI GORILLA LODGE / FIVE VOLCANOES BOUTIQUE HOTEL",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 5,
+                        title: "Rwanda Gorilla Trekking & Gorilla Guardians Village",
+                        description: "Report at the park office for a briefing before entering the forest for your gorilla tracking adventure (3-6 hours). Spend one hour with the gorillas. In the evening, visit Gorilla Guardians Village for cultural entertainment and traditional dances.",
+                        accommodation: "MUHABURA HOTEL / DAVICI GORILLA LODGE / FIVE VOLCANOES BOUTIQUE HOTEL",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 6,
+                        title: "Golden Monkey tracking & Departure",
+                        description: "Morning Golden monkey tracking in Volcanoes National Park. Afterwards, transfer to Kigali International Airport for your departure flight.",
+                        meals: "Breakfast & Lunch"
+                    }
                 ]
             }
         },
@@ -243,7 +285,31 @@ export const services: Service[] = [
         ],
         bestTime: "June to September, December to February",
         difficulty: "Moderate to Challenging",
-        groupSize: "Maximum 8 people per group"
+        groupSize: "Maximum 8 people per group",
+        durationInclusions: {
+            "6 Days": [
+                "Transport in 4WD Comfortable Vehicle with Fuel",
+                "Airport drop at the end of the tour",
+                "Service of a professional English-speaking driver/guide",
+                "Gorilla trekking permits ($1500 each in Rwanda)",
+                "Chimpanzee Tracking permit (Nyungwe forest)",
+                "Golden monkey tracking fees",
+                "All activities mentioned in the itinerary",
+                "Accommodation for 5 Nights, 6 Days (All Meals, except meals in Kigali Hotel)",
+                "Bottled drinking water while on tour",
+                "Government taxes"
+            ]
+        },
+        durationExclusions: {
+            "6 Days": [
+                "Any domestic or International flights",
+                "Visa fees",
+                "All optional activities",
+                "Medical and travel Insurance",
+                "Tips and gratuities to the guide/driver and hotel staffs.",
+                "Any item not mentioned in the itinerary of personal nature like laundry and beverages, souvenirs and telephone bills."
+            ]
+        }
     },
     {
         id: "wildlife-safari",
@@ -777,26 +843,97 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/1142995/pexels-photo-1142995.jpeg",
             "https://images.pexels.com/photos/33773537/pexels-photo-33773537.jpeg"
         ],
-        itinerary: {
-            "4 Days": [
-                { day: 1, title: "Mabamba Swamp", description: "Early morning boat ride to Mabamba Swamp in search of the rare Shoebill Stork and other wetland species." },
-                { day: 2, title: "Lake Mburo", description: "Transfer to Lake Mburo National Park. Afternoon bird walk focusing on acacia-associated species." },
-                { day: 3, title: "Lake Mburo Boat Cruise", description: "Morning boat cruise for water birds, then afternoon savanna birding." },
-                { day: 4, title: "Return to Entebbe", description: "Final morning bird walk and transfer back to the airport." }
-            ],
-            "8 Days": [
-                { day: 1, title: "Arrival", description: "Airport pickup and Entebbe Botanical Gardens birding." },
-                { day: 2, title: "Murchison Falls", description: "Transfer to Murchison Falls NP. En-route birding at Ziwa Rhino Sanctuary." },
-                { day: 3, title: "Nile Delta Birding", description: "Boat cruise to the Nile Delta to look for the Shoebill and other water birds." },
-                { day: 4, title: "Kibale Forest", description: "Long drive to Kibale Forest with stops for Rift Valley endemics." },
-                { day: 5, title: "Green-breasted Pitta", description: "Early start to find the elusive Green-breasted Pitta in Kibale." },
-                { day: 6, title: "Queen Elizabeth NP", description: "Transfer to QENP. Afternoon birding along the Kazinga Channel." },
-                { day: 7, title: "Bwindi (Ruhija)", description: "Transfer to the higher altitude Ruhija sector of Bwindi for Albertine Rift endemics." },
-                { day: 8, title: "Departure", description: "Morning bird walk in Bwindi and drive back to Entebbe/Kampala." }
-            ]
+        itinerary: {},
+        countryItineraries: {
+            "Uganda": {
+                "4 Days": [
+                    { day: 1, title: "Mabamba Swamp", description: "Early morning boat ride to Mabamba Swamp in search of the rare Shoebill Stork and other wetland species." },
+                    { day: 2, title: "Lake Mburo", description: "Transfer to Lake Mburo National Park. Afternoon bird walk focusing on acacia-associated species." },
+                    { day: 3, title: "Lake Mburo Boat Cruise", description: "Morning boat cruise for water birds, then afternoon savanna birding." },
+                    { day: 4, title: "Return to Entebbe", description: "Final morning bird walk and transfer back to the airport." }
+                ],
+                "8 Days": [
+                    { day: 1, title: "Arrival", description: "Airport pickup and Entebbe Botanical Gardens birding." },
+                    { day: 2, title: "Murchison Falls", description: "Transfer to Murchison Falls NP. En-route birding at Ziwa Rhino Sanctuary." },
+                    { day: 3, title: "Nile Delta Birding", description: "Boat cruise to the Nile Delta to look for the Shoebill and other water birds." },
+                    { day: 4, title: "Kibale Forest", description: "Long drive to Kibale Forest with stops for Rift Valley endemics." },
+                    { day: 5, title: "Green-breasted Pitta", description: "Early start to find the elusive Green-breasted Pitta in Kibale." },
+                    { day: 6, title: "Queen Elizabeth NP", description: "Transfer to QENP. Afternoon birding along the Kazinga Channel." },
+                    { day: 7, title: "Bwindi (Ruhija)", description: "Transfer to the higher altitude Ruhija sector of Bwindi for Albertine Rift endemics." },
+                    { day: 8, title: "Departure", description: "Morning bird walk in Bwindi and drive back to Entebbe/Kampala." }
+                ]
+            },
+            "Rwanda": {
+                "6 Days": [
+                    {
+                        day: 1,
+                        title: "Kigali Airport pick up & City tour",
+                        description: "Upon arrival at Kigali International Airport, you will be picked by one of our experienced Rwanda Gorillas & Chimpanzee Tracking Safari driver/guide who will transfer you to Kigali for a city tour. You will visit many places including Kigali Genocide Memorial and museum, Caplaki craft market, Camp Kigali among others, then drive to your Hotel where you will spend the night.",
+                        accommodation: "FIVE TO FIVE HOTEL / HOTEL DES MILLE COLLINES / KIGALI SERENA HOTEL"
+                    },
+                    {
+                        day: 2,
+                        title: "Depart Kigali – for Nyungwe Forest",
+                        description: "In the morning after your breakfast, drive to Nyungwe Forest National Park. You will visit the King's palace in Nyanza, Ethnographic museum in Butare/Huye and Murambi Genocide memorial with lunch break along the way. Later continue through the forest to Gisakura.",
+                        accommodation: "GISAKURA GUEST HOUSE / NYUNGWE HILL TOP VIEW HOTEL / ONE & ONLY NYUNGWE HOUSE",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 3,
+                        title: "Chimpanzee tracking & Transfer to Kibuye",
+                        description: "Early morning breakfast, then report at the ranger station for Chimpanzee tracking briefing. Explore the forest with a park guide for your chimpanzee experience. Afterwards, you will be driven to Kibuye on Lake Kivu.",
+                        accommodation: "BETHANY HOTEL / MORIAH HILL RESORT / COMORAN LODGE",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 4,
+                        title: "Colobus Monkey Tracking & Transfer to Volcanoes NP",
+                        description: "Go for Angolan Colobus monkey tracking, a rare species found in this part of the forest. Later, transfer northwards to Volcanoes National Park via a western scenic route along the shores of Lake Kivu.",
+                        accommodation: "MUHABURA HOTEL / DAVICI GORILLA LODGE / FIVE VOLCANOES BOUTIQUE HOTEL",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 5,
+                        title: "Rwanda Gorilla Trekking & Gorilla Guardians Village",
+                        description: "Report at the park office for a briefing before entering the forest for your gorilla tracking adventure (3-6 hours). Spend one hour with the gorillas. In the evening, visit Gorilla Guardians Village for cultural entertainment and traditional dances.",
+                        accommodation: "MUHABURA HOTEL / DAVICI GORILLA LODGE / FIVE VOLCANOES BOUTIQUE HOTEL",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 6,
+                        title: "Golden Monkey tracking & Departure",
+                        description: "Morning Golden monkey tracking in Volcanoes National Park. Afterwards, transfer to Kigali International Airport for your departure flight.",
+                        meals: "Breakfast & Lunch"
+                    }
+                ]
+            }
         },
         inclusions: [],
         exclusions: [],
+        durationInclusions: {
+            "6 Days": [
+                "Transport in 4WD Comfortable Vehicle with Fuel",
+                "Airport drop at the end of the tour",
+                "Service of a professional English-speaking driver/guide",
+                "Gorilla trekking permits ($1500 each in Rwanda)",
+                "Chimpanzee Tracking permit (Nyungwe forest)",
+                "Golden monkey tracking fees",
+                "All activities mentioned in the itinerary",
+                "Accommodation for 5 Nights, 6 Days (All Meals, except meals in Kigali Hotel)",
+                "Bottled drinking water while on tour",
+                "Government taxes"
+            ]
+        },
+        durationExclusions: {
+            "6 Days": [
+                "Any domestic or International flights",
+                "Visa fees",
+                "All optional activities",
+                "Medical and travel Insurance",
+                "Tips and gratuities to the guide/driver and hotel staffs.",
+                "Any item not mentioned in the itinerary of personal nature like laundry and beverages, souvenirs and telephone bills."
+            ]
+        },
         bestTime: "November to April (migratory season)",
         difficulty: "Easy to Moderate",
         groupSize: "Maximum 6 birders"
@@ -806,7 +943,7 @@ export const services: Service[] = [
         title: "Uganda Gorilla & Chimpanzee Safari",
         shortDescription: "Track chimps in Kibale Forest, gorillas in Bwindi, and explore Queen Elizabeth & Lake Mburo on this complete 7-day primate adventure.",
         fullDescription: "Kibale Forest is the primate capital of the world, home to over 1,500 chimpanzees. Combined with gorilla trekking at Bwindi Impenetrable Forest, game drives at Queen Elizabeth NP, and island canoeing at Lake Bunyonyi, this 7-day journey is a complete East African safari experience.",
-        duration: "7 Days",
+        duration: "6-7 Days",
         price: "From $2,920",
         heroImage: "/images/chimp.jpeg",
         gallery: [
@@ -816,54 +953,142 @@ export const services: Service[] = [
             "/images/chimp4.jpg",
             "/images/chimp5.jpg"
         ],
-        itinerary: {
-            "7 Days": [
-                {
-                    day: 1,
-                    title: "Scenic Drive to the Forest of Kibale",
-                    description: "You will be warmly welcomed at the airport or your hotel by your private guide. After a short briefing, step into your private Land Cruiser and set off to begin your safari adventure.\n\nBegin your journey towards Kibale Forest, traveling through one of Uganda's most scenic regions. The area is well known for its rolling tea plantations, lush countryside, and beautiful crater lakes, offering a striking introduction to western Uganda as you make your way towards the forest.\n\nTransfer Time: 7 hours",
-                    image: "/images/chimp.jpeg"
-                },
-                {
-                    day: 2,
-                    title: "Chimpanzee Trekking at the Primate Capital of the World",
-                    description: "This morning, head into Kibale National Park for an unforgettable chimpanzee trekking experience. Kibale is home to the highest density of chimpanzees in the region — over 1,500 individuals — making it one of the best places in the world to see them in the wild.\n\nWith the guidance of expert trackers, you'll follow signs through the forest until you find one of the habituated chimp families. Once located, you'll spend one hour observing their natural behavior — grooming, feeding, calling loudly through the forest, or moving swiftly through the canopy.\n\nAfter the trek, continue your journey to Queen Elizabeth National Park.\n\nTransfer time: 1–2 hours",
-                    image: "/images/chimp1.jpg"
-                },
-                {
-                    day: 3,
-                    title: "Game Drive and Boat Safari at Kazinga Channel",
-                    description: "Start your morning with a game drive through Queen Elizabeth National Park, one of Uganda's premier wildlife destinations. The park is home to an incredible variety of animals, including lions, elephants, buffaloes, and elusive leopards often seen lounging in the shade.\n\nIn the afternoon, set off on a boat safari along the Kazinga Channel, home to one of the world's largest hippo populations. You'll glide past massive pods of hippos, crocodiles basking on the banks, and large herds of elephants and buffaloes coming to drink. Few places in Africa offer such consistent and close-up encounters with wildlife.\n\nIn the evening, rest in your lodge or continue with a sunset game drive.",
-                    image: "/images/chimp2.jpg"
-                },
-                {
-                    day: 4,
-                    title: "Drive to Gorilla Land and Visit Batwa Community",
-                    description: "Today, we leave the open savannah landscapes behind and journey toward Uganda's ancient montane forests, a dramatic change in scenery and atmosphere. As we travel deeper into the highlands, the environment becomes cooler, greener, and more densely forested — the natural home of the endangered mountain gorillas.\n\nIf time allows, you may choose to take part in a guided walk through the Batwa community. This experience includes visits to basket weavers and a local school, storytelling about Batwa history and present-day life.\n\nTransfer time: 5 hours",
-                    image: "/images/chimp3.jpg"
-                },
-                {
-                    day: 5,
-                    title: "Gorilla Trekking at Bwindi Forest",
-                    description: "Today you'll trek in Bwindi Impenetrable Forest, a UNESCO World Heritage Site that is home to nearly half of the world's remaining mountain gorillas. After a short briefing, set off with your guide into the forest to track one of the habituated gorilla families. Once located, you'll spend one unforgettable hour observing them up close — playing, moving through the trees, and interacting with each other in their natural environment.\n\nAfter the trek, continue your adventure to Lake Bunyonyi, one of the most breathtaking and peaceful places in Uganda. Check in and rest at your lodge, surrounded by the lake's calm waters and dotted islands that create an unforgettable view.\n\nTransfer time: 1–2 hours",
-                    image: "/images/chimp4.jpg"
-                },
-                {
-                    day: 6,
-                    title: "Islands of Lake Bunyonyi",
-                    description: "Start your day at Lake Bunyonyi, one of the most beautiful and serene spots in Uganda. Surrounded by terraced hills and dotted with 29 small islands, this lake is Africa's second deepest — and completely free of crocodiles and hippos, making it ideal for a peaceful experience. Here you will embark on a boat adventure to explore some of these islands, taking in the stunning scenery and getting a glimpse of local life along the lakeshore.\n\nAfterward, begin your journey towards Lake Mburo National Park.\n\nTransfer time: 5 hours",
-                    image: "/images/chimp5.jpg"
-                },
-                {
-                    day: 7,
-                    title: "Walking Safari at Lake Mburo National Park",
-                    description: "Begin the day with a guided walking safari, led by an armed ranger — a unique way to get closer to the animals in Lake Mburo National Park. The park is one of the best places in Uganda to see large herds of zebras and the striking Rothschild's giraffes.\n\nAfter the walk, you'll begin the drive back to Entebbe. Along the way, you'll stop at the Equator for photos and a chance to pick up some local crafts.\n\nTransfer time: 5 hours",
-                    image: "/images/chimp.jpeg"
-                }
+        itinerary: {},
+        countryItineraries: {
+            "Uganda": {
+                "7 Days": [
+                    {
+                        day: 1,
+                        title: "Scenic Drive to the Forest of Kibale",
+                        description: "You will be warmly welcomed at the airport or your hotel by your private guide. After a short briefing, step into your private Land Cruiser and set off to begin your safari adventure.\n\nBegin your journey towards Kibale Forest, traveling through one of Uganda's most scenic regions. The area is well known for its rolling tea plantations, lush countryside, and beautiful crater lakes, offering a striking introduction to western Uganda as you make your way towards the forest.\n\nTransfer Time: 7 hours",
+                        image: "/images/chimp.jpeg"
+                    },
+                    {
+                        day: 2,
+                        title: "Chimpanzee Trekking at the Primate Capital of the World",
+                        description: "This morning, head into Kibale National Park for an unforgettable chimpanzee trekking experience. Kibale is home to the highest density of chimpanzees in the region — over 1,500 individuals — making it one of the best places in the world to see them in the wild.\n\nWith the guidance of expert trackers, you'll follow signs through the forest until you find one of the habituated chimp families. Once located, you'll spend one hour observing their natural behavior — grooming, feeding, calling loudly through the forest, or moving swiftly through the canopy.\n\nAfter the trek, continue your journey to Queen Elizabeth National Park.\n\nTransfer time: 1–2 hours",
+                        image: "/images/chimp1.jpg"
+                    },
+                    {
+                        day: 3,
+                        title: "Game Drive and Boat Safari at Kazinga Channel",
+                        description: "Start your morning with a game drive through Queen Elizabeth National Park, one of Uganda's premier wildlife destinations. The park is home to an incredible variety of animals, including lions, elephants, buffaloes, and elusive leopards often seen lounging in the shade.\n\nIn the afternoon, set off on a boat safari along the Kazinga Channel, home to one of the world's largest hippo populations. You'll glide past massive pods of hippos, crocodiles basking on the banks, and large herds of elephants and buffaloes coming to drink. Few places in Africa offer such consistent and close-up encounters with wildlife.\n\nIn the evening, rest in your lodge or continue with a sunset game drive.",
+                        image: "/images/chimp2.jpg"
+                    },
+                    {
+                        day: 4,
+                        title: "Drive to Gorilla Land and Visit Batwa Community",
+                        description: "Today, we leave the open savannah landscapes behind and journey toward Uganda's ancient montane forests, a dramatic change in scenery and atmosphere. As we travel deeper into the highlands, the environment becomes cooler, greener, and more densely forested — the natural home of the endangered mountain gorillas.\n\nIf time allows, you may choose to take part in a guided walk through the Batwa community. This experience includes visits to basket weavers and a local school, storytelling about Batwa history and present-day life.\n\nTransfer time: 5 hours",
+                        image: "/images/chimp3.jpg"
+                    },
+                    {
+                        day: 5,
+                        title: "Gorilla Trekking at Bwindi Forest",
+                        description: "Today you'll trek in Bwindi Impenetrable Forest, a UNESCO World Heritage Site that is home to nearly half of the world's remaining mountain gorillas. After a short briefing, set off with your guide into the forest to track one of the habituated gorilla families. Once located, you'll spend one unforgettable hour observing them up close — playing, moving through the trees, and interacting with each other in their natural environment.\n\nAfter the trek, continue your adventure to Lake Bunyonyi, one of the most breathtaking and peaceful places in Uganda. Check in and rest at your lodge, surrounded by the lake's calm waters and dotted islands that create an unforgettable view.\n\nTransfer time: 1–2 hours",
+                        image: "/images/chimp4.jpg"
+                    },
+                    {
+                        day: 6,
+                        title: "Islands of Lake Bunyonyi",
+                        description: "Start your day at Lake Bunyonyi, one of the most beautiful and serene spots in Uganda. Surrounded by terraced hills and dotted with 29 small islands, this lake is Africa's second deepest — and completely free of crocodiles and hippos, making it ideal for a peaceful experience. Here you will embark on a boat adventure to explore some of these islands, taking in the stunning scenery and getting a glimpse of local life along the lakeshore.\n\nAfterward, begin your journey towards Lake Mburo National Park.\n\nTransfer time: 5 hours",
+                        image: "/images/chimp5.jpg"
+                    },
+                    {
+                        day: 7,
+                        title: "Walking Safari at Lake Mburo National Park",
+                        description: "Begin the day with a guided walking safari, led by an armed ranger — a unique way to get closer to the animals in Lake Mburo National Park. The park is one of the best places in Uganda to see large herds of zebras and the striking Rothschild's giraffes.\n\nAfter the walk, you'll begin the drive back to Entebbe. Along the way, you'll stop at the Equator for photos and a chance to pick up some local crafts.\n\nTransfer time: 5 hours",
+                        image: "/images/chimp.jpeg"
+                    }
+                ]
+            },
+            "Rwanda": {
+                "6 Days": [
+                    {
+                        day: 1,
+                        title: "Kigali Airport pick up & City tour",
+                        description: "Upon arrival at Kigali International Airport, you will be picked by one of our experienced Rwanda Gorillas & Chimpanzee Tracking Safari driver/guide who will transfer you to Kigali for a city tour. You will visit many places including Kigali Genocide Memorial and museum, Caplaki craft market, Camp Kigali among others, then drive to your Hotel where you will spend the night.",
+                        accommodation: "FIVE TO FIVE HOTEL / HOTEL DES MILLE COLLINES / KIGALI SERENA HOTEL"
+                    },
+                    {
+                        day: 2,
+                        title: "Depart Kigali – for Nyungwe Forest",
+                        description: "In the morning after your breakfast, drive to Nyungwe Forest National Park. You will visit the King's palace in Nyanza, Ethnographic museum in Butare/Huye and Murambi Genocide memorial with lunch break along the way. Later continue through the forest to Gisakura.",
+                        accommodation: "GISAKURA GUEST HOUSE / NYUNGWE HILL TOP VIEW HOTEL / ONE & ONLY NYUNGWE HOUSE",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 3,
+                        title: "Chimpanzee tracking & Transfer to Kibuye",
+                        description: "Early morning breakfast, then report at the ranger station for Chimpanzee tracking briefing. Explore the forest with a park guide for your chimpanzee experience. Afterwards, you will be driven to Kibuye on Lake Kivu.",
+                        accommodation: "BETHANY HOTEL / MORIAH HILL RESORT / COMORAN LODGE",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 4,
+                        title: "Colobus Monkey Tracking & Transfer to Volcanoes NP",
+                        description: "Go for Angolan Colobus monkey tracking, a rare species found in this part of the forest. Later, transfer northwards to Volcanoes National Park via a western scenic route along the shores of Lake Kivu.",
+                        accommodation: "MUHABURA HOTEL / DAVICI GORILLA LODGE / FIVE VOLCANOES BOUTIQUE HOTEL",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 5,
+                        title: "Rwanda Gorilla Trekking & Gorilla Guardians Village",
+                        description: "Report at the park office for a briefing before entering the forest for your gorilla tracking adventure (3-6 hours). Spend one hour with the gorillas. In the evening, visit Gorilla Guardians Village for cultural entertainment and traditional dances.",
+                        accommodation: "MUHABURA HOTEL / DAVICI GORILLA LODGE / FIVE VOLCANOES BOUTIQUE HOTEL",
+                        meals: "Breakfast, Lunch, Dinner"
+                    },
+                    {
+                        day: 6,
+                        title: "Golden Monkey tracking & Departure",
+                        description: "Morning Golden monkey tracking in Volcanoes National Park. Afterwards, transfer to Kigali International Airport for your departure flight.",
+                        meals: "Breakfast & Lunch"
+                    }
+                ]
+            }
+        },
+        inclusions: [
+            "Gorilla & chimpanzee trekking permits",
+            "Rhino tracking at Ziwa Rhino Sanctuary",
+            "All accommodations listed above",
+            "All meals as per itinerary",
+            "Private 4x4 safari vehicle & professional guide",
+            "All game drives & boat safaris",
+            "Park entrance fees",
+            "Mabamba canoe experience",
+            "Bottled drinking water"
+        ],
+        exclusions: [
+            "International flights",
+            "Visa fees",
+            "Travel insurance",
+            "Tips & gratuities",
+            "Personal expenses",
+            "Optional activities not listed"
+        ],
+        durationInclusions: {
+            "6 Days": [
+                "Transport in 4WD Comfortable Vehicle with Fuel",
+                "Airport drop at the end of the tour",
+                "Service of a professional English-speaking driver/guide",
+                "Gorilla trekking permits ($1500 each in Rwanda)",
+                "Chimpanzee Tracking permit (Nyungwe forest)",
+                "Golden monkey tracking fees",
+                "All activities mentioned in the itinerary",
+                "Accommodation for 5 Nights, 6 Days (All Meals, except meals in Kigali Hotel)",
+                "Bottled drinking water while on tour",
+                "Government taxes"
             ]
         },
-        inclusions: [],
-        exclusions: [],
+        durationExclusions: {
+            "6 Days": [
+                "Any domestic or International flights",
+                "Visa fees",
+                "All optional activities",
+                "Medical and travel Insurance",
+                "Tips and gratuities to the guide/driver and hotel staffs.",
+                "Any item not mentioned in the itinerary of personal nature like laundry and beverages, souvenirs and telephone bills."
+            ]
+        },
         pricingTiers: [
             {
                 name: "Budget Friendly",
