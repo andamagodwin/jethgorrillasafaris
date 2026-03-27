@@ -3,7 +3,6 @@ export interface Service {
     title: string;
     shortDescription: string;
     fullDescription: string;
-    icon: string;
     duration: string;
     price: string;
     heroImage: string;
@@ -26,7 +25,6 @@ export const services: Service[] = [
         title: "Gorilla Trekking",
         shortDescription: "Experience the thrill of encountering mountain gorillas in their natural habitat. Our expert guides will lead you through the lush forests of Bwindi Impenetrable National Park.",
         fullDescription: "Embark on an unforgettable journey to encounter the majestic mountain gorillas in their natural habitat. Trek through the misty forests of Bwindi Impenetrable National Park, one of the most biodiverse areas in Africa. This once-in-a-lifetime experience brings you face-to-face with these gentle giants, observing their behavior and social interactions in the wild.",
-        icon: "🦍",
         duration: "3-7 Days",
         price: "From $1,500",
         heroImage: "/images/gorilla/gorilla1.jpeg",
@@ -116,7 +114,6 @@ export const services: Service[] = [
         title: "Wildlife Safari",
         shortDescription: "Explore Uganda's diverse wildlife across multiple national parks. Spot lions, elephants, leopards, and more on guided game drives.",
         fullDescription: "Discover the incredible diversity of Uganda's wildlife on this comprehensive safari adventure. Journey through multiple national parks including Queen Elizabeth, Murchison Falls, and Kidepo Valley. Experience thrilling game drives, boat safaris, and nature walks while spotting the Big Five and countless other species.",
-        icon: "🦁",
         duration: "5-10 Days",
         price: "From $2,000",
         heroImage: "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
@@ -179,7 +176,6 @@ export const services: Service[] = [
         title: "Bird Watching Tours",
         shortDescription: "Discover over 1,000 bird species in Uganda's rich ecosystems. Perfect for both amateur and experienced birders.",
         fullDescription: "Uganda is a birder's paradise with over 1,060 recorded bird species. Join our expert ornithologists on specialized birding tours through diverse habitats from wetlands to montane forests. Spot rare species including the Shoebill Stork, African Green Broadbill, and numerous endemic species.",
-        icon: "🦜",
         duration: "4-8 Days",
         price: "From $1,200",
         heroImage: "https://images.pexels.com/photos/27040793/pexels-photo-27040793.jpeg",
@@ -228,7 +224,6 @@ export const services: Service[] = [
         title: "Chimpanzee Tracking",
         shortDescription: "Track our closest relatives in Kibale Forest. Watch them play, feed, and interact in their natural environment.",
         fullDescription: "Kibale National Park is home to the highest concentration of primates in Africa. Trek through the rainforest to find habituated chimpanzee communities and observe their fascinating behaviors. The park also hosts 12 other primate species, making it a primate lover's dream destination.",
-        icon: "🐵",
         duration: "2-5 Days",
         price: "From $1,000",
         heroImage: "https://images.pexels.com/photos/46540/hippo-hippopotamus-animal-look-46540.jpeg",
@@ -272,7 +267,6 @@ export const services: Service[] = [
         title: "Cultural Tours",
         shortDescription: "Immerse yourself in Uganda's rich cultural heritage. Visit local communities and experience traditional customs.",
         fullDescription: "Experience the vibrant cultures of Uganda through immersive community visits. Meet local tribes, participate in traditional ceremonies, learn about ancient customs, and support sustainable tourism initiatives that benefit local communities.",
-        icon: "🎭",
         duration: "3-6 Days",
         price: "From $800",
         heroImage: "https://images.pexels.com/photos/325976/pexels-photo-325976.jpeg",
@@ -317,7 +311,6 @@ export const services: Service[] = [
         title: "Adventure Activities",
         shortDescription: "White water rafting on the Nile, hiking the Rwenzori Mountains, and more thrilling outdoor adventures.",
         fullDescription: "For adrenaline seekers, Uganda offers world-class adventure activities. Experience the thrill of white water rafting on the Nile, trek the legendary Rwenzori Mountains, go bungee jumping, or try zip-lining through the forest canopy.",
-        icon: "🏔️",
         duration: "2-7 Days",
         price: "From $900",
         heroImage: "https://images.pexels.com/photos/584181/pexels-photo-584181.jpeg",

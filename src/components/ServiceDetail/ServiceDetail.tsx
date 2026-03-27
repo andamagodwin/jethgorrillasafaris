@@ -128,7 +128,6 @@ const ServiceDetail = () => {
                 {/* Hero Content */}
                 <div className="absolute inset-0 flex items-center justify-center text-center px-6">
                     <div>
-                        <span className="text-6xl mb-4 block">{service.icon}</span>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
                             {service.title}
                         </h1>
@@ -234,35 +233,6 @@ const ServiceDetail = () => {
                             </div>
                         </section>
 
-                        {/* Inclusions & Exclusions */}
-                        <section className="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">What's Included</h3>
-                                <ul className="space-y-3">
-                                    {service.inclusions.map((item, index) => (
-                                        <li key={index} className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            <span className="text-gray-700">{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">What's Excluded</h3>
-                                <ul className="space-y-3">
-                                    {service.exclusions.map((item, index) => (
-                                        <li key={index} className="flex items-start gap-3">
-                                            <svg className="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                            </svg>
-                                            <span className="text-gray-700">{item}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </section>
 
                         {/* Gallery */}
                         {service.gallery.length > 0 && (

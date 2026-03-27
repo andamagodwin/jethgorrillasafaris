@@ -13,7 +13,7 @@ const About = () => {
             {/* Content */}
             <div className="relative pt-24 md:pt-32 pb-20 px-6 md:px-12 lg:px-20">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* Left Content */}
                         <div className="space-y-6">
                             <div className="inline-block">
@@ -40,36 +40,54 @@ const About = () => {
                             </p>
                         </div>
 
-                        {/* Right Content - Interactive Stack */}
-                        <div className="relative flex justify-center items-center w-full">
-                            {/* <Stack
-                                randomRotation={true}
-                                sensitivity={180}
-                                sendToBackOnClick={false}
-                                cardDimensions={{ width: 400, height: 500 }}
-                                cardsData={images}
-                            /> */}
-                            <div className="grid grid-cols-2 gap-4 md:gap-6 w-full max-w-lg">
-                                <div className="space-y-4 md:space-y-6">
-                                    <img
-                                        src="/images/image1.jpeg"
-                                        alt="Experience Uganda"
-                                        className="w-full h-40 sm:h-52 object-cover rounded-2xl shadow-xl hover:scale-[1.02] transform transition duration-300"
-                                    />
-                                    <img
-                                        src="/images/image3.jpeg"
-                                        alt="Safari Adventures"
-                                        className="w-full h-32 sm:h-44 object-cover rounded-2xl shadow-xl hover:scale-[1.02] transform transition duration-300"
-                                    />
-                                </div>
-                                <div className="pt-8 md:pt-12">
-                                    <img
-                                        src="/images/old-elephant.jpeg"
-                                        alt="Mountain Gorillas"
-                                        className="w-full h-56 sm:h-[400px] object-cover rounded-2xl shadow-xl hover:scale-[1.02] transform transition duration-300"
-                                    />
-                                </div>
+                        {/* Right Content - Premium Collage */}
+                        <div className="relative h-[520px] sm:h-[600px] lg:h-[680px] w-full">
+
+                            {/* Main tall image - left of collage */}
+                            <div className="absolute left-0 top-0 w-[58%] h-[75%] overflow-hidden rounded-3xl shadow-2xl">
+                                <img
+                                    src="/images/culture.jpeg"
+                                    alt="Ugandan Culture"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
                             </div>
+
+                            {/* Top-right small image */}
+                            <div className="absolute right-0 top-0 w-[38%] h-[36%] overflow-hidden rounded-3xl shadow-xl">
+                                <img
+                                    src="/images/image2.jpeg"
+                                    alt="Wildlife"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+
+                            {/* Mid-right image */}
+                            <div className="absolute right-0 top-[40%] w-[38%] h-[32%] overflow-hidden rounded-3xl shadow-xl">
+                                <img
+                                    src="/images/adventure.jpeg"
+                                    alt="Adventure Safari"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+
+                            {/* Bottom-left image — overlaps the main image slightly */}
+                            <div className="absolute left-[5%] bottom-0 w-[42%] h-[30%] overflow-hidden rounded-3xl shadow-xl border-4 border-white">
+                                <img
+                                    src="/images/gorilla/gorilla1.jpeg"
+                                    alt="Mountain Gorilla"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+
+                            {/* Bottom-right image */}
+                            <div className="absolute right-0 bottom-0 w-[55%] h-[26%] overflow-hidden rounded-3xl shadow-xl border-4 border-white">
+                                <img
+                                    src="/images/image4.jpeg"
+                                    alt="Safari Experience"
+                                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+
                         </div>
                     </div>
                 </div>
