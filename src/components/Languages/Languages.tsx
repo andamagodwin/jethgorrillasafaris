@@ -9,7 +9,7 @@ const languages = [
 
 const Languages = () => {
     return (
-        <section className="relative bg-white py-16 px-6 md:px-12 lg:px-20 z-10 font-sans border-t border-gray-100">
+        <section className="relative bg-white py-16 px-6 md:px-12 lg:px-20 z-10 border-t border-gray-100">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
                 {/* Left side: Text */}
                 <div className="flex-1 text-center md:text-left">

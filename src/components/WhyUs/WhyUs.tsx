@@ -41,7 +41,7 @@ const features = [
 
 const WhyUs = () => {
     return (
-        <section className="relative bg-zinc-50 py-12 px-6 md:px-12 lg:px-20 z-10 font-sans border-t border-gray-100">
+        <section className="relative bg-zinc-50 py-12 px-6 md:px-12 lg:px-20 z-10 border-t border-gray-100">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-10">

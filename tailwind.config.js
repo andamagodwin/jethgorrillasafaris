@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+        sans: ['Campuni', 'Montserrat', 'system-ui', 'sans-serif'],
         cursive: ['Dancing Script', 'cursive'],
       },
       animation: {

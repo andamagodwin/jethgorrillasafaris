@@ -59,7 +59,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="relative bg-zinc-50 py-16 px-6 md:px-12 lg:px-20 z-10 font-sans">
+        <section id="services" className="relative bg-zinc-50 py-16 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -92,8 +92,9 @@ const Services = () => {
                             {/* Minimalist Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
 
-                            {/* Content Container */}
-                            <div className="relative h-full p-8 flex flex-col justify-end text-white z-10 font-sans">
+                            {/* Hover Content */}
+                            <div className="relative h-full p-8 flex flex-col justify-end text-white z-10">
+                                <div className="transform transition-all duration-500 flex flex-col h-full group-hover:-translate-y-2">
                                 {/* Title & Icon Row */}
                                 <div className="flex items-center gap-3 mb-3">
                                     <div className="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-lg border border-white/20">
@@ -123,6 +124,7 @@ const Services = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                         </svg>
                                     </Link>
+                                </div>
                                 </div>
                             </div>
                         </div>
