@@ -1,15 +1,30 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { useState } from 'react';
-import { getServiceById } from '../../data/services';
+import { useState, useEffect } from 'react';
+import { getServiceById, services } from '../../data/services';
 import emailjs from '@emailjs/browser';
 
 const ServiceDetail = () => {
     const { serviceId } = useParams<{ serviceId: string }>();
     const navigate = useNavigate();
-    const service = serviceId ? getServiceById(serviceId) : undefined;
-    
+    const currentService = serviceId ? getServiceById(serviceId) : undefined;
+    const service = currentService;
+
+    // Scroll to top when service changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [serviceId]);
+
     const availableCountries = service?.countryItineraries ? Object.keys(service.countryItineraries) : null;
-    const [selectedCountry, setSelectedCountry] = useState<string | null>(availableCountries?.[0] || null);
+    const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
+
+    // Update selected country when service changes
+    useEffect(() => {
+        if (availableCountries) {
+            setSelectedCountry(availableCountries[0]);
+        } else {
+            setSelectedCountry(null);
+        }
+    }, [serviceId, availableCountries?.length]);
 
     const getInitialDuration = () => {
         if (selectedCountry && service?.countryItineraries) {
@@ -555,6 +570,69 @@ const ServiceDetail = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* You May Also Like Section */}
+                <section className="mt-24 pt-16 border-t border-gray-100">
+                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                        <div>
+                            <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-3 block">
+                                Continue Exploring
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                                You May Also Like
+                            </h2>
+                        </div>
+                        <Link 
+                            to="/#services" 
+                            className="text-gray-900 font-bold border-b-2 border-orange-500 pb-1 hover:text-orange-600 hover:border-orange-600 transition-all duration-300 inline-flex items-center gap-2 group"
+                        >
+                            View All Safaris
+                            <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </Link>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {services
+                            .filter(s => s.id !== serviceId)
+                            .slice(0, 3)
+                            .map((otherService) => (
+                                <Link
+                                    key={otherService.id}
+                                    to={`/services/${otherService.id}`}
+                                    className="group block relative h-[300px] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
+                                >
+                                    {/* Background Image */}
+                                    <div
+                                        className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                                        style={{ backgroundImage: `url(${otherService.heroImage})` }}
+                                    />
+                                    
+                                    {/* Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+
+                                    {/* Content */}
+                                    <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
+                                        <div className="transform transition-all duration-500 group-hover:-translate-y-2">
+                                            <span className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2 block">
+                                                {otherService.duration}
+                                            </span>
+                                            <h3 className="text-xl font-bold mb-1">
+                                                {otherService.title}
+                                            </h3>
+                                            <div className="flex items-center gap-1 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                                Learn More
+                                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))}
+                    </div>
+                </section>
             </div>
         </div>
     );
