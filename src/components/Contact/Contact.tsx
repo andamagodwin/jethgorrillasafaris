@@ -124,6 +124,15 @@ const Contact = () => {
                                 </a>
                             </div>
                         </div>
+
+                        {/* Visual Enhancement */}
+                        <div className="pt-2 rounded-2xl overflow-hidden">
+                            <img 
+                                src="/images/tour-car.jpeg" 
+                                alt="Safari Tour Car" 
+                                className="w-full h-48 md:h-64 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-500" 
+                            />
+                        </div>
                     </div>
 
                     {/* Contact Form */}

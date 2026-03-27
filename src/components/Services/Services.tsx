@@ -79,9 +79,10 @@ const Services = () => {
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service) => (
-                        <div
+                        <Link
                             key={service.id}
-                            className="group relative h-[380px] rounded-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden shadow-sm hover:shadow-xl bg-white border border-gray-100"
+                            to={`/services/${service.id}`}
+                            className="group relative block h-[380px] rounded-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden shadow-sm hover:shadow-xl bg-white border border-gray-100"
                         >
                             {/* Background Image */}
                             <div
@@ -97,9 +98,7 @@ const Services = () => {
                                 <div className="transform transition-all duration-500 flex flex-col h-full group-hover:-translate-y-2">
                                 {/* Title & Icon Row */}
                                 <div className="flex items-center gap-3 mb-3">
-                                    <div className="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-lg border border-white/20">
-                                        <img src={service.icon} alt={service.title} className="w-6 h-6 filter brightness-0 invert" />
-                                    </div>
+                                    <img src={service.icon} alt={service.title} className="w-6 h-6 filter brightness-0 invert" />
                                     <h3 className="text-xl font-bold tracking-tight">
                                         {service.title}
                                     </h3>
@@ -110,24 +109,15 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                {/* Footer: Price & Link */}
-                                <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                                {/* Footer: Price */}
+                                <div className="mt-auto flex items-center justify-between">
                                     <span className="text-sm font-bold text-orange-400">
                                         {service.price}
                                     </span>
-                                    <Link 
-                                        to={`/services/${service.id}`}
-                                        className="text-xs font-bold uppercase tracking-widest hover:text-orange-400 transition-colors flex items-center gap-2"
-                                    >
-                                        Explore
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                        </svg>
-                                    </Link>
                                 </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
