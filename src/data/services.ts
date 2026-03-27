@@ -11,6 +11,8 @@ export interface Service {
         day: number;
         title: string;
         description: string;
+        accommodation?: string;
+        meals?: string;
     }[]>;
     inclusions: string[];
     exclusions: string[];
@@ -128,16 +130,74 @@ export const services: Service[] = [
                  { day: 7, title: "Departure", description: "Drive back to Kampala/Entebbe." }
             ],
             "10 Days": [
-                { day: 1, title: "Pick up Entebbe", description: "You will meet your driver guide at Entebbe International Airport who will be already waiting for you and then, he will drive your lodge for an overnight stay. Night at Airport Link Guest House. Meal Plan. Full Board." },
-                { day: 2, title: "Transfer to Murchison Falls NP & Rhino Tracking", description: "Enjoy breakfast at your hotel early in the morning before hitting the road for the most beautiful protected area in Uganda: Murchison Falls National Park. Passing through the famous Luwero triangle, stopover at Ziwa Rhino sanctuary and then have lunch. Proceed to the magnificent falls to marvel at the mighty Nile. Night at Heritage Site Safari Lodge. Meals: Full Board." },
-                { day: 3, title: "Full Day Murchison Falls National Park", description: "Start an early morning game drive towards the Delta area, in search for wildlife including the Rothschild Giraffe, elephant, Lions, Warthogs, and Leopards. Afternoon boat cruise on the Nile for game viewing at close quarters. Night at Heritage Safari Lodge. Meals Full Board." },
-                { day: 4, title: "Transfer to Kibale National Park", description: "Start your drive to western Uganda through the beautiful green scenery and tea plantations. One hour drive to Kibale forest to spot monkeys, birds and Baboons. Night at Chimpanzee Capital Lodge. Meals: Full Board." },
-                { day: 5, title: "Chimpanzee Trekking & Transfer to QE NP", description: "Trip for Chimpanzee walk in Kibale Forest. Experience our cousins for one hour through the tropical rain forest. Afternoon visit to Bigodi swamp to spot monkeys and birds. Drive straight to Queen Elizabeth National Park arriving late evening. Night at Irungu Safari Lodge. Meals: Full Board." },
-                { day: 6, title: "Full Day Queen Elizabeth National Park", description: "Early morning game drive to spot animals like lions, Leopards, elephants, buffaloes, and Uganda Kob. Afternoon boat cruise at Kazinga Channel to see aquatic life, crocodiles, elephants, and Hippos. Night at Irungu Safari Lodge. Meals. Full Board." },
-                { day: 7, title: "Transfer to Bwindi Impenetrable National Park", description: "Early morning drive heading to the Southern gate of Queen Elizabeth National Park (Ishasha sector) for another game drive to look for the climbing lions. Picnic lunch and continue drive to Bwindi. Night at Buhoma Community Rest Camp. Meals: Full Board." },
-                { day: 8, title: "Gorilla Tracking and Community Walk", description: "Experience a life-changing adventure meeting the gentle giants of Bwindi. Spend 1 hour with the gorillas. Transfer to Lake Bunyonyi, a tropical gem. Enjoy a tranquil boat cruise. Night at Seeds of Hope Island. Meal: Full Board." },
-                { day: 9, title: "Transfer to Lake Mburo, Game drive & Nature walk", description: "Head for a 4-5 hours drive to Lake Mburo National Park. Nature Walk to see the Long Horned Ankole cows, do milking in the local areas, followed by an evening game drive. Night at Kigarama Wilderness Lodge. Meals: Full Board." },
-                { day: 10, title: "Morning Walk & Transfer to Entebbe via Equator", description: "Enter into the park with a ranger to spot more wildlife. Transfer to Entebbe stopping at the equator for pictures in both hemispheres. Arriving evening at the airport depending on your flight schedule. End of 10 days Uganda Safari." }
+                {
+                    day: 1,
+                    title: "Pick up Entebbe",
+                    description: "You will meet your driver guide at Entebbe International Airport who will be already waiting for you and then, he will drive your lodge for an overnight stay.",
+                    accommodation: "Airport Link Guest House",
+                    meals: "Full Board"
+                },
+                {
+                    day: 2,
+                    title: "Transfer to Murchison Falls National Park and Rhino Tracking at Ziwa Sanctuary",
+                    description: "Enjoy breakfast at your hotel early in the morning before hitting the road for the most beautiful protected area in Uganda: Murchison Falls National Park.\n\nThis park is located about 300 kilometres north of Kampala, passing through the famous Luwero triangle and has a stopover at Ziwa Rhino sanctuary and then have lunch at Kabalega dinners.\n\nWe later proceed on entering the park through Kichombanyobo gate and visit the magnificent falls where you will enjoy and marvel at the mighty Nile, being forced into a seven meter crevice to thunder 45 meters below in a series of cascades that can be viewed at different points.",
+                    accommodation: "Heritage Site Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 3,
+                    title: "Full Day Murchison Falls National Park",
+                    description: "After an early morning breakfast, we drive to the park to start our game drive towards the Delta area, in search for wildlife that includes; the Rothschild Giraffe, elephant, Jackson’s Hartbeast, Lions, Warthogs, Kobs, Jackals, Oribis, Waterbucks, Patus monkeys and Leopards among others.\n\nHere also a variety of Savannah woodland birds can be seen. We go back to the lodge, relax around, have lunch and later in the afternoon, at 02:00pm go for the boat cruise on the Nile, for game viewing at close quarters as they come to cool off on the shores of the mighty Nile.\n\nHere you get a chance of seeing many schools of Hippos, Crocodiles, Buffaloes, Elephants and a variety of water birds. We come back to the lodge after about 3 hours, for dinner and overnight.",
+                    accommodation: "Heritage Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 4,
+                    title: "Transfer to Kibale National Park",
+                    description: "You will start your drive to western Uganda through the beautiful green scenery and the tea plantations.\n\nYou will have a chance to interact with local people during the walk through the market after lunch. After lunch, you will have a one hour drive to Kibale forest where you will be able to spot some monkeys, birds and Baboons on your way and during the stop-over.",
+                    accommodation: "Chimpanzee Capital Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 5,
+                    title: "Chimpanzee trekking",
+                    description: "Today you will have your breakfast at the lodge and prepare for your trip for Chimpanzee walk. Kibale forest National Park consists of around 13 primate species.\n\nWhile at the park, you will be able to see many types of monkeys like; the wonderful Red Columbus, Grey cheeked mangabey, Black and white Columbus monkey, L’hoest monkey and the amazing Chimpanzees.\n\nHere you will experience our cousins today for one hour and the trip takes 3-4 hours walk through the tropical rain forest with the experienced guide.\n\nAfter lunch you will visit Bigodi swamp for the walk to spot some monkeys and bird species and that takes you through grassland, small communities, see local gardens, people's way of leaving and many others.\n\nAfter we shall drive straight to Queen Elizabeth National Park and arrive late evening.",
+                    accommodation: "Irungu Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 6,
+                    title: "Full Day Queen Elizabeth National Park",
+                    description: "Wake up early morning, have your breakfast and drive to the park through the Kasenyi gate for the early morning game drive where you will be able to spot animals like lions, Leopards, elephants, beards of buffaloes, Uganda Kob and other antelopes, warthogs and birds like the Eagles, Guinea Fowls, Spurfowls, falconlins and more.\n\nThe drive back to the lodge for your lunch and then we enter the park again for the boat cruise at Kazinga Channel to see aquatic life and spot some water birds, crocodiles, elephants, buffaloes, monitor lizards, Hippos and more others.",
+                    accommodation: "Irungu Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 7,
+                    title: "Transfer to Bwindi Impenetrable National Park",
+                    description: "Early morning breakfast, then drive heading to the Southern gate of Queen Elizabeth National Park (Ishasha sector) for another game drive to look for the climbing lions, enjoy your picnic lunch and we continue our drive to Bwindi.",
+                    accommodation: "Buhoma Community Rest Camp",
+                    meals: "Full Board"
+                },
+                {
+                    day: 8,
+                    title: "Gorilla Tracking and Community Walk",
+                    description: "Today experience what most of the people define as a life-changing a experience, adventure meeting the gentle giants of Bwindi Impenetrable National Park.\n\nHave your morning breakfast early in the morning at 6:30 and then set off to the park headquarters for briefing. This is conducted by skilled local rangers who then again guide to the entire activity.\n\nThe you will embark and enter into the rain forest that is full of uncommon animal species such as monkeys, beautiful butterflies and exotic birds.\n\nGorilla Trekking will take 2-3 hours taking you on the challenging steep trails and dense vegetation with beautiful views.\n\nYour efforts applied for the trek will be later paid off when you meet one of the family of the endangered Mountain Gorillas. You find them feasting, grooming each other, playing and napping. Their behaviour is so catchy as you feel you have known them for your entire life.\n\nYou will spend 1 hour with the gorillas, taking pictures and then have your lunch and head back to centre for your gorilla trekking certificates.\n\nAfter this superb activity, transfer to Lake Bunyonyi a fabulous tropical gem of Kigezi Highlands. When here you will be blown by the attractiveness of this scenery lake.\n\nOn arrival, enjoy a tranquil boat cruise as you explore some of the lake's popular 29 Islands.",
+                    accommodation: "Seeds of Hope Island",
+                    meals: "Full Board"
+                },
+                {
+                    day: 9,
+                    title: "Transfer to Lake Mburo, Game drive and a Nature walk",
+                    description: "Have a hearty laze breakfast on this 9th day of your 10 days Uganda Experience, checkout of the lodge and head North East for 4-5 hours drive to Lake Mburo National Park.\n\nCheck into your lodge, relax and then head for Nature Walk to see the Long Horned Ankole cows, do milking in the local areas and then head for the evening game drive to spot animal like the Elands, Impalas, Zebras giraffes and more.",
+                    accommodation: "Kigarama Wilderness Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 10,
+                    title: "Enjoy a morning walk, and transfer to Entebbe",
+                    description: "Have your breakfast and enter into the park with a park ranger to spot more wildlife like the Topis, water bucks, bush bucks, giraffes, hynas and various bird species plus the scenic views of the park.\n\nAfter this walk, transfer to Entebbe which will take 3-4 hours. However on this journey, stop to the equator for pictures in both the Southern Hemisphere and the Northern Hemisphere at one point as your chance to stand in the middle of the world.\n\nThe drive to Entebbe to shop for your favourite souvenirs arriving evening at the airport depending on your flight schedule.\n\nYour driver will be there to drive you to the airport or to any hotel if you have a day room. A day room is applicable if you have a late flight."
+                }
             ]
         },
         inclusions: [

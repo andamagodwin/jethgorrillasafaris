@@ -209,24 +209,44 @@ const ServiceDetail = () => {
                             </div>
 
                             {/* Dynamically Rendered Itinerary Steps */}
-                            <div className="space-y-6">
+                            <div className="space-y-12">
                                 {service.itinerary[selectedDuration]?.map((day) => (
-                                    <div key={day.day} className="flex gap-6 relative group">
-                                        {/* Connector Line */}
-                                        <div className="absolute top-12 left-6 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
-                                        
-                                        <div className="flex-shrink-0 relative z-10">
-                                            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-bold shadow-sm">
-                                                {day.day}
-                                            </div>
+                                    <div key={day.day} className="flex flex-col md:flex-row gap-4 md:gap-8 group">
+                                        <div className="flex-shrink-0 md:w-32 pt-1">
+                                            <span className="text-gray-400 font-bold uppercase tracking-wider text-sm block mb-1">
+                                                Day {day.day}
+                                            </span>
                                         </div>
-                                        <div className="flex-1 pb-6">
-                                            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                                        
+                                        <div className="flex-1">
+                                            <h3 className="text-xl font-bold text-gray-900 mb-3 leading-snug">
                                                 {day.title}
                                             </h3>
-                                            <p className="text-gray-600 leading-relaxed bg-gray-50 p-4 rounded-lg border border-gray-100">
+                                            
+                                            <div className="text-gray-600 leading-relaxed whitespace-pre-line text-[15px] md:text-base">
                                                 {day.description}
-                                            </p>
+                                            </div>
+                                            
+                                            {(day.accommodation || day.meals) && (
+                                                <div className="mt-6 flex flex-wrap gap-6">
+                                                    {day.accommodation && (
+                                                        <div className="flex items-center gap-2 text-sm text-gray-800">
+                                                            <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                                            </svg>
+                                                            <span><strong className="font-semibold text-gray-900">Night at:</strong> {day.accommodation}</span>
+                                                        </div>
+                                                    )}
+                                                    {day.meals && (
+                                                        <div className="flex items-center gap-2 text-sm text-gray-800">
+                                                            <svg className="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                            </svg>
+                                                            <span><strong className="font-semibold text-gray-900">Meals:</strong> {day.meals}</span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 ))}
