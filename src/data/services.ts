@@ -29,11 +29,13 @@ export const services: Service[] = [
         icon: "🦍",
         duration: "3-7 Days",
         price: "From $1,500",
-        heroImage: "https://images.pexels.com/photos/35002913/pexels-photo-35002913.jpeg",
+        heroImage: "/images/gorilla/gorilla1.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/35002913/pexels-photo-35002913.jpeg",
-            "https://images.pexels.com/photos/35018550/pexels-photo-35018550.jpeg",
-            "https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg"
+            "/images/gorilla/gorilla2.jpeg",
+            "/images/gorilla/gorilla3.jpeg",
+            "/images/gorilla/gorilla4.jpeg",
+            "/images/gorilla/gorilla5.jpeg",
+            "/images/gorilla/gorilla6.jpeg"
         ],
         itinerary: {
             "3 Days": [

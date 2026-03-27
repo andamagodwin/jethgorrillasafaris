@@ -286,7 +286,7 @@ const ServiceDetail = () => {
                     {/* Right Column - Booking Form */}
                     <div className="lg:col-span-1">
                         <div className="sticky top-24">
-                            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+                            <div className="bg-white rounded-2xl p-8">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Book This Experience</h3>
 
                                 <form onSubmit={handleSubmit} className="space-y-4">
