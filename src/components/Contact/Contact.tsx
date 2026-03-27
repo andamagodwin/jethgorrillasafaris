@@ -151,7 +151,7 @@ const Contact = () => {
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
                                     />
                                 </div>
 
@@ -167,7 +167,7 @@ const Contact = () => {
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
                                     />
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
                                     />
                                 </div>
 
@@ -199,7 +199,7 @@ const Contact = () => {
                                         value={formData.subject}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
                                     >
                                         <option value="">Select a tour</option>
                                         <option value="gorilla-trekking">Gorilla Trekking</option>
@@ -223,7 +223,7 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     rows={6}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none resize-none"
+                                    className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none resize-none"
                                 ></textarea>
                             </div>
 

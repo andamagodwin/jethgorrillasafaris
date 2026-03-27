@@ -14,6 +14,7 @@ export interface Service {
     }[]>;
     inclusions: string[];
     exclusions: string[];
+    note?: string;
     bestTime: string;
     difficulty: string;
     groupSize: string;
@@ -90,32 +91,19 @@ export const services: Service[] = [
                  { day: 7, title: "Departure", description: "Morning departure drive back to Entebbe for your outbound flight." }
             ]
         },
-        inclusions: [
-            "Gorilla trekking permit",
-            "Professional guide services",
-            "All park entrance fees",
-            "Accommodation and meals",
-            "Ground transportation in 4x4 vehicle",
-            "Bottled water during trek"
-        ],
-        exclusions: [
-            "International flights",
-            "Travel insurance",
-            "Personal expenses",
-            "Tips and gratuities",
-            "Alcoholic beverages"
-        ],
+        inclusions: [],
+        exclusions: [],
         bestTime: "June to September, December to February",
         difficulty: "Moderate to Challenging",
         groupSize: "Maximum 8 people per group"
     },
     {
         id: "wildlife-safari",
-        title: "Wildlife Safari",
+        title: "10 Days 9 Nights Uganda Safari",
         shortDescription: "Explore Uganda's diverse wildlife across multiple national parks. Spot lions, elephants, leopards, and more on guided game drives.",
-        fullDescription: "Discover the incredible diversity of Uganda's wildlife on this comprehensive safari adventure. Journey through multiple national parks including Queen Elizabeth, Murchison Falls, and Kidepo Valley. Experience thrilling game drives, boat safaris, and nature walks while spotting the Big Five and countless other species.",
+        fullDescription: "Discover the incredible diversity of Uganda's wildlife on this comprehensive 10-day safari adventure. Journey through multiple national parks including Queen Elizabeth, Murchison Falls, and Lake Mburo. Experience thrilling game drives, boat safaris, chimpanzee habituation, and gorilla trekking while spotting the Big Five and countless other species.",
         duration: "5-10 Days",
-        price: "From $2,000",
+        price: "$1,428 Per Person",
         heroImage: "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
         gallery: [
             "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
@@ -140,33 +128,36 @@ export const services: Service[] = [
                  { day: 7, title: "Departure", description: "Drive back to Kampala/Entebbe." }
             ],
             "10 Days": [
-                { day: 1, title: "Arrival", description: "Airport pickup." },
-                { day: 2, title: "Murchison Falls", description: "Transfer and Top of the Falls visit." },
-                { day: 3, title: "Game Drive & Boat Trip", description: "Wildlife viewing on the savanna and Nile river." },
-                { day: 4, title: "Transfer to Kibale", description: "Scenic drive through local villages." },
-                { day: 5, title: "Chimpanzee Tracking", description: "Primate tracking in Kibale Forest." },
-                { day: 6, title: "Queen Elizabeth NP", description: "Transfer and evening game drive." },
-                { day: 7, title: "Kazinga Channel Cruise", description: "Morning game drive and afternoon boat safari." },
-                { day: 8, title: "Ishasha Sector", description: "Search for tree-climbing lions." },
-                { day: 9, title: "Lake Mburo NP", description: "Transfer to Lake Mburo for a walking safari." },
-                { day: 10, title: "Departure", description: "Morning game drive and departure." }
+                { day: 1, title: "Pick up Entebbe", description: "You will meet your driver guide at Entebbe International Airport who will be already waiting for you and then, he will drive your lodge for an overnight stay. Night at Airport Link Guest House. Meal Plan. Full Board." },
+                { day: 2, title: "Transfer to Murchison Falls NP & Rhino Tracking", description: "Enjoy breakfast at your hotel early in the morning before hitting the road for the most beautiful protected area in Uganda: Murchison Falls National Park. Passing through the famous Luwero triangle, stopover at Ziwa Rhino sanctuary and then have lunch. Proceed to the magnificent falls to marvel at the mighty Nile. Night at Heritage Site Safari Lodge. Meals: Full Board." },
+                { day: 3, title: "Full Day Murchison Falls National Park", description: "Start an early morning game drive towards the Delta area, in search for wildlife including the Rothschild Giraffe, elephant, Lions, Warthogs, and Leopards. Afternoon boat cruise on the Nile for game viewing at close quarters. Night at Heritage Safari Lodge. Meals Full Board." },
+                { day: 4, title: "Transfer to Kibale National Park", description: "Start your drive to western Uganda through the beautiful green scenery and tea plantations. One hour drive to Kibale forest to spot monkeys, birds and Baboons. Night at Chimpanzee Capital Lodge. Meals: Full Board." },
+                { day: 5, title: "Chimpanzee Trekking & Transfer to QE NP", description: "Trip for Chimpanzee walk in Kibale Forest. Experience our cousins for one hour through the tropical rain forest. Afternoon visit to Bigodi swamp to spot monkeys and birds. Drive straight to Queen Elizabeth National Park arriving late evening. Night at Irungu Safari Lodge. Meals: Full Board." },
+                { day: 6, title: "Full Day Queen Elizabeth National Park", description: "Early morning game drive to spot animals like lions, Leopards, elephants, buffaloes, and Uganda Kob. Afternoon boat cruise at Kazinga Channel to see aquatic life, crocodiles, elephants, and Hippos. Night at Irungu Safari Lodge. Meals. Full Board." },
+                { day: 7, title: "Transfer to Bwindi Impenetrable National Park", description: "Early morning drive heading to the Southern gate of Queen Elizabeth National Park (Ishasha sector) for another game drive to look for the climbing lions. Picnic lunch and continue drive to Bwindi. Night at Buhoma Community Rest Camp. Meals: Full Board." },
+                { day: 8, title: "Gorilla Tracking and Community Walk", description: "Experience a life-changing adventure meeting the gentle giants of Bwindi. Spend 1 hour with the gorillas. Transfer to Lake Bunyonyi, a tropical gem. Enjoy a tranquil boat cruise. Night at Seeds of Hope Island. Meal: Full Board." },
+                { day: 9, title: "Transfer to Lake Mburo, Game drive & Nature walk", description: "Head for a 4-5 hours drive to Lake Mburo National Park. Nature Walk to see the Long Horned Ankole cows, do milking in the local areas, followed by an evening game drive. Night at Kigarama Wilderness Lodge. Meals: Full Board." },
+                { day: 10, title: "Morning Walk & Transfer to Entebbe via Equator", description: "Enter into the park with a ranger to spot more wildlife. Transfer to Entebbe stopping at the equator for pictures in both hemispheres. Arriving evening at the airport depending on your flight schedule. End of 10 days Uganda Safari." }
             ]
         },
         inclusions: [
-            "All park entrance fees",
-            "Professional safari guide",
-            "4x4 safari vehicle",
-            "Accommodation and meals",
-            "Boat cruises",
-            "Game drives"
+            "Transport",
+            "Safari Vehicle with POP Up roof",
+            "English speaking guide and driver",
+            "All Park entrance fees",
+            "Water to drink while on Safari",
+            "Meals"
         ],
         exclusions: [
-            "International flights",
-            "Travel insurance",
-            "Personal expenses",
-            "Optional activities",
-            "Tips and gratuities"
+            "Drinks",
+            "Laundry",
+            "Travel Insurance",
+            "Chimpanzee Permits ($250 @)",
+            "Gorilla Permits ($800 @)",
+            "Extra activities added while on Safari"
         ],
+        note: "Please feel free to ask any questions on the proposal given above. Both Chimpanzee Permits and Gorilla Permits have to be paid for in time because they have limitations. Please continue and confirm the exact dates for tracking.",
+
         bestTime: "December to February, June to September",
         difficulty: "Easy to Moderate",
         groupSize: "Flexible group sizes"
@@ -201,20 +192,8 @@ export const services: Service[] = [
                 { day: 8, title: "Departure", description: "Morning bird walk in Bwindi and drive back to Entebbe/Kampala." }
             ]
         },
-        inclusions: [
-            "Expert birding guide",
-            "All park fees",
-            "Boat trips",
-            "Accommodation and meals",
-            "Transportation",
-            "Bird checklist"
-        ],
-        exclusions: [
-            "International flights",
-            "Travel insurance",
-            "Personal binoculars",
-            "Tips and gratuities"
-        ],
+        inclusions: [],
+        exclusions: [],
         bestTime: "November to April (migratory season)",
         difficulty: "Easy to Moderate",
         groupSize: "Maximum 6 birders"
@@ -245,19 +224,8 @@ export const services: Service[] = [
                 { day: 5, title: "Departure", description: "Morning boat cruise on Kazinga Channel and drive back." }
             ]
         },
-        inclusions: [
-            "Chimpanzee tracking permit",
-            "Professional guide",
-            "Park entrance fees",
-            "Accommodation and meals",
-            "Ground transportation"
-        ],
-        exclusions: [
-            "International flights",
-            "Travel insurance",
-            "Personal expenses",
-            "Tips and gratuities"
-        ],
+        inclusions: [],
+        exclusions: [],
         bestTime: "Year-round, best in dry season",
         difficulty: "Moderate",
         groupSize: "Maximum 6 people per group"
@@ -269,10 +237,12 @@ export const services: Service[] = [
         fullDescription: "Experience the vibrant cultures of Uganda through immersive community visits. Meet local tribes, participate in traditional ceremonies, learn about ancient customs, and support sustainable tourism initiatives that benefit local communities.",
         duration: "3-6 Days",
         price: "From $800",
-        heroImage: "https://images.pexels.com/photos/325976/pexels-photo-325976.jpeg",
+        heroImage: "/images/culture.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/325976/pexels-photo-325976.jpeg",
-            "https://images.pexels.com/photos/624044/pexels-photo-624044.jpeg"
+            "/images/culture.jpeg",
+            "/images/culture1.jpeg",
+            "/images/culture2.jpg",
+            "/images/culture3.jpg"
         ],
         itinerary: {
             "3 Days": [
@@ -289,19 +259,8 @@ export const services: Service[] = [
                 { day: 6, title: "Departure", description: "Return journey and departure operations." }
             ]
         },
-        inclusions: [
-            "Cultural guide",
-            "Community fees",
-            "Accommodation and meals",
-            "Transportation",
-            "Cultural performances"
-        ],
-        exclusions: [
-            "International flights",
-            "Travel insurance",
-            "Personal expenses",
-            "Tips and gratuities"
-        ],
+        inclusions: [],
+        exclusions: [],
         bestTime: "Year-round",
         difficulty: "Easy",
         groupSize: "Flexible"
@@ -339,19 +298,8 @@ export const services: Service[] = [
                 { day: 7, title: "Lion Tracking & Departure", description: "Experiential lion tracking before driving back to Entebbe." }
             ]
         },
-        inclusions: [
-            "Professional instructors",
-            "Safety equipment",
-            "Activity permits",
-            "Accommodation and meals",
-            "Transportation"
-        ],
-        exclusions: [
-            "International flights",
-            "Travel insurance",
-            "Personal expenses",
-            "Optional activities"
-        ],
+        inclusions: [],
+        exclusions: [],
         bestTime: "Year-round, best July to February",
         difficulty: "Moderate to Challenging",
         groupSize: "Varies by activity"

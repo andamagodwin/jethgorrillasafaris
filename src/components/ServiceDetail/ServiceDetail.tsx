@@ -233,6 +233,49 @@ const ServiceDetail = () => {
                             </div>
                         </section>
 
+                        {/* Inclusions, Exclusions & Notes */}
+                        {(service.inclusions.length > 0 || service.exclusions.length > 0) && (
+                            <section className="grid md:grid-cols-2 gap-8 mt-12 mb-8 bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-100">
+                                {service.inclusions.length > 0 && (
+                                    <div>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-4">Price Includes</h3>
+                                        <ul className="space-y-3">
+                                            {service.inclusions.map((item, index) => (
+                                                <li key={index} className="flex items-start gap-3">
+                                                    <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                    <span className="text-gray-700 text-sm">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                                {service.exclusions.length > 0 && (
+                                    <div>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-4">Price Excludes</h3>
+                                        <ul className="space-y-3">
+                                            {service.exclusions.map((item, index) => (
+                                                <li key={index} className="flex items-start gap-3">
+                                                    <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                                    </svg>
+                                                    <span className="text-gray-700 text-sm">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                            </section>
+                        )}
+
+                        {service.note && (
+                            <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-10 rounded-r-lg">
+                                <p className="text-sm text-orange-800 leading-relaxed font-medium">
+                                    <span className="font-bold">Note:</span> {service.note}
+                                </p>
+                            </div>
+                        )}
 
                         {/* Gallery */}
                         {service.gallery.length > 0 && (
@@ -271,7 +314,7 @@ const ServiceDetail = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                             placeholder="John Doe"
                                         />
                                     </div>
@@ -287,7 +330,7 @@ const ServiceDetail = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                             placeholder="john@example.com"
                                         />
                                     </div>
@@ -303,7 +346,7 @@ const ServiceDetail = () => {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                             placeholder="+256 123 456 789"
                                         />
                                     </div>
@@ -318,7 +361,7 @@ const ServiceDetail = () => {
                                             value={formData.travelers}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                         >
                                             {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
                                                 <option key={num} value={num}>{num} {num === 1 ? 'Person' : 'People'}</option>
@@ -337,7 +380,7 @@ const ServiceDetail = () => {
                                             value={formData.date}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
+                                            className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-200 outline-none"
                                         />
                                     </div>
 
@@ -351,7 +394,7 @@ const ServiceDetail = () => {
                                             value={formData.message}
                                             onChange={handleChange}
                                             rows={4}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
+                                            className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
                                             placeholder="Any special requirements or questions..."
                                         ></textarea>
                                     </div>
