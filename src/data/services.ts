@@ -1208,28 +1208,32 @@ export const services: Service[] = [
         fullDescription: "For adrenaline seekers, Uganda offers world-class adventure activities. Experience the thrill of white water rafting on the Nile, trek the legendary Rwenzori Mountains, go bungee jumping, or try zip-lining through the forest canopy.",
         duration: "2-7 Days",
         price: "From $900",
-        heroImage: "https://images.pexels.com/photos/584181/pexels-photo-584181.jpeg",
+        heroImage: "/images/activity.jpg",
         gallery: [
-            "https://images.pexels.com/photos/584181/pexels-photo-584181.jpeg"
+            "/images/activity.jpg",
+            "/images/activity1.webp",
+            "/images/activity2.jpg",
+            "/images/activity3.webp",
+            "/images/activity4.webp"
         ],
         itinerary: {
             "2 Days": [
-                { day: 1, title: "Jinja - Adventure Capital", description: "Transfer to Jinja. Evening briefing and preparation for white water rafting." },
-                { day: 2, title: "White Water Rafting", description: "Full day white water rafting on the Nile River. Navigate through Grade 5 rapids. Return to Kampala." }
+                { day: 1, title: "Jinja - Adventure Capital", description: "Transfer to Jinja. Evening briefing and preparation for white water rafting.", image: "/images/activity4.webp" },
+                { day: 2, title: "White Water Rafting", description: "Full day white water rafting on the Nile River. Navigate through Grade 5 rapids. Return to Kampala.", image: "/images/activity1.webp" }
             ],
             "5 Days": [
-                { day: 1, title: "Arrival & Transfer to Jinja", description: "Pickup and transfer to the source of the Nile." },
-                { day: 2, title: "Rafting & Bungee", description: "Morning Grade 5 rafting followed by afternoon bungee jumping over the Nile." },
+                { day: 1, title: "Arrival & Transfer to Jinja", description: "Pickup and transfer to the source of the Nile.", image: "/images/activity4.webp" },
+                { day: 2, title: "Rafting & Bungee", description: "Morning Grade 5 rafting followed by afternoon bungee jumping over the Nile.", image: "/images/activity1.webp" },
                 { day: 3, title: "Quad Biking & Transfer", description: "Morning quad biking through local villages. Transfer to Mt. Elgon region." },
-                { day: 4, title: "Sipi Falls Hike & Abseiling", description: "Hike the magnificent Sipi Falls and attempt a thrilling 100m abseil." },
+                { day: 4, title: "Sipi Falls Hike & Abseiling", description: "Hike the magnificent Sipi Falls and attempt a thrilling 100m abseil.", image: "/images/activity2.jpg" },
                 { day: 5, title: "Departure", description: "Morning coffee tour and return transfer." }
             ],
             "7 Days": [
                 { day: 1, title: "Arrival", description: "Airport pickup." },
-                { day: 2, title: "Jinja Adrenaline", description: "White water rafting on the Nile." },
+                { day: 2, title: "Jinja Adrenaline", description: "White water rafting on the Nile.", image: "/images/activity1.webp" },
                 { day: 3, title: "Drive to Rwenzori", description: "Long scenic drive to the foothills of the Mountains of the Moon." },
                 { day: 4, title: "Rwenzori Trekking (Day 1)", description: "Start the Mahoma trail trek through the bamboo zone." },
-                { day: 5, title: "Rwenzori Trekking (Day 2)", description: "Hike to Lake Mahoma, experiencing unique afro-alpine flora." },
+                { day: 5, title: "Rwenzori Trekking (Day 2)", description: "Hike to Lake Mahoma, experiencing unique afro-alpine flora.", image: "/images/activity3.webp" },
                 { day: 6, title: "Descend & Transfer", description: "Descend the mountain and drive to Queen Elizabeth NP for a relaxed evening." },
                 { day: 7, title: "Lion Tracking & Departure", description: "Experiential lion tracking before driving back to Entebbe." }
             ]
