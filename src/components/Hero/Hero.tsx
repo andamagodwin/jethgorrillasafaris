@@ -53,20 +53,19 @@ const Hero = () => {
                     <div ref={containerRef} style={{ position: 'relative' }}>
                         <VariableProximity
                             label="Discover the Wild Beauty of Uganda"
-                            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight"
+                            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight px-4"
                             fromFontVariationSettings="'wght' 400, 'opsz' 9"
                             toFontVariationSettings="'wght' 1000, 'opsz' 40"
                             containerRef={containerRef}
                             radius={150}
                             falloff="linear"
+                            wordStyles={{
+                                2: 'text-orange-500',
+                                3: 'text-orange-500',
+                                5: 'text-orange-500'
+                            }}
                         />
                     </div>
-
-                    {/* Hero Subtitle */}
-                    <p className="text-base sm:text-xs md:text-sm text-gray-200 max-w-3xl leading-relaxed font-light">
-                        Embark on an unforgettable safari adventure through breathtaking landscapes
-                        and encounter majestic wildlife in their natural habitat
-                    </p>
 
                     {/* Hero Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto px-4 sm:px-0">

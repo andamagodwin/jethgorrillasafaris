@@ -46,12 +46,6 @@ const Languages = () => {
                         </div>
                     ))}
                     
-                    {/* Special Connector Card */}
-                    <div className="hidden sm:flex p-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl text-white items-center justify-center text-center col-span-1 shadow-lg shadow-orange-500/20">
-                        <p className="text-xs font-bold uppercase tracking-tighter">
-                            Bridging <br/> Worlds
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>

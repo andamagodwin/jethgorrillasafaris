@@ -56,9 +56,6 @@ const Footer = () => {
                                 <span className="text-lg font-bold text-white">
                                     Eyre Gorilla Adventures Ltd
                                 </span>
-                                <span className="text-xs text-gray-400">
-                                    Uncovering Hidden Gems
-                                </span>
                             </div>
                         </a>
                         <p className="text-sm text-gray-400 leading-relaxed mb-6">

@@ -54,6 +54,7 @@ interface VariableProximityProps extends HTMLAttributes<HTMLSpanElement> {
     className?: string;
     onClick?: () => void;
     style?: CSSProperties;
+    wordStyles?: { [key: number]: string };
 }
 
 const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>((props, ref) => {
@@ -67,6 +68,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>((p
         className = '',
         onClick,
         style,
+        wordStyles = {},
         ...restProps
     } = props;
 
@@ -170,7 +172,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>((p
             {...restProps}
         >
             {words.map((word, wordIndex) => (
-                <span key={wordIndex} className="inline-block whitespace-nowrap">
+                <span key={wordIndex} className={`inline-block whitespace-nowrap ${wordStyles[wordIndex] || ''}`}>
                     {word.split('').map(letter => {
                         const currentLetterIndex = letterIndex++;
                         return (
