@@ -39,7 +39,7 @@ const items = [
     },
     {
         id: "7",
-        img: "https://images.pexels.com/photos/469676/pexels-photo-469676.jpeg",
+        img: "/images/chimp6.jpeg",
         url: "https://example.com/seven",
         height: 500,
     },
@@ -69,7 +69,7 @@ const items = [
     },
     {
         id: "12",
-        img: "https://images.pexels.com/photos/325976/pexels-photo-325976.jpeg",
+        img: "/images/chimp7.jpeg",
         url: "https://example.com/twelve",
         height: 480,
     },

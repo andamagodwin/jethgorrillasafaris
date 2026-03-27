@@ -221,6 +221,28 @@ export const services: Service[] = [
                         meals: "Breakfast & Lunch"
                     }
                 ],
+                "3 Days": [
+                    {
+                        day: 1,
+                        title: "Kigali – Transfer to Volcanoes NP",
+                        description: "Pick up from Kigali International Airport or your Kigali Hotel. Your driver-guide may propose a visit to Kigali city which includes the Genocide Memorial centre at Gisozi. Later, transfer to Kinigi at the foothills of the Volcanoes. Go for a community/village walk in the afternoon to enjoy their different performances and explore more about their unique culture.",
+                        accommodation: "MOUNTAIN GORILLA VIEW LODGE / DAVINCI GORILLA LODGE / LA PALME HOTEL",
+                        meals: "Half Board"
+                    },
+                    {
+                        day: 2,
+                        title: "Gorilla Trekking in Volcanoes National Park",
+                        description: "After breakfast, depart for the park headquarters where your driver-guide will accomplish the necessary formalities. Meet your ranger guide(s) for a briefing about the greatest animal experience ever! Enter the forest for gorilla trekking. Spend an unforgettable hour with the majestic mountain gorillas.",
+                        accommodation: "MOUNTAIN GORILLA VIEW LODGE / DAVINCI GORILLA LODGE / LA PALME HOTEL",
+                        meals: "Full Board"
+                    },
+                    {
+                        day: 3,
+                        title: "Golden Monkey Tracking & Return to Kigali",
+                        description: "After breakfast, go for golden monkey tracking in the park. Thereafter, return to Kigali. If you missed the city tour on the first day, you will visit the Genocide Memorial centre at Gisozi and other landmarks. Finally, transfer to the Airport for your departure flight.",
+                        meals: "Breakfast & Lunch"
+                    }
+                ],
                 "6 Days": [
                     {
                         day: 1,
@@ -639,23 +661,26 @@ export const services: Service[] = [
         durationInclusions: {
             "3 Days": [
                 "Park Entry fees",
-                "Accommodation and Meals",
-                "Transport costs in a comfortable 4wd safari vehicle with pop up.",
-                "Full time knowledgeable English speaking safari guide/driver and his allowances",
-                "Boat Cruise",
-                "Rhinoceros tracking at Ziwa sanctuary",
-                "Game drives",
-                "Drinking water while on the tour"
+                "Gorilla Tracking permit",
+                "Golden monkey tracking fee (Rwanda)",
+                "Accommodation and Meals as per itinerary",
+                "Transport in a comfortable 4wd safari vehicle",
+                "Full time knowledgeable English speaking safari guide/driver",
+                "Airport transfers",
+                "Rhinoceros tracking at Ziwa sanctuary (Uganda)",
+                "Game drives and Boat cruises (Uganda)",
+                "Drinking water while on tour",
+                "Local taxes"
             ]
         },
         durationExclusions: {
             "3 Days": [
-                "Any domestic or International flights",
+                "International flights and Airfares",
                 "Visa fees",
                 "All optional activities",
                 "Medical and travel Insurance",
-                "Tips and gratuities to the guide/driver and hotel staffs.",
-                "Any item not mentioned in the itinerary of personal nature like laundry and beverages, souvenirs and telephone bills."
+                "Tips and gratuities",
+                "Items of personal nature (laundry, beverages, souvenirs)"
             ]
         },
         pricingTiers: [
