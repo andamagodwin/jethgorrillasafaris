@@ -8,10 +8,30 @@ const ServiceDetail = () => {
     const navigate = useNavigate();
     const service = serviceId ? getServiceById(serviceId) : undefined;
     
-    // Default to the first duration option available in the new itinerary object
-    const [selectedDuration, setSelectedDuration] = useState<string>(
-        service ? Object.keys(service.itinerary)[0] : '3 Days'
-    );
+    const availableCountries = service?.countryItineraries ? Object.keys(service.countryItineraries) : null;
+    const [selectedCountry, setSelectedCountry] = useState<string | null>(availableCountries?.[0] || null);
+
+    const getInitialDuration = () => {
+        if (selectedCountry && service?.countryItineraries) {
+            return Object.keys(service.countryItineraries[selectedCountry])[0] || '3 Days';
+        }
+        return service ? Object.keys(service.itinerary)[0] : '3 Days';
+    };
+
+    const [selectedDuration, setSelectedDuration] = useState<string>(getInitialDuration());
+
+    // Update duration when country changes
+    const handleCountryChange = (country: string) => {
+        setSelectedCountry(country);
+        if (service?.countryItineraries?.[country]) {
+            const countryDurations = Object.keys(service.countryItineraries[country]);
+            setSelectedDuration(countryDurations[0]);
+        }
+    };
+
+    const currentItineraryOptions = selectedCountry && service?.countryItineraries
+        ? service.countryItineraries[selectedCountry]
+        : service?.itinerary || {};
 
     const [formData, setFormData] = useState({
         name: '',
@@ -186,31 +206,60 @@ const ServiceDetail = () => {
                             <h2 className="text-3xl font-bold text-gray-900 mb-4">Itinerary Planner</h2>
                             
                             <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-8 rounded-r-lg">
-                                <p className="text-gray-700 italic">
-                                    "Your journey, your rules. We meticulously craft out journeys according to your schedule and preferences. Below are some of our most popular, expertly designed fixed itineraries to inspire you. Select a duration:"
+                                <p className="text-gray-700 italic text-sm md:text-base">
+                                    "Your journey, your rules. We meticulously craft out journeys according to your schedule and preferences. Below are some of our most popular, expertly designed fixed itineraries to inspire you. Select a destination and duration:"
                                 </p>
                             </div>
 
+                            {/* Country Selector Pills */}
+                            {availableCountries && availableCountries.length > 0 && (
+                                <div className="mb-6">
+                                    <span className="text-sm font-bold text-gray-400 uppercase tracking-widest block mb-3">
+                                        Select Country
+                                    </span>
+                                    <div className="flex flex-wrap gap-3">
+                                        {availableCountries.map((country) => (
+                                            <button
+                                                key={country}
+                                                onClick={() => handleCountryChange(country)}
+                                                className={`px-6 py-2 rounded-xl font-bold transition-all duration-300 border-2 ${
+                                                    selectedCountry === country
+                                                        ? 'bg-gray-900 text-white border-gray-900 shadow-lg'
+                                                        : 'bg-white text-gray-500 border-gray-100 hover:border-gray-300'
+                                                }`}
+                                            >
+                                                {country}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
                             {/* Duration Selector Pills */}
-                            <div className="flex flex-wrap gap-3 mb-8">
-                                {Object.keys(service.itinerary).map((durationKey) => (
-                                    <button
-                                        key={durationKey}
-                                        onClick={() => setSelectedDuration(durationKey)}
-                                        className={`px-5 py-2.5 rounded-full font-semibold transition-all duration-300 ${
-                                            selectedDuration === durationKey
-                                                ? 'bg-orange-500 text-white shadow-md transform scale-105'
-                                                : 'bg-gray-100 text-gray-600 hover:bg-orange-100 hover:text-orange-600'
-                                        }`}
-                                    >
-                                        {durationKey}
-                                    </button>
-                                ))}
+                            <div className="mb-8">
+                                <span className="text-sm font-bold text-gray-400 uppercase tracking-widest block mb-3">
+                                    Select Duration
+                                </span>
+                                <div className="flex flex-wrap gap-3">
+                                    {Object.keys(currentItineraryOptions).map((durationKey) => (
+                                        <button
+                                            key={durationKey}
+                                            onClick={() => setSelectedDuration(durationKey)}
+                                            className={`px-5 py-2.5 rounded-full font-semibold transition-all duration-300 ${
+                                                selectedDuration === durationKey
+                                                    ? 'bg-orange-500 text-white shadow-md transform scale-105'
+                                                    : 'bg-gray-100 text-gray-600 hover:bg-orange-100 hover:text-orange-600'
+                                            }`}
+                                        >
+                                            {durationKey}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
 
                             {/* Dynamically Rendered Itinerary Steps */}
                             <div className="space-y-12">
-                                {service.itinerary[selectedDuration]?.map((day) => (
+                                {currentItineraryOptions[selectedDuration]?.map((day) => (
                                     <div key={day.day} className="flex flex-col md:flex-row gap-4 md:gap-8 group">
                                         <div className="flex-shrink-0 md:w-32 pt-1">
                                             <span className="text-gray-400 font-bold uppercase tracking-wider text-sm block mb-1">
