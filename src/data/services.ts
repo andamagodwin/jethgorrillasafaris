@@ -852,6 +852,38 @@ export const services: Service[] = [
                     { day: 3, title: "Lake Mburo Boat Cruise", description: "Morning boat cruise for water birds, then afternoon savanna birding." },
                     { day: 4, title: "Return to Entebbe", description: "Final morning bird walk and transfer back to the airport." }
                 ],
+                "6 Days": [
+                    {
+                        day: 1,
+                        title: "Arrival & Entebbe Botanical Gardens",
+                        description: "Arrival at Entebbe International Airport, meet your guide and transfer to your hotel. Later, visit Entebbe Botanical Gardens for an introduction to Uganda's common birds including Great Blue Turaco and Ross's Turaco."
+                    },
+                    {
+                        day: 2,
+                        title: "Mabamba Swamp & Transfer to Lake Mburo",
+                        description: "Early morning visit to Mabamba Swamp to search for the prehistoric Shoebill Stork via traditional canoe. Afterwards, drive to Lake Mburo National Park with birding stops along the way."
+                    },
+                    {
+                        day: 3,
+                        title: "Birding in Lake Mburo National Park",
+                        description: "Morning bird walk in the acacia woodlands of Lake Mburo. In the afternoon, enjoy a boat trip on the lake to spot species like the African Finfoot, White-backed Night-Heron, and various kingfishers."
+                    },
+                    {
+                        day: 4,
+                        title: "Transfer to Queen Elizabeth NP & Kazinga Channel",
+                        description: "Drive to Queen Elizabeth National Park. In the afternoon, embark on a boat safari along the Kazinga Channel, a highlight for birders with hundreds of water birds and hippos."
+                    },
+                    {
+                        day: 5,
+                        title: "Game Drive & Savanna Birding",
+                        description: "Morning game drive in the Kasenyi plains to look for savanna birds and predators. Afternoon explore the crater lakes region or Maramagambo forest for specialized bird species."
+                    },
+                    {
+                        day: 6,
+                        title: "Return to Entebbe via Equator",
+                        description: "Final morning birding in the park before beginning the journey back to Entebbe. Stop at the Equator for photos and lunch. Transfer to the airport for your departure."
+                    }
+                ],
                 "8 Days": [
                     { day: 1, title: "Arrival", description: "Airport pickup and Entebbe Botanical Gardens birding." },
                     { day: 2, title: "Murchison Falls", description: "Transfer to Murchison Falls NP. En-route birding at Ziwa Rhino Sanctuary." },
