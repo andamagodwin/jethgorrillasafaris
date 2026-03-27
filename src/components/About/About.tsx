@@ -73,8 +73,8 @@ const About = () => {
                             {/* Bottom-left image — overlaps the main image slightly */}
                             <div className="absolute left-[5%] bottom-0 w-[42%] h-[30%] overflow-hidden rounded-3xl shadow-xl border-4 border-white">
                                 <img
-                                    src="/images/gorilla/gorilla1.jpeg"
-                                    alt="Mountain Gorilla"
+                                    src="/images/image1.jpeg"
+                                    alt="Chimpanzee"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
