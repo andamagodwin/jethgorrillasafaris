@@ -303,7 +303,50 @@ const ServiceDetail = () => {
                             </section>
                         )}
 
-                        {service.note && (
+                        {service.pricingTiers && service.pricingTiers.length > 0 && (
+                            <section className="mt-12 mb-10">
+                                <div className="text-center mb-10">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Private Safari Cost</h2>
+                                    <p className="text-gray-500 text-sm md:text-base max-w-lg mx-auto leading-relaxed">
+                                        The price of each safari depends on the number of travelers, trip duration, and accommodation type. Below you can see approximate prices for each category.
+                                    </p>
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-0 overflow-hidden rounded-2xl">
+                                    {service.pricingTiers.map((tier, index) => (
+                                        <div
+                                            key={index}
+                                            className={`p-8 md:p-10 ${
+                                                tier.dark
+                                                    ? "bg-[#1a3d1a] text-white"
+                                                    : tier.highlight
+                                                    ? "bg-[#5c3d11] text-white"
+                                                    : "bg-gray-100 text-gray-900"
+                                            }`}
+                                        >
+                                            <h3 className={`text-xl font-bold mb-3 ${tier.dark || tier.highlight ? "text-white" : "text-orange-700"}`}>
+                                                {tier.name}
+                                            </h3>
+                                            {tier.description && (
+                                                <p className={`text-sm mb-5 leading-relaxed ${tier.dark || tier.highlight ? "text-gray-300" : "text-gray-600"}`}>
+                                                    {tier.description}
+                                                </p>
+                                            )}
+                                            {tier.prices && tier.prices.length > 0 && (
+                                                <ul className="space-y-3">
+                                                    {tier.prices.map((price, i) => (
+                                                        <li key={i} className={`text-sm leading-snug ${tier.dark || tier.highlight ? "text-gray-200" : "text-gray-700"}`}>
+                                                            {price.label}: <span className="font-semibold">{price.amount}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
+
+                        {service.note && !service.pricingTiers && (
                             <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-10 rounded-r-lg">
                                 <p className="text-sm text-orange-800 leading-relaxed font-medium">
                                     <span className="font-bold">Note:</span> {service.note}

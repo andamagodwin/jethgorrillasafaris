@@ -18,6 +18,13 @@ export interface Service {
     inclusions: string[];
     exclusions: string[];
     note?: string;
+    pricingTiers?: {
+        name: string;
+        description?: string;
+        highlight?: boolean;
+        dark?: boolean;
+        prices?: { label: string; amount: string }[];
+    }[];
     bestTime: string;
     difficulty: string;
     groupSize: string;
@@ -43,18 +50,20 @@ export const services: Service[] = [
             "3 Days": [
                 {
                     day: 1,
-                    title: "Arrival & Transfer to Bwindi",
-                    description: "Meet and greet at Entebbe International Airport or in Kampala. Scenic drive through the countryside to Bwindi Impenetrable National Park."
+                    title: "Travel to Bwindi Impenetrable National Park",
+                    description: "You will be picked from the Airport on arrival or from your Hotel by one of our experienced Uganda gorilla safari driver/ guide who will transfer you to Bwindi Impenetrable national park. You will have a stopover at the equator for photography and lunch break in Mbarara town. The drive will take you through different villages with fascinating scenery, make stopovers for pictures then proceed to check-in to your lodge for dinner and overnight.",
+                    accommodation: "Mahogany Springs (Luxury) / Bakiga Lodge (Semi-luxury) / Buhoma Community Rest Camp (Budget)"
                 },
                 {
                     day: 2,
-                    title: "Gorilla Trekking Day",
-                    description: "Early morning briefing at the park headquarters. Trek through the forest to find the gorilla family. Spend one magical hour observing these incredible creatures."
+                    title: "Gorilla Trekking & Community Walk",
+                    description: "In the morning take an early breakfast, head to the park office headquarters with parked lunch for a vital briefing ready to trek the gorillas in the thick impenetrable forest. You get to spend and hour with the gorillas after having trekked for about 3-6 hours. If you still feel strong in the afternoon, you will head for a community walk to meet the local people and Batwa community to learn about their traditional way of living. Also available are curio shops drinking joints children's school among others. After all, return to the lodge for Dinner and overnight stay.",
+                    accommodation: "Mahogany Springs (Luxury) / Bakiga Lodge (Semi-luxury) / Buhoma Community Rest Camp (Budget)"
                 },
                 {
                     day: 3,
-                    title: "Return Journey",
-                    description: "Leisure morning at the lodge. Transfer back to Kampala or Entebbe for your departure flight."
+                    title: "Transfer back to Kampala or Entebbe",
+                    description: "On this day after relaxed breakfast, you will travel to Kampala, reaching early in the afternoon. The tour driver will drive you to your Hotel or in the same way continue taking you to Entebbe international airport to catch up with your departure flight if on schedule."
                 }
             ],
             "5 Days": [
@@ -96,6 +105,22 @@ export const services: Service[] = [
         },
         inclusions: [],
         exclusions: [],
+        pricingTiers: [
+            {
+                name: "Budget Friendly",
+                description: "Basic yet comfortable accommodations like Buhoma Community Rest Camp. Ideal for travelers focused on the experience."
+            },
+            {
+                name: "Mid Range",
+                highlight: true,
+                description: "Mid-to-upper range lodges like Bakiga Lodge, offering better views and enhanced amenities."
+            },
+            {
+                name: "Luxury Safari",
+                dark: true,
+                description: "Premium stays at high-end lodges like Mahogany Springs, featuring world-class service and luxury interiors."
+            }
+        ],
         bestTime: "June to September, December to February",
         difficulty: "Moderate to Challenging",
         groupSize: "Maximum 8 people per group"
@@ -217,7 +242,23 @@ export const services: Service[] = [
             "Gorilla Permits ($800 @)",
             "Extra activities added while on Safari"
         ],
-        note: "Please feel free to ask any questions on the proposal given above. Both Chimpanzee Permits and Gorilla Permits have to be paid for in time because they have limitations. Please continue and confirm the exact dates for tracking.",
+        pricingTiers: [
+            {
+                name: "Budget Friendly",
+                description: "Features comfortable guest houses and standard safari lodges. Ideal for those seeking an authentic experience on a budget."
+            },
+            {
+                name: "Mid Range",
+                highlight: true,
+                description: "Our most popular choice. Includes well-appointed safari lodges and tented camps with enhanced amenities and service."
+            },
+            {
+                name: "Luxury Safari",
+                dark: true,
+                description: "The ultimate experience. Stay in Uganda's finest boutique lodges and luxury camps with premium services and locations."
+            }
+        ],
+        note: "Please feel free to ask any questions on the proposal given above. Both Chimpanzee Permits and Gorilla Permits have to be paid for in time because they have limitations.",
 
         bestTime: "December to February, June to September",
         difficulty: "Easy to Moderate",
@@ -362,7 +403,14 @@ export const services: Service[] = [
             "Personal expenses",
             "Optional activities not listed"
         ],
-        note: "Package Cost: USD 11,000 total for 2 people sharing (Private safari experience)",
+        pricingTiers: [
+            {
+                name: "Private Safari",
+                highlight: true,
+                description: "This 15-day comprehensive journey is designed as a high-end private experience. Experience the best of Uganda with a dedicated professional guide and premium 4x4 transport."
+            }
+        ],
+        note: "Contact us for a personalized quote based on your preferred dates and group size.",
         bestTime: "June to September, December to February",
         difficulty: "Moderate",
         groupSize: "Private safari"
@@ -466,7 +514,22 @@ export const services: Service[] = [
         },
         inclusions: [],
         exclusions: [],
-        note: "Private Safari Cost varies by group size:\n\nBudget Friendly — For 2: $2,920/person · For 4: $2,280/person\nMid Range — For 2: $3,280/person · For 4: $2,580/person\nLuxury Safari — For 2: $3,880/person · For 4: $3,280/person",
+        pricingTiers: [
+            {
+                name: "Budget Friendly",
+                description: "Focuses on quality budget-friendly accommodations and efficient travel logistics."
+            },
+            {
+                name: "Mid Range",
+                highlight: true,
+                description: "Upgraded lodges and more immersive experiences throughout the 7-day journey."
+            },
+            {
+                name: "Luxury Safari",
+                dark: true,
+                description: "Top-tier luxury lodges and exclusive private experiences in every national park."
+            }
+        ],
         bestTime: "Year-round, best in dry season",
         difficulty: "Moderate",
         groupSize: "Maximum 6 people per group"
