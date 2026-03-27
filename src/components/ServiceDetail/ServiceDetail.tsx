@@ -268,13 +268,15 @@ const ServiceDetail = () => {
                         </section>
 
                         {/* Inclusions, Exclusions & Notes */}
-                        {(service.inclusions.length > 0 || service.exclusions.length > 0) && (
+                        {/* Inclusions, Exclusions & Notes */}
+                        {((service.durationInclusions?.[selectedDuration] || service.inclusions).length > 0 || 
+                          (service.durationExclusions?.[selectedDuration] || service.exclusions).length > 0) && (
                             <section className="grid md:grid-cols-2 gap-8 mt-12 mb-8 bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-100">
-                                {service.inclusions.length > 0 && (
+                                {(service.durationInclusions?.[selectedDuration] || service.inclusions).length > 0 && (
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-4">Price Includes</h3>
                                         <ul className="space-y-3">
-                                            {service.inclusions.map((item, index) => (
+                                            {(service.durationInclusions?.[selectedDuration] || service.inclusions).map((item, index) => (
                                                 <li key={index} className="flex items-start gap-3">
                                                     <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -285,11 +287,11 @@ const ServiceDetail = () => {
                                         </ul>
                                     </div>
                                 )}
-                                {service.exclusions.length > 0 && (
+                                {(service.durationExclusions?.[selectedDuration] || service.exclusions).length > 0 && (
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-4">Price Excludes</h3>
                                         <ul className="space-y-3">
-                                            {service.exclusions.map((item, index) => (
+                                            {(service.durationExclusions?.[selectedDuration] || service.exclusions).map((item, index) => (
                                                 <li key={index} className="flex items-start gap-3">
                                                     <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

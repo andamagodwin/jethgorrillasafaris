@@ -17,6 +17,8 @@ export interface Service {
     }[]>;
     inclusions: string[];
     exclusions: string[];
+    durationInclusions?: Record<string, string[]>;
+    durationExclusions?: Record<string, string[]>;
     note?: string;
     pricingTiers?: {
         name: string;
@@ -36,7 +38,7 @@ export const services: Service[] = [
         title: "Gorilla Trekking",
         shortDescription: "Experience the thrill of encountering mountain gorillas in their natural habitat. Our expert guides will lead you through the lush forests of Bwindi Impenetrable National Park.",
         fullDescription: "Embark on an unforgettable journey to encounter the majestic mountain gorillas in their natural habitat. Trek through the misty forests of Bwindi Impenetrable National Park, one of the most biodiverse areas in Africa. This once-in-a-lifetime experience brings you face-to-face with these gentle giants, observing their behavior and social interactions in the wild.",
-        duration: "3-7 Days",
+        duration: "3-15 Days",
         price: "From $1,500",
         heroImage: "/images/gorilla/gorilla1.jpeg",
         gallery: [
@@ -101,6 +103,97 @@ export const services: Service[] = [
                  { day: 5, title: "Gorilla Trekking", description: "The ultimate primate experience in Bwindi Impenetrable Forest." },
                  { day: 6, title: "Lake Bunyonyi Relaxation", description: "Transfer to Africa's second deepest lake, Lake Bunyonyi, for canoeing and relaxation." },
                  { day: 7, title: "Departure", description: "Morning departure drive back to Entebbe for your outbound flight." }
+            ],
+            "15 Days": [
+                {
+                    day: 1,
+                    title: "Arrival and Transfer to the hotel",
+                    description: "On arrival at Entebbe international Airport, our experienced Classic Uganda safari guide will meet and transfer you to your Hotel for an overnight stay.",
+                    accommodation: "CASSIA LODGE / LE PETITE VILLAGE BOUTIQUE HOTEL"
+                },
+                {
+                    day: 2,
+                    title: "Transfer to Murchison Falls via Ziwa Rhino Sanctuary",
+                    description: "An early morning start after breakfast, depart to Murchison falls national park with en route visit to Ziwa Rhino Sanctuary for Rhinoceros tracking. Murchison falls national park is Uganda's largest savannah park with largest concentration of animals, so expect to see a lot of Giraffes, Elephants, Jacksons hartebeests, Oribi Uganda kob, buffalos, birds, crocodiles in water or basking on sand hippos warthogs if lucky lions and leopards, Jackals and hyenas. You will continue and make it to the top of the falls for photography before reaching your lodge.",
+                    accommodation: "PARAA SAFARI LODGE / PAKUBA SAFARI LODGE / FORT MURCHISON"
+                },
+                {
+                    day: 3,
+                    title: "Full Day in Murchison Falls",
+                    description: "Morning game drive where you stand chances to see and take pictures of savannah game such as Elephants, giraffes, buffalos, hartebeests, Uganda kobs, warthogs, oribi as well as birds of different species. After lunch, take a boat cruise to the bottom of the falls that will reward you with hippos, crocodiles, and possibly Elephants coming to drink water.",
+                    accommodation: "PARAA SAFARI LODGE / PAKUBA SAFARI LODGE / FORT MURCHISON"
+                },
+                {
+                    day: 4,
+                    title: "Morning Game Drive & Transfer to Hoima",
+                    description: "After breakfast, go on a final game drive for more chances to try early raisers like lions and leopards. Then later you will transfer to Hoima town where the seat of the bunyoro kitara kingdom is found to shorten the journey to Kibale national park the next day.",
+                    accommodation: "HOIMA CULTURAL LODGE / HOTEL KONTIK"
+                },
+                {
+                    day: 5,
+                    title: "Transfer to Kibale Forest National Park",
+                    description: "After your relaxed breakfast, you will start your journey heading to Kibale forest national park, the home to over 13 primate species including the red colobus and the chimpanzee, besides these, there are around 350 bird species recorded.",
+                    accommodation: "KYANINGA LODGE / PRIMATE LODGE KIBALE / CHIMPANZEE FOREST LODGE"
+                },
+                {
+                    day: 6,
+                    title: "Chimpanzee Tracking & Bigodi Nature Walk",
+                    description: "Assemble at the ranger station for your chimpanzee tracking briefing, thereafter proceed on your trek which will take you 3 to 4 hours. After lunch, visit Bigodi wetland sanctuary for more primate and bird watching walk that will take approximately 3 hours.",
+                    accommodation: "KYANINGA LODGE / PRIMATE LODGE KIBALE / CHIMPANZEE FOREST LODGE"
+                },
+                {
+                    day: 7,
+                    title: "Semuliki National Park & Crater Region",
+                    description: "Driven to a scenic route to Semuliki national park for a morning nature walk to see variety of monkey, Sempaya hot springs and forest birds. On your return, explore the crater region for scenic views.",
+                    accommodation: "MOUNTAINS OF THE MOON / RWENZORI VIEW GUEST HOUSE"
+                },
+                {
+                    day: 8,
+                    title: "Transfer to Queen Elizabeth National Park",
+                    description: "Transfer to Queen Elizabeth national park, the second largest protected area with a huge number of animal and bird species. Once you enter the park, you will visit salt lake katwe before proceeding to the lodge.",
+                    accommodation: "MWEYA SAFARI LODGE / ENGANZI LODGE / BUSH LODGE"
+                },
+                {
+                    day: 9,
+                    title: "Game Drive & Kazinga Channel Boat Safari",
+                    description: "Set off to kasenyi plains for your early morning game drive in search of lions, leopards, and other savanna game. In the afternoon, take a boat cruise on Kazinga channel to view hippos, birds, and crocodiles at close range.",
+                    accommodation: "MWEYA SAFARI LODGE / ENGANZI LODGE / BUSH LODGE"
+                },
+                {
+                    day: 10,
+                    title: "Transfer to Ishasha Sector",
+                    description: "Transfer to Ishasha, the southern sector of Queen Elizabeth national park which is famous for tree climbing lions that are seen clinging between the fig trees. Enjoy an afternoon game drive in search of them.",
+                    accommodation: "ISHASHA JUNGLE LODGE / ENJOJO LODGE"
+                },
+                {
+                    day: 11,
+                    title: "Game Drive & Transfer to Bwindi",
+                    description: "Morning game drive to try more chances for tree climbing lions and other game animal. Then transfer to Bwindi impenetrable national park, the home to the world's few remaining mountain gorillas.",
+                    accommodation: "MAHOGANY SPRING LODGE / BUHOMA HAVEN LODGE / BAKIGA LODGE"
+                },
+                {
+                    day: 12,
+                    title: "Gorilla Tracking & Community Walk",
+                    description: "Report to the ranger station for a briefing about gorilla tracking, then ascend to the forest for your gorilla adventure. Once located, spend 1 hour with these gentle giants. Later, take a community walk to learn about local culture.",
+                    accommodation: "MAHOGANY SPRING LODGE / BUHOMA HAVEN LODGE / BAKIGA LODGE"
+                },
+                {
+                    day: 13,
+                    title: "Transfer to Lake Bunyonyi & Boat Ride",
+                    description: "Transfer to Lake Bunyonyi, Uganda's deepest and most beautiful lake. Upon arrival, go for a boat ride to visit historical islands including the Punishment Island.",
+                    accommodation: "BIRDNEST RESORT / ARCADIA COTTAGES / BUNYONYI OVERLAND RESORT"
+                },
+                {
+                    day: 14,
+                    title: "Transfer to Lake Mburo National Park",
+                    description: "Transfer to Lake Mburo national park, Uganda's smallest Savannah park. In the evening, go for a night game drive in search of nocturnal animals like leopards and bush babies.",
+                    accommodation: "MIHINGO SAFARI LODGE / RWAKOBO ROCK / LAKE MBURO SAFARI LODGE"
+                },
+                {
+                    day: 15,
+                    title: "Morning Game Drive & Transfer to Entebbe",
+                    description: "Final game drive in search of Impalas, giraffes, Plain zebra, and Topis. Then drive back to Entebbe with a stopover at the equator for photography and craft shopping."
+                }
             ]
         },
         inclusions: [],
@@ -130,7 +223,7 @@ export const services: Service[] = [
         title: "10 Days 9 Nights Uganda Safari",
         shortDescription: "Explore Uganda's diverse wildlife across multiple national parks. Spot lions, elephants, leopards, and more on guided game drives.",
         fullDescription: "Discover the incredible diversity of Uganda's wildlife on this comprehensive 10-day safari adventure. Journey through multiple national parks including Queen Elizabeth, Murchison Falls, and Lake Mburo. Experience thrilling game drives, boat safaris, chimpanzee habituation, and gorilla trekking while spotting the Big Five and countless other species.",
-        duration: "5-10 Days",
+        duration: "3-21 Days",
         price: "$1,428 Per Person",
         heroImage: "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
         gallery: [
@@ -139,6 +232,28 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/1524628/pexels-photo-1524628.jpeg"
         ],
         itinerary: {
+            "3 Days": [
+                {
+                    day: 1,
+                    title: "Transfer to Murchison Falls via Ziwa Rhinos",
+                    description: "Pick-up from your hotel for a transfer to Murchison Falls National Park. Stop en-route at Ziwa Rhino Sanctuary to track white rhinos on foot. Enjoy lunch and continue with en-route game viewing for lions, elephants, and giraffes.",
+                    accommodation: "Paraa (Luxury) / Murchison River Lodge (Mid-Range) / Fort Murchison (Budget)",
+                    meals: "Lunch & Dinner"
+                },
+                {
+                    day: 2,
+                    title: "Game Drive & Afternoon Nile Boat Cruise",
+                    description: "Embark on an early morning game drive to spot the Big Five and various antelope species. In the afternoon, enjoy a boat cruise along the Nile to the base of the falls, seeing hippos and crocodiles.",
+                    accommodation: "Paraa (Luxury) / Murchison River Lodge (Mid-Range) / Fort Murchison (Budget)",
+                    meals: "Full Board"
+                },
+                {
+                    day: 3,
+                    title: "Morning Game Drive, Top of Falls & Return",
+                    description: "Start with a final game drive, then visit the breathtaking Top of the Falls where the Nile crashes through a narrow gorge. Afterwards, drive back to Kampala/Entebbe.",
+                    meals: "Breakfast & Lunch"
+                }
+            ],
             "5 Days": [
                 { day: 1, title: "Arrival & Transfer", description: "Airport pickup and transfer to Murchison Falls National Park." },
                 { day: 2, title: "Murchison Falls Game Drive", description: "Early morning game drive to spot lions, elephants, and giraffes. Afternoon boat cruise on the Nile." },
@@ -147,13 +262,54 @@ export const services: Service[] = [
                 { day: 5, title: "Return to Entebbe", description: "Morning game drive and transfer back to Entebbe for departure." }
             ],
             "7 Days": [
-                 { day: 1, title: "Arrival", description: "Welcome to Uganda! Transfer to hotel in Kampala." },
-                 { day: 2, title: "Ziwa Rhino Sanctuary", description: "Drive north with a stop at Ziwa for on-foot Rhino tracking." },
-                 { day: 3, title: "Murchison Falls", description: "Game drive in Murchison Falls NP and afternoon boat cruise to the base of the falls." },
-                 { day: 4, title: "Kibale Forest", description: "Transfer to Kibale Forest National Park, the primate capital of the world." },
-                 { day: 5, title: "Chimp Trekking & Transfer", description: "Morning Chimp trek, then drive to Queen Elizabeth NP." },
-                 { day: 6, title: "Queen Elizabeth NP", description: "Full day exploring Queen Elizabeth NP via game drives and the Kazinga Channel boat tour." },
-                 { day: 7, title: "Departure", description: "Drive back to Kampala/Entebbe." }
+                {
+                    day: 1,
+                    title: "Transfer to Kibale National Park",
+                    description: "Early morning breakfast at your hotel followed by a pick-up for a scenic drive to Kibale National Park, the primate capital of the world. After check-in and lunch, head out for a community tour to explore the local surroundings.\n\nTransfer Time: 6h 50min (340km)",
+                    accommodation: "Chimp Nest Safari Lodge",
+                    meals: "Lunch & Dinner"
+                },
+                {
+                    day: 2,
+                    title: "Chimpanzee Tracking & Banana Experience",
+                    description: "After an early breakfast, head into the forest for your chimpanzee tracking experience. Spend time observing our closest relatives in their natural habitat. In the evening, you can opt for a unique Banana Experience, learning about banana gin and beer production.",
+                    accommodation: "Chimp Nest Safari Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 3,
+                    title: "Transfer to Bwindi via Queen Elizabeth NP",
+                    description: "Transfer to Queen Elizabeth National Park for a morning game drive in the Kasenyi plains and channel tracks. Enjoy an Equator experience and a packed lunch. Later, continue to Bwindi Impenetrable National Park via the Ishasha sector, famous for tree-climbing lions.\n\nTransfer: 225km (approx. 5h 30min combined)",
+                    accommodation: "Bwindi Home Stay",
+                    meals: "Full Board"
+                },
+                {
+                    day: 4,
+                    title: "Mountain Gorilla Experience",
+                    description: "The highlight of your journey: trekking the majestic mountain gorillas in Bwindi. Spend one life-changing hour with a gorilla family. In the afternoon, you can optionally take a nature walk to visit the incredible 3-course cascaded waterfalls.",
+                    accommodation: "Bwindi Home Stay",
+                    meals: "Full Board"
+                },
+                {
+                    day: 5,
+                    title: "Community Engagement & Batwa Walk",
+                    description: "A day dedicated to cultural immersion. Take a mid-morning community walk to meet the Batwa people and learn about their traditional forest life. In the late afternoon, visit a local orphanage school to see the community impact projects.",
+                    accommodation: "Bwindi Home Stay",
+                    meals: "Full Board"
+                },
+                {
+                    day: 6,
+                    title: "Transfer to Lake Mburo & Boat Cruise",
+                    description: "Drive to Lake Mburo National Park, Uganda's smallest Savannah park. After check-in, enjoy an afternoon boat cruise on the lake to spot hippos, crocodiles, and diverse birdlife.\n\nTransfer: 198km (4h 10min)",
+                    accommodation: "Kigarama Wilderness Lodge",
+                    meals: "Full Board"
+                },
+                {
+                    day: 7,
+                    title: "Game Drive & Return to Entebbe",
+                    description: "Start the day with an early morning game drive to spot elands, zebras, and giraffes. After check-out, begin your journey back to Entebbe for your departure flight.\n\nTransfer: 275km (5h 40min)",
+                    meals: "Breakfast & Lunch"
+                }
             ],
             "10 Days": [
                 {
@@ -224,24 +380,191 @@ export const services: Service[] = [
                     title: "Enjoy a morning walk, and transfer to Entebbe",
                     description: "Have your breakfast and enter into the park with a park ranger to spot more wildlife like the Topis, water bucks, bush bucks, giraffes, hynas and various bird species plus the scenic views of the park.\n\nAfter this walk, transfer to Entebbe which will take 3-4 hours. However on this journey, stop to the equator for pictures in both the Southern Hemisphere and the Northern Hemisphere at one point as your chance to stand in the middle of the world.\n\nThe drive to Entebbe to shop for your favourite souvenirs arriving evening at the airport depending on your flight schedule.\n\nYour driver will be there to drive you to the airport or to any hotel if you have a day room. A day room is applicable if you have a late flight."
                 }
+            ],
+            "21 Days": [
+                {
+                    day: 1,
+                    title: "Arrival at Entebbe Airport & Transfer to Hotel",
+                    description: "Upon arrival at Entebbe international Airport, your tour guide will transfer you to your hotel in either Entebbe or Kampala for an overnight stay.",
+                    accommodation: "PROTEA HOTEL / ADMAS GRAND HOTEL / CASSIA LODGE"
+                },
+                {
+                    day: 2,
+                    title: "Kampala City Tour & Transfer to Jinja",
+                    description: "Explore the cultural and historical sites of Kampala, including Kasubi Royal Tombs, Namugongo martyrs shrine, and the Uganda National Museum. Later, drive to Jinja town.",
+                    accommodation: "HAVEN RIVER LODGE / 2 FRIENDS GUEST HOUSE / EXPLORERS CAMP",
+                    meals: "Lunch & Dinner"
+                },
+                {
+                    day: 3,
+                    title: "Source of the Nile, Speke Monument & Return to Kampala",
+                    description: "Visit the source of the Nile River and the Speke monument by boat. Explore local markets, then head back to Kampala with a visit to Sezibwa Falls or Mabira forest.",
+                    accommodation: "SHERATON HOTEL / LE PETITE VILLAGE HOTEL / CASSIA LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 4,
+                    title: "Transfer to Kitgum via Ziwa Rhino Sanctuary",
+                    description: "Depart for Kitgum town with a stop at Ziwa Rhino sanctuary for tracking. This sanctuary is home to the only wild rhinos in Uganda.",
+                    accommodation: "BOMAH HOTEL / FUGLEYS GUEST HOUSE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 5,
+                    title: "Drive to Kidepo Valley National Park",
+                    description: "Head to north-eastern Uganda to Kidepo Valley NP, one of Uganda's best game parks. Observe the unique Karamojongo lifestyle and enjoy an afternoon game drive.",
+                    accommodation: "APOKA LODGE / SAVANNAH LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 6,
+                    title: "Full Day in Kidepo Valley NP",
+                    description: "Enjoy morning and afternoon game drives with chances to see giraffes, elephants, lions, leopards, and uniquely, cheetahs and ostriches.",
+                    accommodation: "APOKA LODGE / SAVANNAH LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 7,
+                    title: "Transfer to Murchison Falls National Park",
+                    description: "Drive to Uganda's largest park, Murchison Falls. Enjoy en-route game viewing as you enter this stunning landscape bisected by the Nile.",
+                    accommodation: "PARAA SAFARI LODGE / PAKUBA SAFARI LODGE / FORT MURCHISON",
+                    meals: "Full Board"
+                },
+                {
+                    day: 8,
+                    title: "Game Drive & Boat Trip to Bottom of Falls",
+                    description: "A morning game drive for savannah game, followed by an afternoon boat ride to the base of the mighty Murchison Falls.",
+                    accommodation: "PARAA SAFARI LODGE / PAKUBA SAFARI LODGE / FORT MURCHISON",
+                    meals: "Full Board"
+                },
+                {
+                    day: 9,
+                    title: "Morning Game Drive & Transfer to Hoima",
+                    description: "A final game drive in Murchison Falls to catch early raisers, followed by a transfer to Hoima town, the seat of the Bunyoro Kitara kingdom.",
+                    accommodation: "HOIMA CULTURAL LODGE / HOTEL KONTIK",
+                    meals: "Full Board"
+                },
+                {
+                    day: 10,
+                    title: "Transfer to Kibale Forest National Park",
+                    description: "Drive to the primate capital of the world, Kibale Forest. Enjoy the scenic Albertine rift views along the way.",
+                    accommodation: "KYANINGA LODGE / PRIMATE LODGE KIBALE / CHIMPANZEE FOREST LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 11,
+                    title: "Chimpanzee Tracking & Bigodi Wetland Walk",
+                    description: "Morning chimp tracking in the rain forest, followed by a nature walk in the Bigodi wetland sanctuary for more primates and birds.",
+                    accommodation: "KYANINGA LODGE / PRIMATE LODGE KIBALE / CHIMPANZEE FOREST LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 12,
+                    title: "Transfer to Queen Elizabeth National Park",
+                    description: "Drive towards Queen Elizabeth NP with views of the Rwenzori Mountains. Cross the equator and enjoy an evening game drive.",
+                    accommodation: "MWEYA SAFARI LODGE / ENGANZI LODGE / BUSH LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 13,
+                    title: "Morning Game Drive & Kazinga Channel Boat Cruise",
+                    description: "Morning safari in the Kasenyi plains followed by a 2-hour boat cruise on the natural Kazinga channel.",
+                    accommodation: "MWEYA SAFARI LODGE / ENGANZI LODGE / BUSH LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 14,
+                    title: "Ishasha Sector Game Drive (Tree-Climbing Lions)",
+                    description: "Transfer to the southern Ishasha sector. Enjoy an afternoon game drive in search of its famous tree-climbing lions.",
+                    accommodation: "ISHASHA WILDERNESS CAMP / ISHASHA JUNGLE LODGE",
+                    meals: "Full Board"
+                },
+                {
+                    day: 15,
+                    title: "Game Drive & Transfer to Bwindi National Park",
+                    description: "Final game drive in Ishasha followed by a transfer to the misty forests of Bwindi, home to the mountain gorillas.",
+                    accommodation: "MAHOGANY SPRINGS / BUHOMA HAVEN / BUHOMA COMMUNITY REST CAMP",
+                    meals: "Full Board"
+                },
+                {
+                    day: 16,
+                    title: "Gorilla Tracking in Bwindi & Nature Walk",
+                    description: "A life-changing encounter with Bwindi's gentle giants. Spend an hour with a gorilla family. Optional waterfall walk in the afternoon.",
+                    accommodation: "MAHOGANY SPRINGS / BUHOMA HAVEN / BUHOMA COMMUNITY REST CAMP",
+                    meals: "Full Board"
+                },
+                {
+                    day: 17,
+                    title: "Batwa Community Walk & Transfer to Lake Bunyonyi",
+                    description: "Meet the Batwa pygmies and learn about their traditional forest life. Later, drive to Lake Bunyonyi, Uganda's deepest lake.",
+                    accommodation: "BIRDNEST RESORT / ARCADIA COTTAGES / BUNYONYI OVERLAND RESORT",
+                    meals: "Full Board"
+                },
+                {
+                    day: 18,
+                    title: "Lake Bunyonyi Boat Ride & Transfer to Rwanda",
+                    description: "Explore the 29 islands of Lake Bunyonyi by boat. In the afternoon, cross the border at Cyanika to Volcanoes National Park in Rwanda.",
+                    accommodation: "MOUNTAIN GORILLA VIEW LODGE / DAVINCI GORILLA LODGE / LA PALME HOTEL",
+                    meals: "Full Board"
+                },
+                {
+                    day: 19,
+                    title: "2nd Gorilla Trekking (Volcanoes NP) & Cultural Tour",
+                    description: "A second gorilla experience in Rwanda's Volcanoes NP. Later, visit the Iby'iwacu Cultural Village for a traditional demonstration.",
+                    accommodation: "MOUNTAIN GORILLA VIEW LODGE / DAVINCI GORILLA LODGE / LA PALME HOTEL",
+                    meals: "Full Board"
+                },
+                {
+                    day: 20,
+                    title: "Golden Monkey Tracking & Transfer to Kigali",
+                    description: "Track the rare golden monkeys or hike to Dian Fossey's grave. In the afternoon, transfer to Rwanda's clean and vibrant capital, Kigali.",
+                    accommodation: "KIGALI SERENA / HOTEL DES MILLE COLLINES / FIVE TO FIVE HOTEL",
+                    meals: "Full Board"
+                },
+                {
+                    day: 21,
+                    title: "Kigali City Tour & Departure",
+                    description: "Tour Kigali city, visiting the Genocide Memorial and local craft markets before your final transfer to the airport."
+                }
             ]
         },
         inclusions: [
-            "Transport",
-            "Safari Vehicle with POP Up roof",
-            "English speaking guide and driver",
-            "All Park entrance fees",
-            "Water to drink while on Safari",
-            "Meals"
+            "Airport pick and drop",
+            "English speaking Driver guide",
+            "Gorilla tracking permits and park fees",
+            "Mid range accommodation (full Board)",
+            "All handling and itinerary planning"
         ],
         exclusions: [
-            "Drinks",
-            "Laundry",
-            "Travel Insurance",
-            "Chimpanzee Permits ($250 @)",
-            "Gorilla Permits ($800 @)",
-            "Extra activities added while on Safari"
+            "International flights",
+            "Travel insurance",
+            "Porter tips, guide tips",
+            "Personal expenses (souvenirs)",
+            "Optional activities",
+            "Meals not specified"
         ],
+        durationInclusions: {
+            "3 Days": [
+                "Park Entry fees",
+                "Accommodation and Meals",
+                "Transport costs in a comfortable 4wd safari vehicle with pop up.",
+                "Full time knowledgeable English speaking safari guide/driver and his allowances",
+                "Boat Cruise",
+                "Rhinoceros tracking at Ziwa sanctuary",
+                "Game drives",
+                "Drinking water while on the tour"
+            ]
+        },
+        durationExclusions: {
+            "3 Days": [
+                "Any domestic or International flights",
+                "Visa fees",
+                "All optional activities",
+                "Medical and travel Insurance",
+                "Tips and gratuities to the guide/driver and hotel staffs.",
+                "Any item not mentioned in the itinerary of personal nature like laundry and beverages, souvenirs and telephone bills."
+            ]
+        },
         pricingTiers: [
             {
                 name: "Budget Friendly",
@@ -258,7 +581,7 @@ export const services: Service[] = [
                 description: "The ultimate experience. Stay in Uganda's finest boutique lodges and luxury camps with premium services and locations."
             }
         ],
-        note: "Please feel free to ask any questions on the proposal given above. Both Chimpanzee Permits and Gorilla Permits have to be paid for in time because they have limitations.",
+        note: "Bwindi impenetrable national park has been open for tourism since 1993. 20% of every gorilla permit fee goes directly to farmers as compensation for crop protection. A recent census confirmed that 426 chimpanzees call Bwindi home.",
 
         bestTime: "December to February, June to September",
         difficulty: "Easy to Moderate",
