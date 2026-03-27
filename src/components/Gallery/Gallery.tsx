@@ -94,8 +94,7 @@ const Gallery = () => {
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <span
-                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block"
-                        style={{ fontFamily: "'Libre Baskerville', serif" }}
+                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block font-['Campuni']"
                     >
                         Safari Gallery
                     </span>

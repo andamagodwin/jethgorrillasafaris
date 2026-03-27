@@ -14,8 +14,7 @@ const Languages = () => {
                 {/* Left side: Text */}
                 <div className="flex-1 text-center md:text-left">
                     <span
-                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block"
-                        style={{ fontFamily: "'Libre Baskerville', serif" }}
+                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block font-['Campuni']"
                     >
                         Global Connection
                     </span>

@@ -64,8 +64,7 @@ const Services = () => {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <span
-                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block"
-                        style={{ fontFamily: "'Libre Baskerville', serif" }}
+                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block font-['Campuni']"
                     >
                         Our Services
                     </span>

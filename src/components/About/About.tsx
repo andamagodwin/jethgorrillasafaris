@@ -18,8 +18,7 @@ const About = () => {
                         <div className="space-y-6">
                             <div className="inline-block">
                                 <span
-                                    className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide"
-                                    style={{ fontFamily: "'Libre Baskerville', serif" }}
+                                    className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide font-['Campuni']"
                                 >
                                     About Eyre Gorilla Adventures Ltd
                                 </span>
