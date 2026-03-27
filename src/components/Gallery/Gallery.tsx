@@ -108,7 +108,7 @@ const Gallery = () => {
                 </div>
 
                 {/* Masonry Grid */}
-                <div className="w-full" style={{ height: '600px' }}>
+                <div className="w-full">
                     <Masonry
                         items={items}
                         ease="power3.out"
