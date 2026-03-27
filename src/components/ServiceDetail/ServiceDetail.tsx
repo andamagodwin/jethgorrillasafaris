@@ -7,6 +7,11 @@ const ServiceDetail = () => {
     const { serviceId } = useParams<{ serviceId: string }>();
     const navigate = useNavigate();
     const service = serviceId ? getServiceById(serviceId) : undefined;
+    
+    // Default to the first duration option available in the new itinerary object
+    const [selectedDuration, setSelectedDuration] = useState<string>(
+        service ? Object.keys(service.itinerary)[0] : '3 Days'
+    );
 
     const [formData, setFormData] = useState({
         name: '',
@@ -177,22 +182,50 @@ const ServiceDetail = () => {
                             </div>
                         </section>
 
-                        {/* Itinerary */}
+                        {/* Dynamic Itinerary */}
                         <section>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Itinerary</h2>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-4">Itinerary Planner</h2>
+                            
+                            <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-8 rounded-r-lg">
+                                <p className="text-gray-700 italic">
+                                    "Your journey, your rules. We meticulously craft out journeys according to your schedule and preferences. Below are some of our most popular, expertly designed fixed itineraries to inspire you. Select a duration:"
+                                </p>
+                            </div>
+
+                            {/* Duration Selector Pills */}
+                            <div className="flex flex-wrap gap-3 mb-8">
+                                {Object.keys(service.itinerary).map((durationKey) => (
+                                    <button
+                                        key={durationKey}
+                                        onClick={() => setSelectedDuration(durationKey)}
+                                        className={`px-5 py-2.5 rounded-full font-semibold transition-all duration-300 ${
+                                            selectedDuration === durationKey
+                                                ? 'bg-orange-500 text-white shadow-md transform scale-105'
+                                                : 'bg-gray-100 text-gray-600 hover:bg-orange-100 hover:text-orange-600'
+                                        }`}
+                                    >
+                                        {durationKey}
+                                    </button>
+                                ))}
+                            </div>
+
+                            {/* Dynamically Rendered Itinerary Steps */}
                             <div className="space-y-6">
-                                {service.itinerary.map((day) => (
-                                    <div key={day.day} className="flex gap-6">
-                                        <div className="flex-shrink-0">
-                                            <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                {service.itinerary[selectedDuration]?.map((day) => (
+                                    <div key={day.day} className="flex gap-6 relative group">
+                                        {/* Connector Line */}
+                                        <div className="absolute top-12 left-6 bottom-[-24px] w-0.5 bg-gray-200 group-last:hidden"></div>
+                                        
+                                        <div className="flex-shrink-0 relative z-10">
+                                            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-bold shadow-sm">
                                                 {day.day}
                                             </div>
                                         </div>
-                                        <div className="flex-1">
+                                        <div className="flex-1 pb-6">
                                             <h3 className="text-xl font-semibold text-gray-900 mb-2">
                                                 {day.title}
                                             </h3>
-                                            <p className="text-gray-600 leading-relaxed">
+                                            <p className="text-gray-600 leading-relaxed bg-gray-50 p-4 rounded-lg border border-gray-100">
                                                 {day.description}
                                             </p>
                                         </div>

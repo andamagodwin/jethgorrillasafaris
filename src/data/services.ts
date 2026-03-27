@@ -8,11 +8,11 @@ export interface Service {
     price: string;
     heroImage: string;
     gallery: string[];
-    itinerary: {
+    itinerary: Record<string, {
         day: number;
         title: string;
         description: string;
-    }[];
+    }[]>;
     inclusions: string[];
     exclusions: string[];
     bestTime: string;
@@ -35,28 +35,61 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/35018550/pexels-photo-35018550.jpeg",
             "https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg"
         ],
-        itinerary: [
-            {
-                day: 1,
-                title: "Arrival in Entebbe",
-                description: "Meet and greet at Entebbe International Airport. Transfer to your hotel in Kampala. Evening briefing about the trek."
-            },
-            {
-                day: 2,
-                title: "Transfer to Bwindi",
-                description: "Early morning departure to Bwindi Impenetrable National Park. Scenic drive through the countryside with stops at the Equator and local markets."
-            },
-            {
-                day: 3,
-                title: "Gorilla Trekking Day",
-                description: "Early morning briefing at the park headquarters. Trek through the forest to find the gorilla family. Spend one magical hour observing these incredible creatures."
-            },
-            {
-                day: 4,
-                title: "Return Journey",
-                description: "Leisure morning at the lodge. Afternoon transfer back to Kampala or Entebbe for your departure flight."
-            }
-        ],
+        itinerary: {
+            "3 Days": [
+                {
+                    day: 1,
+                    title: "Arrival & Transfer to Bwindi",
+                    description: "Meet and greet at Entebbe International Airport or in Kampala. Scenic drive through the countryside to Bwindi Impenetrable National Park."
+                },
+                {
+                    day: 2,
+                    title: "Gorilla Trekking Day",
+                    description: "Early morning briefing at the park headquarters. Trek through the forest to find the gorilla family. Spend one magical hour observing these incredible creatures."
+                },
+                {
+                    day: 3,
+                    title: "Return Journey",
+                    description: "Leisure morning at the lodge. Transfer back to Kampala or Entebbe for your departure flight."
+                }
+            ],
+            "5 Days": [
+                {
+                    day: 1,
+                    title: "Arrival in Entebbe",
+                    description: "Meet and greet at Entebbe International Airport. Transfer to your hotel in Kampala for an evening briefing."
+                },
+                {
+                    day: 2,
+                    title: "Lake Mburo National Park",
+                    description: "Drive to Lake Mburo National Park. Afternoon game drive or boat safari."
+                },
+                {
+                    day: 3,
+                    title: "Transfer to Bwindi",
+                    description: "Morning nature walk in Lake Mburo. Scenic drive to Bwindi Impenetrable forest."
+                },
+                {
+                    day: 4,
+                    title: "Gorilla Trekking Day",
+                    description: "The highlight of your trip! A full day dedicated to tracking and observing the endangered mountain gorillas."
+                },
+                {
+                    day: 5,
+                    title: "Return Journey",
+                    description: "Drive back to Entebbe with a stop at the Equator for photos and souvenirs."
+                }
+            ],
+            "7 Days": [
+                 { day: 1, title: "Arrival", description: "Welcome to Uganda! Airport transfer and relaxation in Entebbe." },
+                 { day: 2, title: "Drive to Queen Elizabeth", description: "Scenic drive to Queen Elizabeth National Park with crater lakes views." },
+                 { day: 3, title: "Game Drive & Boat Cruise", description: "Morning game drive to spot lions, then an afternoon Kazinga Channel boat cruise." },
+                 { day: 4, title: "Ishasha Sector (Tree-Climbing Lions)", description: "Transfer to the Ishasha sector in search of tree-climbing lions before heading to Bwindi." },
+                 { day: 5, title: "Gorilla Trekking", description: "The ultimate primate experience in Bwindi Impenetrable Forest." },
+                 { day: 6, title: "Lake Bunyonyi Relaxation", description: "Transfer to Africa's second deepest lake, Lake Bunyonyi, for canoeing and relaxation." },
+                 { day: 7, title: "Departure", description: "Morning departure drive back to Entebbe for your outbound flight." }
+            ]
+        },
         inclusions: [
             "Gorilla trekking permit",
             "Professional guide services",
@@ -90,33 +123,36 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/3850526/pexels-photo-3850526.jpeg",
             "https://images.pexels.com/photos/1524628/pexels-photo-1524628.jpeg"
         ],
-        itinerary: [
-            {
-                day: 1,
-                title: "Arrival & Kampala City Tour",
-                description: "Airport pickup and transfer to hotel. Optional Kampala city tour visiting cultural sites and markets."
-            },
-            {
-                day: 2,
-                title: "Murchison Falls National Park",
-                description: "Drive to Murchison Falls. Visit the top of the falls for spectacular views. Evening game drive."
-            },
-            {
-                day: 3,
-                title: "Game Drive & Boat Safari",
-                description: "Early morning game drive to spot lions, elephants, and giraffes. Afternoon boat cruise on the Nile to the base of the falls."
-            },
-            {
-                day: 4,
-                title: "Queen Elizabeth National Park",
-                description: "Transfer to Queen Elizabeth National Park. Evening game drive in search of tree-climbing lions."
-            },
-            {
-                day: 5,
-                title: "Kazinga Channel Cruise",
-                description: "Morning game drive. Afternoon boat cruise on Kazinga Channel to see hippos, crocodiles, and water birds."
-            }
-        ],
+        itinerary: {
+            "5 Days": [
+                { day: 1, title: "Arrival & Transfer", description: "Airport pickup and transfer to Murchison Falls National Park." },
+                { day: 2, title: "Murchison Falls Game Drive", description: "Early morning game drive to spot lions, elephants, and giraffes. Afternoon boat cruise on the Nile." },
+                { day: 3, title: "Transfer to Queen Elizabeth", description: "Drive south to Queen Elizabeth National Park along the scenic Albertine Rift." },
+                { day: 4, title: "Kazinga Channel Safari", description: "Morning game drive and afternoon boat cruise on the Kazinga Channel, famous for hippo pods." },
+                { day: 5, title: "Return to Entebbe", description: "Morning game drive and transfer back to Entebbe for departure." }
+            ],
+            "7 Days": [
+                 { day: 1, title: "Arrival", description: "Welcome to Uganda! Transfer to hotel in Kampala." },
+                 { day: 2, title: "Ziwa Rhino Sanctuary", description: "Drive north with a stop at Ziwa for on-foot Rhino tracking." },
+                 { day: 3, title: "Murchison Falls", description: "Game drive in Murchison Falls NP and afternoon boat cruise to the base of the falls." },
+                 { day: 4, title: "Kibale Forest", description: "Transfer to Kibale Forest National Park, the primate capital of the world." },
+                 { day: 5, title: "Chimp Trekking & Transfer", description: "Morning Chimp trek, then drive to Queen Elizabeth NP." },
+                 { day: 6, title: "Queen Elizabeth NP", description: "Full day exploring Queen Elizabeth NP via game drives and the Kazinga Channel boat tour." },
+                 { day: 7, title: "Departure", description: "Drive back to Kampala/Entebbe." }
+            ],
+            "10 Days": [
+                { day: 1, title: "Arrival", description: "Airport pickup." },
+                { day: 2, title: "Murchison Falls", description: "Transfer and Top of the Falls visit." },
+                { day: 3, title: "Game Drive & Boat Trip", description: "Wildlife viewing on the savanna and Nile river." },
+                { day: 4, title: "Transfer to Kibale", description: "Scenic drive through local villages." },
+                { day: 5, title: "Chimpanzee Tracking", description: "Primate tracking in Kibale Forest." },
+                { day: 6, title: "Queen Elizabeth NP", description: "Transfer and evening game drive." },
+                { day: 7, title: "Kazinga Channel Cruise", description: "Morning game drive and afternoon boat safari." },
+                { day: 8, title: "Ishasha Sector", description: "Search for tree-climbing lions." },
+                { day: 9, title: "Lake Mburo NP", description: "Transfer to Lake Mburo for a walking safari." },
+                { day: 10, title: "Departure", description: "Morning game drive and departure." }
+            ]
+        },
         inclusions: [
             "All park entrance fees",
             "Professional safari guide",
@@ -149,23 +185,24 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/1142995/pexels-photo-1142995.jpeg",
             "https://images.pexels.com/photos/33773537/pexels-photo-33773537.jpeg"
         ],
-        itinerary: [
-            {
-                day: 1,
-                title: "Mabamba Swamp",
-                description: "Early morning boat ride to Mabamba Swamp in search of the rare Shoebill Stork and other wetland species."
-            },
-            {
-                day: 2,
-                title: "Bwindi Forest",
-                description: "Birding in Bwindi Impenetrable Forest. Target species include African Green Broadbill and Albertine Rift endemics."
-            },
-            {
-                day: 3,
-                title: "Queen Elizabeth National Park",
-                description: "Birding along Kazinga Channel and in various habitats. Over 600 species recorded in this park."
-            }
-        ],
+        itinerary: {
+            "4 Days": [
+                { day: 1, title: "Mabamba Swamp", description: "Early morning boat ride to Mabamba Swamp in search of the rare Shoebill Stork and other wetland species." },
+                { day: 2, title: "Lake Mburo", description: "Transfer to Lake Mburo National Park. Afternoon bird walk focusing on acacia-associated species." },
+                { day: 3, title: "Lake Mburo Boat Cruise", description: "Morning boat cruise for water birds, then afternoon savanna birding." },
+                { day: 4, title: "Return to Entebbe", description: "Final morning bird walk and transfer back to the airport." }
+            ],
+            "8 Days": [
+                { day: 1, title: "Arrival", description: "Airport pickup and Entebbe Botanical Gardens birding." },
+                { day: 2, title: "Murchison Falls", description: "Transfer to Murchison Falls NP. En-route birding at Ziwa Rhino Sanctuary." },
+                { day: 3, title: "Nile Delta Birding", description: "Boat cruise to the Nile Delta to look for the Shoebill and other water birds." },
+                { day: 4, title: "Kibale Forest", description: "Long drive to Kibale Forest with stops for Rift Valley endemics." },
+                { day: 5, title: "Green-breasted Pitta", description: "Early start to find the elusive Green-breasted Pitta in Kibale." },
+                { day: 6, title: "Queen Elizabeth NP", description: "Transfer to QENP. Afternoon birding along the Kazinga Channel." },
+                { day: 7, title: "Bwindi (Ruhija)", description: "Transfer to the higher altitude Ruhija sector of Bwindi for Albertine Rift endemics." },
+                { day: 8, title: "Departure", description: "Morning bird walk in Bwindi and drive back to Entebbe/Kampala." }
+            ]
+        },
         inclusions: [
             "Expert birding guide",
             "All park fees",
@@ -197,23 +234,20 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/46540/hippo-hippopotamus-animal-look-46540.jpeg",
             "https://images.pexels.com/photos/18115745/pexels-photo-18115745.jpeg"
         ],
-        itinerary: [
-            {
-                day: 1,
-                title: "Arrival in Kibale",
-                description: "Transfer to Kibale Forest National Park. Evening nature walk in Bigodi Wetland Sanctuary."
-            },
-            {
-                day: 2,
-                title: "Chimpanzee Tracking",
-                description: "Early morning chimpanzee tracking in Kibale Forest. Afternoon primate walk to spot other monkey species."
-            },
-            {
-                day: 3,
-                title: "Return Journey",
-                description: "Optional morning activity. Transfer back to Kampala or continue to other destinations."
-            }
-        ],
+        itinerary: {
+            "3 Days": [
+                { day: 1, title: "Arrival in Kibale", description: "Transfer to Kibale Forest National Park. Evening nature walk in Bigodi Wetland Sanctuary." },
+                { day: 2, title: "Chimpanzee Tracking", description: "Early morning chimpanzee tracking in Kibale Forest. Afternoon primate walk to spot other monkey species." },
+                { day: 3, title: "Return Journey", description: "Optional morning activity. Transfer back to Kampala or continue to other destinations." }
+            ],
+            "5 Days": [
+                { day: 1, title: "Arrival", description: "Airport pickup and transfer to Kampala." },
+                { day: 2, title: "Drive to Kibale", description: "Scenic drive through tea plantations to Kibale Forest." },
+                { day: 3, title: "Chimpanzee Habituation", description: "Full day Chimpanzee Habituation Experience - spend the entire day following the chimps with researchers." },
+                { day: 4, title: "Bigodi & Queen Elizabeth", description: "Morning swamp walk in Bigodi. Transfer to Queen Elizabeth NP for an evening game drive." },
+                { day: 5, title: "Departure", description: "Morning boat cruise on Kazinga Channel and drive back." }
+            ]
+        },
         inclusions: [
             "Chimpanzee tracking permit",
             "Professional guide",
@@ -244,23 +278,21 @@ export const services: Service[] = [
             "https://images.pexels.com/photos/325976/pexels-photo-325976.jpeg",
             "https://images.pexels.com/photos/624044/pexels-photo-624044.jpeg"
         ],
-        itinerary: [
-            {
-                day: 1,
-                title: "Kampala Cultural Sites",
-                description: "Visit Kasubi Tombs, Kabaka's Palace, and local craft markets. Learn about Buganda Kingdom history."
-            },
-            {
-                day: 2,
-                title: "Batwa Community Visit",
-                description: "Meet the Batwa pygmies and learn about their traditional forest lifestyle and cultural practices."
-            },
-            {
-                day: 3,
-                title: "Village Homestay",
-                description: "Stay with a local family, participate in daily activities, and enjoy traditional meals and entertainment."
-            }
-        ],
+        itinerary: {
+            "3 Days": [
+                { day: 1, title: "Kampala Cultural Sites", description: "Visit Kasubi Tombs, Kabaka's Palace, and local craft markets. Learn about Buganda Kingdom history." },
+                { day: 2, title: "Batwa Community Visit", description: "Transfer to the southwest. Meet the Batwa pygmies and learn about their traditional forest lifestyle and cultural practices." },
+                { day: 3, title: "Village Homestay", description: "Stay with a local family, participate in daily activities, and enjoy traditional meals and entertainment." }
+            ],
+            "6 Days": [
+                { day: 1, title: "Arrival", description: "Pickup in Entebbe. Briefing and traditional dinner." },
+                { day: 2, title: "Buganda Kingdom", description: "Full day exploring Kampala's historical sites, including Ndere Cultural Centre in the evening." },
+                { day: 3, title: "Igongo Cultural Centre", description: "Drive to western Uganda with a stop at Igongo to learn about Ankole culture." },
+                { day: 4, title: "Batwa Trail", description: "Experience the Batwa Trail in Mgahinga, learning ancient hunting and survival skills." },
+                { day: 5, title: "Karamojong Experience", description: "(Flight/Long drive north) Visit a traditional Manyatta to learn about the pastoralist Karamojong culture." },
+                { day: 6, title: "Departure", description: "Return journey and departure operations." }
+            ]
+        },
         inclusions: [
             "Cultural guide",
             "Community fees",
@@ -290,23 +322,28 @@ export const services: Service[] = [
         gallery: [
             "https://images.pexels.com/photos/584181/pexels-photo-584181.jpeg"
         ],
-        itinerary: [
-            {
-                day: 1,
-                title: "Jinja - Adventure Capital",
-                description: "Transfer to Jinja. Evening briefing and preparation for white water rafting."
-            },
-            {
-                day: 2,
-                title: "White Water Rafting",
-                description: "Full day white water rafting on the Nile River. Navigate through Grade 5 rapids with expert guides."
-            },
-            {
-                day: 3,
-                title: "Optional Activities",
-                description: "Choose from bungee jumping, kayaking, quad biking, or horseback riding along the Nile."
-            }
-        ],
+        itinerary: {
+            "2 Days": [
+                { day: 1, title: "Jinja - Adventure Capital", description: "Transfer to Jinja. Evening briefing and preparation for white water rafting." },
+                { day: 2, title: "White Water Rafting", description: "Full day white water rafting on the Nile River. Navigate through Grade 5 rapids. Return to Kampala." }
+            ],
+            "5 Days": [
+                { day: 1, title: "Arrival & Transfer to Jinja", description: "Pickup and transfer to the source of the Nile." },
+                { day: 2, title: "Rafting & Bungee", description: "Morning Grade 5 rafting followed by afternoon bungee jumping over the Nile." },
+                { day: 3, title: "Quad Biking & Transfer", description: "Morning quad biking through local villages. Transfer to Mt. Elgon region." },
+                { day: 4, title: "Sipi Falls Hike & Abseiling", description: "Hike the magnificent Sipi Falls and attempt a thrilling 100m abseil." },
+                { day: 5, title: "Departure", description: "Morning coffee tour and return transfer." }
+            ],
+            "7 Days": [
+                { day: 1, title: "Arrival", description: "Airport pickup." },
+                { day: 2, title: "Jinja Adrenaline", description: "White water rafting on the Nile." },
+                { day: 3, title: "Drive to Rwenzori", description: "Long scenic drive to the foothills of the Mountains of the Moon." },
+                { day: 4, title: "Rwenzori Trekking (Day 1)", description: "Start the Mahoma trail trek through the bamboo zone." },
+                { day: 5, title: "Rwenzori Trekking (Day 2)", description: "Hike to Lake Mahoma, experiencing unique afro-alpine flora." },
+                { day: 6, title: "Descend & Transfer", description: "Descend the mountain and drive to Queen Elizabeth NP for a relaxed evening." },
+                { day: 7, title: "Lion Tracking & Departure", description: "Experiential lion tracking before driving back to Entebbe." }
+            ]
+        },
         inclusions: [
             "Professional instructors",
             "Safety equipment",
@@ -324,6 +361,7 @@ export const services: Service[] = [
         difficulty: "Moderate to Challenging",
         groupSize: "Varies by activity"
     }
+
 ];
 
 export const getServiceById = (id: string): Service | undefined => {
