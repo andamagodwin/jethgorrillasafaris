@@ -727,6 +727,7 @@ export const services: Service[] = [
             "/images/safari12.jpeg",
             "/images/safari13.jpeg",
             "/images/safari14.jpeg",
+            "/images/safari15.jpeg",
             "/images/elephant10.jpeg",
             "/images/elephant11.jpeg",
             "/images/elephant12.jpeg",
@@ -1203,6 +1204,9 @@ export const services: Service[] = [
             "/images/culture19.jpeg",
             "/images/culture20.jpeg",
             "/images/culture21.jpeg",
+            "/images/culture22.jpeg",
+            "/images/culture23.jpeg",
+            "/images/culture24.jpeg",
             "/images/coffee1.jpeg"
         ],
         itinerary: {

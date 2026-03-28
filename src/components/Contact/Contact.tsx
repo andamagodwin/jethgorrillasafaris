@@ -126,12 +126,28 @@ const Contact = () => {
                         </div>
 
                         {/* Visual Enhancement */}
-                        <div className="pt-2 rounded-2xl overflow-hidden">
-                            <img 
-                                src="/images/tour-car.jpeg" 
-                                alt="Safari Tour Car" 
-                                className="w-full h-48 md:h-64 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-500" 
-                            />
+                        <div className="pt-2 grid grid-cols-2 gap-4">
+                            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img 
+                                    src="/images/tour-car-5.jpeg" 
+                                    alt="Safari Tour Car" 
+                                    className="w-full h-32 md:h-40 object-cover hover:scale-110 transition-transform duration-500" 
+                                />
+                            </div>
+                            <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img 
+                                    src="/images/tour-car-4.jpeg" 
+                                    alt="Safari Tour Car" 
+                                    className="w-full h-32 md:h-40 object-cover hover:scale-110 transition-transform duration-500" 
+                                />
+                            </div>
+                            <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                <img 
+                                    src="/images/tour-car.jpeg" 
+                                    alt="Safari Tour Car" 
+                                    className="w-full h-40 md:h-48 object-cover object-center hover:scale-110 transition-transform duration-500" 
+                                />
+                            </div>
                         </div>
                     </div>
 
