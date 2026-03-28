@@ -166,8 +166,17 @@ const Header = () => {
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
-                                className={`font-semibold text-xs transition-colors duration-300 hover:text-yellow-500 ${isScrolled ? 'text-gray-900' : 'text-white'
-                                    }`}
+                                className={
+                                    link.name === 'Contact'
+                                        ? `font-semibold text-xs px-6 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
+                                              isScrolled 
+                                                  ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                                                  : 'bg-white text-emerald-700 hover:bg-gray-100'
+                                          }`
+                                        : `font-semibold text-xs transition-colors duration-300 hover:text-yellow-500 ${
+                                              isScrolled ? 'text-gray-900' : 'text-white'
+                                          }`
+                                }
                             >
                                 {link.name}
                             </a>
@@ -217,7 +226,11 @@ const Header = () => {
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link.href)}
-                                className="block py-2 text-gray-900 font-semibold hover:text-yellow-500 transition-colors duration-300"
+                                className={
+                                    link.name === 'Contact'
+                                        ? "block py-2.5 px-4 text-center mt-2 mx-2 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition-colors duration-300"
+                                        : "block py-2 px-2 text-gray-900 font-semibold hover:text-yellow-500 transition-colors duration-300"
+                                }
                             >
                                 {link.name}
                             </a>
