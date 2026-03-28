@@ -1190,7 +1190,7 @@ export const services: Service[] = [
         title: "Cultural Tours",
         shortDescription: "Immerse yourself in Uganda's rich cultural heritage. Visit local communities and experience traditional customs.",
         fullDescription: "Experience the vibrant cultures of Uganda through immersive community visits. Meet local tribes, participate in traditional ceremonies, learn about ancient customs, and support sustainable tourism initiatives that benefit local communities.",
-        duration: "3-6 Days",
+        duration: "3-12 Days",
         price: "From $800",
         heroImage: "/images/culture12.jpeg",
         gallery: [
@@ -1222,6 +1222,20 @@ export const services: Service[] = [
                 { day: 4, title: "Batwa Trail", description: "Experience the Batwa Trail in Mgahinga, learning ancient hunting and survival skills." },
                 { day: 5, title: "Karamojong Experience", description: "(Flight/Long drive north) Visit a traditional Manyatta to learn about the pastoralist Karamojong culture." },
                 { day: 6, title: "Departure", description: "Return journey and departure operations." }
+            ],
+            "12 Days": [
+                { day: 1, title: "Arrival – Rhino tracking & transfer to Murchison falls.", description: "Meet your guide at the airport, get a briefing over breakfast, and drive to Ziwa Rhino sanctuary for foot-tracking of white rhinos. Proceed to Murchison Falls NP to view the spectacular waterfalls." },
+                { day: 2, title: "Game drive & Nile Boat Safari in Murchison falls.", description: "Sunrise game drive across the northern sector of the park to spot lions, leopards, giraffes, and elephants. In the afternoon, embark on a launch cruise towards the base of Murchison Falls." },
+                { day: 3, title: "Transfer to Kibale NP & Community Experience.", description: "Drive to Kibale National Park through breathtaking landscapes. In the afternoon, engage in an authentic community visit to learn about daily life, tradition, and the Local Banana Gin experience." },
+                { day: 4, title: "Chimpanzee tracking and Bigodi wetland Experience.", description: "Morning chimpanzee tracking through the tropical rainforest of Kibale. Later, visit the Bigodi wetland sanctuary for a nature walk and cultural interactions." },
+                { day: 5, title: "Sempaya Hot Springs & Amabeere Ga Nyinamwiru Caves.", description: "Visit the dramatic Sempaya Hot Springs in Semliki National Park, followed by an exploration of the legendary Amabeere Ga Nyinamwiru caves and a scenic hike with views of crater lakes." },
+                { day: 6, title: "Game drive & Kazinga channel Boat cruise.", description: "Sunrise game drive in Queen Elizabeth National Park's Kasenyi sector. Enjoy an afternoon boat cruise along the Kazinga Channel for close-up wildlife viewing of hippos, crocodiles, and elephants." },
+                { day: 7, title: "Ishasha Sector – in Search of Tree-climbing Lions.", description: "Game drive through the Ishasha sector, scanning the sprawling fig trees for the region's famous tree-climbing lions. Spot topis, buffalo herds, and elephants along the way." },
+                { day: 8, title: "Transfer to Bwindi & Community activity.", description: "Exit Queen Elizabeth NP and drive to the dense rainforest of Bwindi. Engage in a meaningful cultural visit with the indigenous Batwa pygmies to learn their traditional forest survival skills." },
+                { day: 9, title: "Mountain Gorilla Trekking Experience.", description: "Venture deep into Bwindi Impenetrable Forest. Spend one magical, unforgettable hour in the presence of a mountain gorilla family observing them in their natural habitat." },
+                { day: 10, title: "Transfer to Lake Bunyonyi – Relaxation & Scenic Exploration.", description: "Drive through the beautifully terraced Kigezi Highlands to Lake Bunyonyi. Relax by the lake and take a dugout canoe or motorized boat excursion to explore its 29 historic islands." },
+                { day: 11, title: "Transfer to Lake Mburo & Evening Activity.", description: "Journey to Lake Mburo National Park. Embark on an evening game drive to spot massive elands, zebras, impalas, topis, and buffalos amidst the scenic acacia-dotted savannah." },
+                { day: 12, title: "Cycling or Horseback Safari & Transfer back to Entebbe.", description: "Experience Lake Mburo via an adventurous morning cycling or horseback safari. In the afternoon, transfer back to Entebbe with a stopover at the Equator for photos before your departure flight." }
             ]
         },
         inclusions: [],
