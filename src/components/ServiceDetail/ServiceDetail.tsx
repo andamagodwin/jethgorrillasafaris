@@ -1,11 +1,10 @@
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getServiceById, services } from '../../data/services';
 import emailjs from '@emailjs/browser';
 
 const ServiceDetail = () => {
     const { serviceId } = useParams<{ serviceId: string }>();
-    const navigate = useNavigate();
     const currentService = serviceId ? getServiceById(serviceId) : undefined;
     const service = currentService;
 
@@ -148,17 +147,6 @@ const ServiceDetail = () => {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
-
-                {/* Back Button */}
-                <button
-                    onClick={() => navigate('/')}
-                    className="absolute top-24 left-6 md:left-12 lg:left-20 z-10 flex items-center gap-2 text-white hover:text-emerald-400 transition-colors duration-300"
-                >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                    <span className="font-semibold">Back to Home</span>
-                </button>
 
                 {/* Hero Content */}
                 <div className="absolute inset-0 flex items-center justify-center text-center px-6">

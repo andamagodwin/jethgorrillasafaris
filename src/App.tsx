@@ -10,6 +10,7 @@ import Languages from './components/Languages'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ServiceDetail from './components/ServiceDetail'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 function App() {
   const HomePage = () => (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/services/:serviceId" element={<ServiceDetail />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton />
     </BrowserRouter>
   )
 }
