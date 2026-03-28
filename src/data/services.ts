@@ -1218,6 +1218,7 @@ export const services: Service[] = [
             "/images/culture22.jpeg",
             "/images/culture23.jpeg",
             "/images/culture24.jpeg",
+            "/images/culture25.jpeg",
             "/images/coffee1.jpeg"
         ],
         itinerary: {
