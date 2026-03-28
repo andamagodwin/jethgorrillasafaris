@@ -1201,7 +1201,7 @@ export const services: Service[] = [
         title: "Cultural Tours",
         shortDescription: "Immerse yourself in Uganda's rich cultural heritage. Visit local communities and experience traditional customs.",
         fullDescription: "Experience the vibrant cultures of Uganda through immersive community visits. Meet local tribes, participate in traditional ceremonies, learn about ancient customs, and support sustainable tourism initiatives that benefit local communities.",
-        duration: "3-12 Days",
+        duration: "3-15 Days",
         price: "From $800",
         heroImage: "/images/culture12.jpeg",
         gallery: [
@@ -1260,6 +1260,23 @@ export const services: Service[] = [
                 { day: 10, title: "Transfer to Lake Bunyonyi – Relaxation & Scenic Exploration.", description: "Drive through the beautifully terraced Kigezi Highlands to Lake Bunyonyi. Relax by the lake and take a dugout canoe or motorized boat excursion to explore its 29 historic islands." },
                 { day: 11, title: "Transfer to Lake Mburo & Evening Activity.", description: "Journey to Lake Mburo National Park. Embark on an evening game drive to spot massive elands, zebras, impalas, topis, and buffalos amidst the scenic acacia-dotted savannah." },
                 { day: 12, title: "Cycling or Horseback Safari & Transfer back to Entebbe.", description: "Experience Lake Mburo via an adventurous morning cycling or horseback safari. In the afternoon, transfer back to Entebbe with a stopover at the Equator for photos before your departure flight." }
+            ],
+            "15 Days": [
+                { day: 1, title: "Pick up from place of accommodation and transfer to Kampala", description: "Wake up and have breakfast, then transfer to Kampala with en-route stopovers for food and snacks. Visit the Kingugu landing site, Muzinga square, Zamugula site, and the magnificent Bemba cave in Ziika ecotourism forest. You will also visit Kasubi tombs, Naggalabi coronation site, and Wamala tombs before returning to your hotel in Kampala." },
+                { day: 2, title: "City Tour and visit Uganda Museums", description: "After breakfast, transfer to experience a city tour around Uganda’s cultural sites like the Uganda Museum. Spot ethnographic artifacts, visit the Bahai temple, Namugongo Martyr's shrine, Namirembe cathedral, and the Gaddafi mosque." },
+                { day: 3, title: "Transfer to Hoima", description: "Wake up for a transfer to the 'land of peaceful'. Drive to Hoima via Kiboga. In the afternoon, visit the Karuzika palace of the Bunyoro kingdom to explore its historical cultural heritages. Proceed to Bujumbura cathedral for further cultural and religious exploration." },
+                { day: 4, title: "Full day Bunyoro Kingdom", description: "Adventure further into the Bunyoro kingdom. Visit the royal burial grounds at Mparo tombs to learn about ancient kings and their ancestral descendants. Enjoy traditional entertainment from cultural dancers before returning to your lodge." },
+                { day: 5, title: "Transfer to Fort Portal", description: "Drive from Hoima town to Fort Portal, enjoying splendorous en-route sightings of rewarding flora and tea plantations. Reach Fort Portal by lunchtime and proceed to Nyakasura to learn the history of the natives." },
+                { day: 6, title: "Full day Toro Kingdom", description: "Dive into Toro culture with a visit to the kingdom palace to explore historical heritages, followed by the royal burial grounds at Karambi royal tombs. After lunch, embark on a superlative adventure to the magnificent crater lakes." },
+                { day: 7, title: "Transfer to Queen Elizabeth National Park", description: "After morning coffee, get ready for a game drive in Queen Elizabeth National Park. Watch various wildlife like elephants, buffaloes, giant forest hogs, lions, and leopards, alongside diverse bird species." },
+                { day: 8, title: "Chimpanzee Tracking in Kyambura Gorge", description: "Transfer to track chimpanzees in Kyambura gorge. After a briefing, track the primates for 3-5 hours with a skilled ranger. Take numerous photos of the chimps in their natural habitat before returning to the lodge." },
+                { day: 9, title: "Game drive in Queen Elizabeth NP and Evening Community Visit", description: "Morning game drive watching animals like lions, buffaloes, and Uganda kobs. In the evening, embark on a guided community walk to learn about the lives of the local people near the park and Lake Katwe salt lake." },
+                { day: 10, title: "Transfer to Kabale", description: "Drive to the 'Switzerland of Africa' via Kanungu. En-route, explore the Kanungu religious site. After lunch, enjoy a cultural sighting at the Kabale museum to see Bakiga cultural archaeologies, followed by a visit to Rushoroza and Rugarama cathedrals." },
+                { day: 11, title: "Transfer to Lake Bunyonyi", description: "Drive to a dammed lake surrounded by countless splendorous hills. Interact with the Edirisa community development organization for an insight into the local people's way of life and a true experience of Bakiga culture." },
+                { day: 12, title: "Transfer to Mbarara", description: "Explore Ankole culture in Mbarara. Visit the palace of the Ankole kingdom to see historical cultural ornaments. Expect to see the iconic long-horned cattle and learn about the Bahima cattle-keeping culture." },
+                { day: 13, title: "Full day Mbarara (Ankole Kingdom)", description: "After breakfast, hike Biharwe hill to see the 1520 AD eclipse monument. Around lunchtime, visit the Ankole museum at the Igongo Cultural Centre." },
+                { day: 14, title: "Transfer to Masaka with en-route game drive in Lake Mburo NP", description: "Drive toward Masaka in the Buganda kingdom. Enjoy authentic game viewing of zebras and Ankole long-horned cattle in Lake Mburo NP, plus an en-route visit to Sanga cultural village." },
+                { day: 15, title: "Transfer to Kampala & Departure", description: "Drive back to Kampala with an en-route stop at Mpambire drum makers. Reach Kampala by lunchtime and visit the Ndere Centre for a breathtaking cultural experience and traditional dances. Later, transfer to the airport for your departure." }
             ]
         },
         inclusions: [],
