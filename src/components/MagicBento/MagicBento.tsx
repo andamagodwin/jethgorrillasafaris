@@ -7,6 +7,7 @@ export interface BentoCardProps {
     description?: string;
     label?: string;
     icon?: string;
+    image?: string;
     textAutoHide?: boolean;
     disableAnimations?: boolean;
 }
@@ -609,11 +610,16 @@ const MagicBento: React.FC<BentoProps> = ({
                         const cardStyle = {
                             backgroundColor: card.color === '#0f0f0f' ? 'var(--background-light)' : (card.color || 'var(--background-light)'),
                             borderColor: 'var(--border-color)',
-                            color: 'var(--dark-text)',
+                            color: card.image ? '#ffffff' : 'var(--dark-text)',
                             '--glow-x': '50%',
                             '--glow-y': '50%',
                             '--glow-intensity': '0',
-                            '--glow-radius': '200px'
+                            '--glow-radius': '200px',
+                            ...(card.image ? {
+                                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.85)), url(${card.image})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            } : {})
                         } as React.CSSProperties;
 
                         return (
@@ -628,19 +634,19 @@ const MagicBento: React.FC<BentoProps> = ({
                                 clickEffect={clickEffect}
                                 enableMagnetism={enableMagnetism}
                             >
-                                <div className="card__header flex justify-between items-start gap-3 relative text-gray-900">
+                                <div className="card__header flex justify-between items-start gap-3 relative z-10 w-full">
                                     {card.icon?.startsWith('/') ? (
                                         <img src={card.icon} alt={card.title} className="w-12 h-12 object-contain" />
                                     ) : (
                                         <span className="text-5xl">{card.icon}</span>
                                     )}
                                 </div>
-                                <div className="card__content flex flex-col relative text-gray-900">
+                                <div className="card__content flex flex-col relative z-10">
                                     <h3 className={`card__title font-bold text-xl m-0 mb-2 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                                         {card.title}
                                     </h3>
                                     <p
-                                        className={`card__description text-sm leading-6 opacity-90 text-gray-600 ${textAutoHide ? 'text-clamp-2' : ''}`}
+                                        className={`card__description text-sm leading-6 opacity-90 ${textAutoHide ? 'text-clamp-2' : ''}`}
                                     >
                                         {card.description}
                                     </p>

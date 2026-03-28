@@ -5,37 +5,43 @@ const features = [
         icon: "/icons/tour.png",
         title: "Expert Guides",
         description: "Our experienced guides have decades of knowledge about Uganda's wildlife and ecosystems.",
-        color: "#0f0f0f"
+        color: "#0f0f0f",
+        image: "/images/safari13.jpeg"
     },
     {
         icon: "/icons/ecology.png",
         title: "Eco-Friendly",
         description: "We practice sustainable tourism to protect Uganda's natural beauty for future generations.",
-        color: "#0f0f0f"
+        color: "#0f0f0f",
+        image: "/images/activity2.jpg"
     },
     {
         icon: "/icons/adjust.png",
         title: "Personalized Tours",
         description: "Every safari is tailored to your interests, ensuring a unique and memorable experience.",
-        color: "#0f0f0f"
+        color: "#0f0f0f",
+        image: "/images/safari2.jpeg"
     },
     {
         icon: "/icons/crown.png",
         title: "Premium Comfort",
         description: "Stay in carefully selected lodges and camps that blend luxury with authentic safari experiences.",
-        color: "#0f0f0f"
+        color: "#0f0f0f",
+        image: "/images/tour-car-2.jpeg"
     },
     {
         icon: "/icons/image.png",
         title: "Photo Opportunities",
         description: "We know the best spots and times for capturing stunning wildlife and landscape photography.",
-        color: "#0f0f0f"
+        color: "#0f0f0f",
+        image: "/images/gorilla10.jpeg"
     },
     {
         icon: "/icons/shield.png",
         title: "Safety First",
         description: "Your safety is our priority with comprehensive insurance and experienced safety protocols.",
-        color: "#0f0f0f"
+        color: "#0f0f0f",
+        image: "/images/safari7.jpeg"
     }
 ];
 
