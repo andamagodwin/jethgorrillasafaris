@@ -54,7 +54,9 @@ export const services: Service[] = [
             "/images/gorilla/gorilla3.jpeg",
             "/images/gorilla/gorilla4.jpeg",
             "/images/gorilla/gorilla5.jpeg",
-            "/images/gorilla/gorilla6.jpeg"
+            "/images/gorilla/gorilla6.jpeg",
+            "/images/gorilla10.jpeg",
+            "/images/gorilla11.jpeg"
         ],
         itinerary: {},
         countryItineraries: {
@@ -340,11 +342,14 @@ export const services: Service[] = [
         fullDescription: "Discover the incredible diversity of Uganda's wildlife on this comprehensive 10-day safari adventure. Journey through multiple national parks including Queen Elizabeth, Murchison Falls, and Lake Mburo. Experience thrilling game drives, boat safaris, chimpanzee habituation, and gorilla trekking while spotting the Big Five and countless other species.",
         duration: "3-21 Days",
         price: "$1,428 Per Person",
-        heroImage: "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
+        heroImage: "/images/safari1.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
-            "https://images.pexels.com/photos/3850526/pexels-photo-3850526.jpeg",
-            "https://images.pexels.com/photos/1524628/pexels-photo-1524628.jpeg"
+            "/images/safari1.jpeg",
+            "/images/safari2.jpeg",
+            "/images/safari3.jpeg",
+            "/images/safari4.jpeg",
+            "/images/safari5.jpeg",
+            "/images/safari6.jpeg"
         ],
         itinerary: {
             "3 Days": [
@@ -712,10 +717,21 @@ export const services: Service[] = [
         fullDescription: "From the mighty waterfalls of Murchison Falls National Park to the primate-rich forests of Kibale National Park and Bwindi Impenetrable National Park, this journey combines wildlife, landscapes, and culture. You will experience rhino tracking, classic game drives, boat safaris, chimpanzee and gorilla trekking, cultural encounters, and relaxation at Lake Bunyonyi and Lake Mburo.",
         duration: "15 Days",
         price: "$11,000 for 2 People",
-        heroImage: "https://images.pexels.com/photos/1524628/pexels-photo-1524628.jpeg",
+        heroImage: "/images/safari7.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/730539/pexels-photo-730539.jpeg",
-            "https://images.pexels.com/photos/3850526/pexels-photo-3850526.jpeg"
+            "/images/safari7.jpeg",
+            "/images/safari8.jpeg",
+            "/images/safari9.jpeg",
+            "/images/safari10.jpeg",
+            "/images/safari11.jpeg",
+            "/images/safari12.jpeg",
+            "/images/safari13.jpeg",
+            "/images/safari14.jpeg",
+            "/images/elephant10.jpeg",
+            "/images/elephant11.jpeg",
+            "/images/elephant12.jpeg",
+            "/images/tour-car-1.jpeg",
+            "/images/tour-car-2.jpeg"
         ],
         itinerary: {
             "15 Days": [
@@ -863,10 +879,11 @@ export const services: Service[] = [
         fullDescription: "Uganda is a birder's paradise with over 1,060 recorded bird species. Join our expert ornithologists on specialized birding tours through diverse habitats from wetlands to montane forests. Spot rare species including the Shoebill Stork, African Green Broadbill, and numerous endemic species.",
         duration: "4-8 Days",
         price: "From $1,200",
-        heroImage: "https://images.pexels.com/photos/27040793/pexels-photo-27040793.jpeg",
+        heroImage: "/images/bird1.jpeg",
         gallery: [
-            "https://images.pexels.com/photos/1142995/pexels-photo-1142995.jpeg",
-            "https://images.pexels.com/photos/33773537/pexels-photo-33773537.jpeg"
+            "/images/bird1.jpeg",
+            "/images/bird2.jpeg",
+            "/images/bird3.jpeg"
         ],
         itinerary: {},
         countryItineraries: {
@@ -1008,7 +1025,8 @@ export const services: Service[] = [
             "/images/chimp2.jpg",
             "/images/chimp3.jpg",
             "/images/chimp4.jpg",
-            "/images/chimp5.jpg"
+            "/images/chimp5.jpg",
+            "/images/chimp10.jpeg"
         ],
         itinerary: {},
         countryItineraries: {
@@ -1173,12 +1191,19 @@ export const services: Service[] = [
         fullDescription: "Experience the vibrant cultures of Uganda through immersive community visits. Meet local tribes, participate in traditional ceremonies, learn about ancient customs, and support sustainable tourism initiatives that benefit local communities.",
         duration: "3-6 Days",
         price: "From $800",
-        heroImage: "/images/culture.jpeg",
+        heroImage: "/images/culture12.jpeg",
         gallery: [
-            "/images/culture.jpeg",
-            "/images/culture1.jpeg",
-            "/images/culture2.jpg",
-            "/images/culture3.jpg"
+            "/images/culture10.jpeg",
+            "/images/culture11.jpeg",
+            "/images/culture12.jpeg",
+            "/images/culture15.jpeg",
+            "/images/culture16.jpeg",
+            "/images/culture17.jpeg",
+            "/images/culture18.jpeg",
+            "/images/culture19.jpeg",
+            "/images/culture20.jpeg",
+            "/images/culture21.jpeg",
+            "/images/coffee1.jpeg"
         ],
         itinerary: {
             "3 Days": [
