@@ -118,13 +118,48 @@ export const services: Service[] = [
                     }
                 ],
                 "7 Days": [
-                     { day: 1, title: "Arrival", description: "Welcome to Uganda! Airport transfer and relaxation in Entebbe." },
-                     { day: 2, title: "Drive to Queen Elizabeth", description: "Scenic drive to Queen Elizabeth National Park with crater lakes views." },
-                     { day: 3, title: "Game Drive & Boat Cruise", description: "Morning game drive to spot lions, then an afternoon Kazinga Channel boat cruise." },
-                     { day: 4, title: "Ishasha Sector (Tree-Climbing Lions)", description: "Transfer to the Ishasha sector in search of tree-climbing lions before heading to Bwindi." },
-                     { day: 5, title: "Gorilla Trekking", description: "The ultimate primate experience in Bwindi Impenetrable Forest." },
-                     { day: 6, title: "Lake Bunyonyi Relaxation", description: "Transfer to Africa's second deepest lake, Lake Bunyonyi, for canoeing and relaxation." },
-                     { day: 7, title: "Departure", description: "Morning departure drive back to Entebbe for your outbound flight." }
+                    {
+                        day: 1,
+                        title: "Airport Pick-up & Transfer to Kibale National Park",
+                        description: "Pick-up from Entebbe International Airport or your hotel in Entebbe/Kampala. Embark on a 5-6 hour drive to Kibale National Park. Enjoy refreshments in Mubende and a scenic lunch stop in Fort Portal town. In the afternoon, visit the Toro Kingdom Palace and the surrounding crater lakes region before settling into your lodge in Kibale Forest.",
+                        meals: "Lunch & Dinner"
+                    },
+                    {
+                        day: 2,
+                        title: "Chimpanzee Tracking & Bigodi Swamp Walk",
+                        description: "After early breakfast, transfer to Kanyanchu for a briefing before your chimpanzee tracking adventure begins. Kibale is home to 13 primate species and over 300 bird species. Spend one hour interacting with our closest relatives. In the afternoon, join the Bigodi Swamp Walk (KAFRED), a community-based project home to the Great Blue Turaco and over 137 bird species.",
+                        meals: "Full Board"
+                    },
+                    {
+                        day: 3,
+                        title: "Queen Elizabeth NP & Kazinga Channel Boat Cruise",
+                        description: "Transfer to Queen Elizabeth National Park (2-3 hours) with views of the Rwenzori Mountains. In the afternoon, enjoy a boat cruise along the Kazinga Channel, which connects Lake Edward and Lake George. This experience offers incredible sightings of hippos, buffaloes, elephants, and over 58 species of birds including kingfishers and saddle-billed storks.",
+                        meals: "Full Board"
+                    },
+                    {
+                        day: 4,
+                        title: "Morning Game Drive en-route to Bwindi Impenetrable NP",
+                        description: "Enjoy a morning game drive while exiting the park, or pass through the remote Ishasha sector in search of rare tree-climbing lions. Spot diverse wildlife including lions, leopards, hyenas, and Uganda kobs. Continue to Bwindi Impenetrable National Park, arriving in the afternoon for relaxation at your lodge.",
+                        meals: "Full Board"
+                    },
+                    {
+                        day: 5,
+                        title: "Gorilla Tracking Experience",
+                        description: "The highlight of your journey: trekking the mountain gorillas in Bwindi. After a briefing, explore the thick forest with ranger guides (2-8 hours). Spend one intimate hour with these gentle giants. In the evening, you can opt for a visit to the Batwa community to learn about their unique forest culture.",
+                        meals: "Full Board"
+                    },
+                    {
+                        day: 6,
+                        title: "Transfer to Lake Mburo National Park & Boat Cruise",
+                        description: "Drive to Lake Mburo National Park (5-6 hours) through rolling Kigezi hills. In the afternoon, enjoy a boat cruise on Lake Mburo, spotting hippos, crocodiles, and waterbirds. Take in a memorable African sunset on the water before heading to your lodge for dinner.",
+                        meals: "Full Board"
+                    },
+                    {
+                        day: 7,
+                        title: "Game Drive & Return to Entebbe via the Equator",
+                        description: "A final morning game drive to spot zebras, impalas, and giraffes while exiting the park. Transfer back to Kampala or Entebbe with a lunch stop at the Uganda Equator crossing monument for photos and souvenir shopping, before your final departure transfer.",
+                        meals: "Breakfast & Lunch"
+                    }
                 ],
                 "14 Days": [
                     { day: 1, title: "Arrival day", description: "On your arrival at Entebbe international airport, you will be highly welcomed by our safari guide from African skimmer tours who will be eagerly waiting to pick you up. You will then be dropped at your booked hotel in Kampala or Entebbe." },
