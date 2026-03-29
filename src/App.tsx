@@ -11,8 +11,43 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ServiceDetail from './components/ServiceDetail'
 import ScrollToTopButton from './components/ScrollToTopButton'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    const handleCopy = (e: ClipboardEvent) => {
+      e.preventDefault();
+      return false;
+    };
+
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+      return false;
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Disable Ctrl+C, Ctrl+U, Ctrl+S, Ctrl+P, F12
+      if (
+        (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p' || e.key === 'a')) ||
+        (e.metaKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p' || e.key === 'a')) ||
+        e.key === 'F12'
+      ) {
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    document.addEventListener('copy', handleCopy);
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('copy', handleCopy);
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const HomePage = () => (
     <>
       <Hero />

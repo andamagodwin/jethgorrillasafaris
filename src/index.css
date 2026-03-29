@@ -46,6 +46,10 @@ body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 #root {
