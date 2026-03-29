@@ -905,7 +905,7 @@ export const services: Service[] = [
         title: "Bird Watching Tours",
         shortDescription: "Discover over 1,000 bird species in Uganda's rich ecosystems. Perfect for both amateur and experienced birders.",
         fullDescription: "Uganda is a birder's paradise with over 1,060 recorded bird species. Join our expert ornithologists on specialized birding tours through diverse habitats from wetlands to montane forests. Spot rare species including the Shoebill Stork, African Green Broadbill, and numerous endemic species.",
-        duration: "4-14 Days",
+        duration: "4-15 Days",
         price: "From $1,200",
         heroImage: "/images/bird1.jpeg",
         gallery: [
@@ -992,6 +992,25 @@ export const services: Service[] = [
                     { day: 12, title: "Optional Gorilla and Transfer to Lake Mburo", description: "Today we shall have to option chosen while booking your safari with us either do gorilla trekking or to check out of the lodge and transfer to Lake Mburo national park for more birding" },
                     { day: 13, title: "Morning Birding and Transfer to Entebbe", description: "An early morning game drive in Lake Mburo national park to see zebras, elands, topi, waterbuck, and many more. common conspicuous birds seen include; crested francolin, emerald spotted wood  dove , brown parrot, bare face go away bird,  African grey hornbill, spot flanked barbet, Nubian woodpecker, trilling cisticola. African finfoot and many others. The woodland in the immediate vicinity of Rwonyo also supports many of these widespread species and then afternoon transfer to Kampala." },
                     { day: 14, title: "Morning Mabamba Swamp and Evening Drive to the Airport for Departure Flight", description: "Your tour guide will transfer you to Mamba swamp in Entebbe and have the a mazing birding experience sighting the elusive shoebill stork and later return to Entebbe for lunch and wait for your departure flight\n\nEnd of your safari" }
+                ],
+                "15 Days": [
+                    { day: 1, title: "Arrival Day", description: "Arrival at Entebbe International Airport or any of Uganda’s border points (Busia, Malaba, Elegu, Mutukula, Katuna, etc.). You will be welcomed by our representatives who will drive you to your booked accommodation for relaxation, dinner, and overnight on your first day with us." },
+                    { day: 2, title: "Transfer to Bwindi Impenetrable National Park", description: "Early in the morning, wake up for breakfast and departure to Bwindi Impenetrable National Park. Pass via the Ankole-Masaka dry corridor of Lake Mburo National Park and have a stopover at Hotel Triangle in Mbarara for lunch. Continue to Bwindi via the Ntugamo-Rukungiri route, check in to your booked lodge for dinner and overnight." },
+                    { day: 3, title: "Gorilla Experience in Bwindi", description: "This is one of the highlights of your safari: meeting the gentle giants of Bwindi Impenetrable National Park. Expect to walk long distances on steep and muddy trails, sometimes in the rain, before encountering the gorillas. It will be completely worthwhile as you observe them closely while they eat, play, and rest. Enjoy the unique sights and sounds of the forest. Dinner and overnight at the lodge." },
+                    { day: 4, title: "Bwindi to Queen Elizabeth National Park", description: "After breakfast, meet your guide for transfer to Queen Elizabeth National Park. Enter through the Ishasha sector (approx. 2-hour drive). Check in and enjoy lunch before a game drive in search of the famous tree-climbing lions. Overnight at Ishasha Jungle Lodge." },
+                    { day: 5, title: "Explore Queen Elizabeth National Park", description: "Morning game drive to find lions and their prey before heading towards the Mweya peninsula. Enjoy lunch overlooking the Kazinga Channel, which connects Lake Edward and Lake George.\n\nIn the afternoon, take a boat cruise along the channel (snacks and drinks included) to see abundant birdlife, elephants, buffaloes, and hundreds of hippos cooling off at the shores. Dinner and overnight at the lodge." },
+                    { day: 6, title: "Queen Elizabeth to Kibale Forest National Park", description: "After breakfast, depart for Fort Portal, resting in the shadow of the Mountains of the Moon. Famous for tea plantations, we'll continue to Kibale National Park, passing through the crater lakes region. Explore some small lakes before heading to Primate Lodge Kibale for dinner and overnight." },
+                    { day: 7, title: "Kibale Forest and Bigodi Swamp Walk", description: "The forest opens its doors for sensational chimpanzee tracking. Kibale is renowned for the highest concentration of primates in East Africa. Search for wild chimps, red-tailed monkeys, and colobus monkeys. After lunch, transfer to Bigodi Wetland Sanctuary for birding and primate watching. Home to the Great Blue Turaco, this community-led project is famous for its diverse species. Dinner and overnight at Primate Lodge Kibale." },
+                    { day: 8, title: "Transfer to Murchison Falls National Park", description: "After breakfast, check out and depart for Murchison Falls National Park via Hoima and Masindi. Reach Paraa Safari Lodge for check-in and lunch. Relax after the long journey and enjoy the sunset. Dinner and overnight at the lodge." },
+                    { day: 9, title: "Game Drive and Boat Ride in Murchison Falls", description: "Morning game drive on the northern bank of the Nile with chances to see giraffes, elephants, lions, and various birds like the shoebill stork. In the afternoon, take a boat cruise on the Nile for close-quarter game viewing. Dinner and overnight at the lodge." },
+                    { day: 10, title: "Murchison to Kidepo Valley National Park", description: "Early morning departure for Kidepo Valley National Park, Uganda's second-biggest park. Stop in Gulu town for shopping and lunch. Check in to Apoka Safari Lodge and enjoy the sunset. Dinner and overnight." },
+                    { day: 11, title: "Full Day Game Drive in Kidepo", description: "Full day of game drives in Kidepo. Spot wildlife like ostriches and many others. In the afternoon, drive to the Kanangorok Hot Springs." },
+                    { day: 12, title: "Game Drive and Community Cultural Walk", description: "Early morning game drive to see a wide variety of flora and fauna. After lunch, set off for a cultural walk to meet the Karamojong people in Kapedo and Karenga. Visit their kraals and see traditional grinding stones and local crafts. Return for dinner and overnight." },
+                    { day: 13, title: "Kidepo to Jinja (Source of the Nile)", description: "After a heavy breakfast, start the journey to Jinja. Pass through the Pian-Upe plains with great views of Mount Elgon and Sipi Falls. Stop in Mbale town for lunch at Mbale Resort Hotel. Proceed to Jinja for check-in and relaxation." },
+                    { day: 14, title: "Boat Cruise at the Source of Nile and Journey to Mabira", description: "Morning boat cruise to the Source of the Nile. Spot various bird species like the pied kingfisher while visiting the start of the world's longest river. In the evening, drive to Mabira Forest for check-in at your lodge." },
+                    { day: 15, title: "Mabira Forest Birding and Transfer to Entebbe", description: "Early morning birding and primate experience in Mabira Forest, one of Uganda's key birding areas. Look for hornbills, Great Blue Turacos, bee-eaters, and more. In the afternoon, transfer to Entebbe for relaxation and overnight." },
+                    { day: 16, title: "Birding at Mabamba Swamp", description: "Travel to Mabamba Swamp on the shores of Lake Victoria. Board a canoe to search for the prehistoric shoebill stork among the marshland channels. Return for lunch in Kampala or Entebbe. Afternoon relaxation at the lodge until dinner and overnight." },
+                    { day: 17, title: "Departure Day", description: "Relaxed breakfast and check-out. Transfer to Entebbe International Airport or your preferred border point for departure flight or onward journey. End of safari." }
                 ]
             },
             "Rwanda": {
@@ -1042,6 +1061,14 @@ export const services: Service[] = [
         inclusions: [],
         exclusions: [],
         durationInclusions: {
+            "15 Days": [
+                "All meals and accommodations as per the itinerary",
+                "All transportation (including airport pick-up and drop-off)",
+                "Full-time professional English-speaking driver/guide",
+                "All activities mentioned in the itinerary",
+                "Park entrance fees",
+                "Community and cultural visits"
+            ],
             "6 Days": [
                 "Transport in 4WD Comfortable Vehicle with Fuel",
                 "Airport drop at the end of the tour",
