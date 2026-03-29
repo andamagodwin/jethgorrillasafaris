@@ -391,11 +391,39 @@ export const services: Service[] = [
                 }
             ],
             "5 Days": [
-                { day: 1, title: "Arrival & Transfer", description: "Airport pickup and transfer to Murchison Falls National Park." },
-                { day: 2, title: "Murchison Falls Game Drive", description: "Early morning game drive to spot lions, elephants, and giraffes. Afternoon boat cruise on the Nile." },
-                { day: 3, title: "Transfer to Queen Elizabeth", description: "Drive south to Queen Elizabeth National Park along the scenic Albertine Rift." },
-                { day: 4, title: "Kazinga Channel Safari", description: "Morning game drive and afternoon boat cruise on the Kazinga Channel, famous for hippo pods." },
-                { day: 5, title: "Return to Entebbe", description: "Morning game drive and transfer back to Entebbe for departure." }
+                {
+                    day: 1,
+                    title: "Arrive in Entebbe",
+                    description: "On arrival at Entebbe International Airport, you will be warmly welcomed by a guide for Explore Eco Safaris and transfer you to a hotel in Entebbe or Kampala. If you arrive early, you could have a tour of either Entebbe or Kampala city.\n\nEntebbe city is a beautiful scenic town with amazing attractions such as Uganda Wildlife and Education Center (the Zoo), botanical gardens and Lake Victoria.",
+                    accommodation: "Hotel in Entebbe / Kampala"
+                },
+                {
+                    day: 2,
+                    title: "Transfer to Queen Elizabeth – Afternoon game drive",
+                    description: "After breakfast you will transfer to Queen Elizabeth national park, along the way you will have a stop at the equator crossing for pictures and buy souvenirs before proceeding to park. The journey will take you through parts of the East Africa Rift Valley, amazing tea plantation and scenic views of Rwenzori Mountains, peasant farms, small towns and so much more.\n\nWhen you arrive in the park, you will have en-route game drive as you head to your lodge for check-in and lunch, in the afternoon you will go for a game drive in the Kasenyi sector of the park where you will spot waterbucks, elephants, bushbucks, buffaloes among others.",
+                    accommodation: "Simba Camp (Budget) / Elephant Hab Safari Lodge (Midrange) / Jacana Safari Lodge (Luxury)",
+                    meals: "Full Board"
+                },
+                {
+                    day: 3,
+                    title: "Morning game drive – Afternoon launch cruise on the Kazinga Channel",
+                    description: "Wake up early for a cup of coffee and head to the park for a morning game drive in Kasenyi sector where you will spot predators heading back to their dens after hunting in the night, you will also have encounters with buffaloes, bushbucks, elephants, giant forest hogs, hyenas among others.\n\nAfter morning game drive, you will head back to the lodge for lunch and relaxation. In the afternoon, go for a launch cruise at Kazinga Channel that connects Lake Edward to Lake George and hosts one of the highest concentrations of wildlife in Africa. You'll see buffaloes, elephants, crocodiles, and hippos along the banks.",
+                    accommodation: "Simba Camp (Budget) / Elephant Hab Safari Lodge (Midrange) / Jacana Safari Lodge (Luxury)",
+                    meals: "Full Board"
+                },
+                {
+                    day: 4,
+                    title: "Chimpanzee Trekking in Kyambura Gorge – Visit the Katwe Salt Lake",
+                    description: "Head to the briefing point for chimpanzee trekking in Kyambura gorge, home to an underground forest which hosts several bird species, chimpanzees, small primates and other mammals. After briefing you will descend into the gorge to begin searching for the chimpanzees. Along the way you will be able to see other primates such as olive baboons, black and white colobus monkeys.\n\nIn the afternoon, visit Lake Katwe in the Mweya Peninsula, one of the leading producers of salt in Uganda, and watch the way salt is mined locally.",
+                    accommodation: "Simba Camp (Budget) / Elephant Hab Safari Lodge (Midrange) / Jacana Safari Lodge (Luxury)",
+                    meals: "Full Board"
+                },
+                {
+                    day: 5,
+                    title: "Tree Climbing Lions of Ishasha – Transfer back to Kampala",
+                    description: "After breakfast you will head to the Ishasha Sector of Queen Elizabeth national Park for game drive on which you will have an opportunity to see the tree climbing lions lounging on tree branches. You will also be able to see antelopes, Uganda kobs, warthogs among others. Exit the park and embark on a journey back to Kampala with a stop in Mbarara for lunch. Proceed to Kampala arriving in evening and transfer to the airport for your flight back home.",
+                    meals: "Breakfast & Lunch"
+                }
             ],
             "7 Days": [
                 {
@@ -703,6 +731,19 @@ export const services: Service[] = [
                 "Game drives and Boat cruises (Uganda)",
                 "Drinking water while on tour",
                 "Local taxes"
+            ],
+            "5 Days": [
+                "Park Entrance fees",
+                "3 Game drives in Queen Elizabeth NP",
+                "Chimpanzee Tracking Permits (Kyambura Gorge)",
+                "Boat cruise along the Kazinga Channel",
+                "Visit to Lake Katwe Salt Lake",
+                "Transport in a standard tour van",
+                "Services of an experienced English speaking Driver/Guide",
+                "Full-board Accommodation for 4 nights",
+                "Food and water throughout the trip",
+                "Airport transfers",
+                "All activities mentioned in the itinerary"
             ]
         },
         durationExclusions: {
@@ -713,6 +754,12 @@ export const services: Service[] = [
                 "Medical and travel Insurance",
                 "Tips and gratuities",
                 "Items of personal nature (laundry, beverages, souvenirs)"
+            ],
+            "5 Days": [
+                "Accommodation on the last day of the tour",
+                "Flights and visa fees",
+                "Expenditures of a personal nature such as alcoholic drinks, cigars and wines",
+                "Medical insurance"
             ]
         },
         pricingTiers: [
