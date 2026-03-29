@@ -45,11 +45,12 @@ export const services: Service[] = [
         id: "gorilla-trekking",
         title: "Gorilla Trekking",
         shortDescription: "Experience the thrill of encountering mountain gorillas in their natural habitat. Our expert guides will lead you through the lush forests of Bwindi Impenetrable National Park.",
-        fullDescription: "Embark on an unforgettable journey to encounter the majestic mountain gorillas in their natural habitat. Trek through the misty forests of Bwindi Impenetrable National Park, one of the most biodiverse areas in Africa. This once-in-a-lifetime experience brings you face-to-face with these gentle giants, observing their behavior and social interactions in the wild.",
+        fullDescription: "This safari gives you a close encounter with our very own closest relatives as well as the gentle and majestic giants in their natural habitat. It offers a unique chance to deepen your understanding of their ecology and behavior, as well as the conservation practices being implemented. You will also experience authentic cultural interactions with local communities, especially the Batwa (pygmy) people, the indigenous inhabitants of the Bwindi forest.",
         duration: "3-15 Days",
         price: "From $1,500",
         heroImage: "/images/gorilla/gorilla1.jpeg",
         gallery: [
+            "/images/gorilla/gorilla1.jpeg",
             "/images/gorilla/gorilla2.jpeg",
             "/images/gorilla/gorilla3.jpeg",
             "/images/gorilla/gorilla4.jpeg",
@@ -83,28 +84,37 @@ export const services: Service[] = [
                 "5 Days": [
                     {
                         day: 1,
-                        title: "Arrival in Entebbe",
-                        description: "Meet and greet at Entebbe International Airport. Transfer to your hotel in Kampala for an evening briefing."
+                        title: "Arrival Entebbe & Transfer to Kibale National Park",
+                        description: "Meet your guide at Entebbe International Airport for a morning pick-up. Set off southward for a 6-hour drive towards Kibale National Park, passing through the scenic Fort Portal city with an en-route lunch. Spend the evening relaxing at your lodge and preparing for the next day's primate encounters.",
+                        accommodation: "Turaco Tree Tops Lodge / Kyaninga Safari Lodge (Half Board)",
+                        meals: "Lunch & Dinner"
                     },
                     {
                         day: 2,
-                        title: "Lake Mburo National Park",
-                        description: "Drive to Lake Mburo National Park. Afternoon game drive or boat safari."
+                        title: "Chimpanzee Trekking & Community Projects",
+                        description: "After breakfast, embark on a chimpanzee trekking adventure in Kibale Forest, home to over 1,000 chimpanzees. After the trek, visit the 'One Traveler, One Tree, One Forest' reforestation project. In the afternoon, you can optionally visit Bigodi village for a cultural interaction with the local community.",
+                        accommodation: "Turaco Tree Tops Lodge / Kyaninga Safari Lodge (Half Board)",
+                        meals: "Full Board"
                     },
                     {
                         day: 3,
-                        title: "Transfer to Bwindi",
-                        description: "Morning nature walk in Lake Mburo. Scenic drive to Bwindi Impenetrable forest."
+                        title: "Transfer to Bwindi & Community Experience",
+                        description: "After an early breakfast, transfer to Bwindi Impenetrable National Park, a UNESCO World Heritage site. Enjoy a hot lunch at Simba Cafe en route. Upon arrival in the afternoon, take a community tour to engage with local people, learn their way of life, and participate in cultural practices or cooking lessons.",
+                        accommodation: "Mahogany Springs Lodge / Gorilla Leisure Lodge / Gorilla Forest Lodge (Half Board)",
+                        meals: "Full Board"
                     },
                     {
                         day: 4,
                         title: "Gorilla Trekking Day",
-                        description: "The highlight of your trip! A full day dedicated to tracking and observing the endangered mountain gorillas."
+                        description: "At 7:30am, head to the UWA briefing center for guidelines and ranger assignment. Embark on your gorilla trekking experience in the thick forest. After the trek, you will be awarded a trekking certificate. In the evening, optionally visit the Pangolin Rescue Centre or a Batwa community to learn about their ancient heritage.",
+                        accommodation: "Mahogany Springs Lodge / Gorilla Leisure Lodge / Gorilla Forest Lodge (Half Board)",
+                        meals: "Full Board"
                     },
                     {
                         day: 5,
-                        title: "Return Journey",
-                        description: "Drive back to Entebbe with a stop at the Equator for photos and souvenirs."
+                        title: "Flight to Entebbe & Departure",
+                        description: "After an early breakfast, transfer to the Kihiihi airstrip for a local morning flight to Entebbe International Airport. This convenient flight connects you directly with your international departure.",
+                        meals: "Breakfast"
                     }
                 ],
                 "7 Days": [
@@ -358,14 +368,27 @@ export const services: Service[] = [
         fullDescription: "Discover the incredible diversity of Uganda's wildlife on this comprehensive 10-day safari adventure. Journey through multiple national parks including Queen Elizabeth, Murchison Falls, and Lake Mburo. Experience thrilling game drives, boat safaris, chimpanzee habituation, and gorilla trekking while spotting the Big Five and countless other species.",
         duration: "3-21 Days",
         price: "$1,428 Per Person",
-        heroImage: "/images/safari1.jpeg",
+        heroImage: "/images/safari12.jpeg",
         gallery: [
             "/images/safari1.jpeg",
             "/images/safari2.jpeg",
             "/images/safari3.jpeg",
             "/images/safari4.jpeg",
             "/images/safari5.jpeg",
-            "/images/safari6.jpeg"
+            "/images/safari6.jpeg",
+            "/images/safari7.jpeg",
+            "/images/safari8.jpeg",
+            "/images/safari9.jpeg",
+            "/images/safari10.jpeg",
+            "/images/safari11.jpeg",
+            "/images/safari12.jpeg",
+            "/images/safari13.jpeg",
+            "/images/safari14.jpeg",
+            "/images/safari15.jpeg",
+            "/images/elephant.jpeg",
+            "/images/elephant10.jpeg",
+            "/images/elephant11.jpeg",
+            "/images/elephant12.jpeg"
         ],
         itinerary: {
             "3 Days": [
@@ -797,7 +820,13 @@ export const services: Service[] = [
             "/images/safari8.jpeg",
             "/images/safari9.jpeg",
             "/images/safari10.jpeg",
-            "/images/safari11.jpeg",
+            "/images/image1.jpeg",
+            "/images/image2.jpeg",
+            "/images/image3.jpeg",
+            "/images/image4.jpeg",
+            "/images/image5.jpeg",
+            "/images/image6.jpeg",
+            "/images/image7.jpeg",
             "/images/safari12.jpeg",
             "/images/safari13.jpeg",
             "/images/safari14.jpeg",
@@ -805,8 +834,14 @@ export const services: Service[] = [
             "/images/elephant10.jpeg",
             "/images/elephant11.jpeg",
             "/images/elephant12.jpeg",
+            "/images/city1.jpeg",
+            "/images/city2.jpeg",
+            "/images/city3.jpeg",
+            "/images/tour-car.jpeg",
             "/images/tour-car-1.jpeg",
-            "/images/tour-car-2.jpeg"
+            "/images/tour-car-2.jpeg",
+            "/images/tour-car-4.jpeg",
+            "/images/tour-car-5.jpeg"
         ],
         itinerary: {
             "15 Days": [
@@ -956,6 +991,7 @@ export const services: Service[] = [
         price: "From $1,200",
         heroImage: "/images/bird1.jpeg",
         gallery: [
+            "/images/bird.jpeg",
             "/images/bird1.jpeg",
             "/images/bird2.jpeg",
             "/images/bird3.jpeg"
@@ -1152,11 +1188,14 @@ export const services: Service[] = [
         price: "From $2,920",
         heroImage: "/images/chimp.jpeg",
         gallery: [
+            "/images/chimp.jpeg",
             "/images/chimp1.jpg",
             "/images/chimp2.jpg",
             "/images/chimp3.jpg",
             "/images/chimp4.jpg",
             "/images/chimp5.jpg",
+            "/images/chimp6.jpeg",
+            "/images/chimp7.jpeg",
             "/images/chimp10.jpeg"
         ],
         itinerary: {},
@@ -1321,9 +1360,15 @@ export const services: Service[] = [
         price: "From $800",
         heroImage: "/images/culture12.jpeg",
         gallery: [
+            "/images/culture.jpeg",
+            "/images/culture1.jpeg",
+            "/images/culture2.jpg",
+            "/images/culture3.jpg",
             "/images/culture10.jpeg",
             "/images/culture11.jpeg",
             "/images/culture12.jpeg",
+            "/images/culture13.jpeg",
+            "/images/culture14.jpeg",
             "/images/culture15.jpeg",
             "/images/culture16.jpeg",
             "/images/culture17.jpeg",
@@ -1335,6 +1380,9 @@ export const services: Service[] = [
             "/images/culture23.jpeg",
             "/images/culture24.jpeg",
             "/images/culture25.jpeg",
+            "/images/culture30.jpeg",
+            "/images/culture31.jpeg",
+            "/images/culture32.jpeg",
             "/images/coffee1.jpeg"
         ],
         itinerary: {
