@@ -41,7 +41,7 @@ const features = [
         title: "Safety First",
         description: "Your safety is our priority with comprehensive insurance and experienced safety protocols.",
         color: "#0f0f0f",
-        image: "/images/safari7.jpeg"
+        image: "/car-1.jpeg"
     }
 ];
 
