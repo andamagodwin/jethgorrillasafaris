@@ -6,7 +6,7 @@ const features = [
         title: "Expert Guides",
         description: "Our experienced guides have decades of knowledge about Uganda's wildlife and ecosystems.",
         color: "#0f0f0f",
-        image: "/images/safari13.jpeg"
+        image: "/images/guide.jpeg"
     },
     {
         icon: "/icons/ecology.png",
@@ -34,7 +34,7 @@ const features = [
         title: "Photo Opportunities",
         description: "We know the best spots and times for capturing stunning wildlife and landscape photography.",
         color: "#0f0f0f",
-        image: "/images/gorilla10.jpeg"
+        image: "/images/photo.jpeg"
     },
     {
         icon: "/icons/shield.png",
