@@ -11,6 +11,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ServiceDetail from './components/ServiceDetail'
 import ScrollToTopButton from './components/ScrollToTopButton'
+import Packages from './components/Packages'
+import BigFive from './components/BigFive'
 import { useEffect } from 'react'
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
       <Gallery />
       <Languages />
       <Services />
+      <BigFive />
+      <Packages />
       <Contact />
     </>
   );
