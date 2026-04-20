@@ -54,6 +54,15 @@ const services = [
         image: "/images/adventure.jpeg",
         duration: "2-7 Days",
         price: "From $900"
+    },
+    {
+        id: "private-tours",
+        title: "Private Tours In the country",
+        description: "Exclusive and fully customizable safari experiences with your own professional guide and private vehicle.",
+        icon: "/icons/tour.png",
+        image: "/images/tour-vehicle.jpeg",
+        duration: "Flexible",
+        price: "Custom"
     }
 ];
 
@@ -96,25 +105,25 @@ const Services = () => {
                             {/* Hover Content */}
                             <div className="relative h-full p-8 flex flex-col justify-end text-white z-10">
                                 <div className="transform transition-all duration-500 flex flex-col h-full group-hover:-translate-y-2">
-                                {/* Title & Icon Row */}
-                                <div className="flex items-center gap-3 mb-3">
-                                    <img src={service.icon} alt={service.title} className="w-6 h-6 filter brightness-0 invert" />
-                                    <h3 className="text-xl font-bold tracking-tight">
-                                        {service.title}
-                                    </h3>
-                                </div>
+                                    {/* Title & Icon Row */}
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <img src={service.icon} alt={service.title} className="w-6 h-6 filter brightness-0 invert" />
+                                        <h3 className="text-xl font-bold tracking-tight">
+                                            {service.title}
+                                        </h3>
+                                    </div>
 
-                                {/* Description */}
-                                <p className="text-sm text-gray-200 mb-6 leading-relaxed line-clamp-2">
-                                    {service.description}
-                                </p>
+                                    {/* Description */}
+                                    <p className="text-sm text-gray-200 mb-6 leading-relaxed line-clamp-2">
+                                        {service.description}
+                                    </p>
 
-                                {/* Footer: View Details indicator or empty space */}
-                                <div className="mt-auto flex items-center justify-end">
-                                    <span className="text-xs font-semibold uppercase tracking-wider text-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        View Details →
-                                    </span>
-                                </div>
+                                    {/* Footer: View Details indicator or empty space */}
+                                    <div className="mt-auto flex items-center justify-end">
+                                        <span className="text-xs font-semibold uppercase tracking-wider text-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            View Details →
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </Link>

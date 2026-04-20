@@ -137,6 +137,24 @@ const ServiceDetail = () => {
         }
     };
 
+    const getitineraryFullTitle = (key: string) => {
+        const titles: Record<string, string> = {
+            "5 Days Gorilla Trek": "5 Days Gorilla trekking Uganda Safari",
+            "6 Days Chimp & Gorilla": "6 Days Chimpanzee and Gorilla trekking Safari",
+            "3 Days Murchison Falls": "3 Days Murchison falls Uganda Safari",
+            "5 Days Gorilla & Bunyonyi": "5 Days Uganda Gorilla Safari & L.Bunyonyi",
+            "4 Days Gorilla & Mburo": "4 Days Uganda Gorilla trekking & L.Mburo",
+            "4 Days Mt Elgon Safari": "4 Days Mountain Elgon National Park",
+            "7 Days North": "7 Days Nothern Uganda Safari",
+            "9 Days Wildlife": "9 Days Uganda Wildlife Safari",
+            "10 Days Adventure": "10 Days Uganda Safari – Gorillas, Chimps & Wildlife Adventure",
+            "11 Days Big Five": "11 Days Uganda Safari – Gorillas, Chimpanzees & Big Five Adventure",
+            "12 Days Experience": "12 Days Uganda Safari – Gorillas, Chimpanzees, Big Five & Lake Bunyonyi Experience",
+            "15 Days Grand Safari": "15 Days Uganda Safari – Gorillas, Chimpanzees, Big Five, Waterfalls & Culture"
+        };
+        return titles[key] || key;
+    };
+
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
@@ -176,11 +194,31 @@ const ServiceDetail = () => {
                     <div className="lg:col-span-2 space-y-12">
                         {/* Overview */}
                         <section>
-                            <h2 className="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
-                            <p className="text-lg text-gray-700 leading-relaxed">
-                                {service.fullDescription}
+                            <h2 className="text-3xl font-bold text-gray-900 mb-6 font-display">Overview</h2>
+                            <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+                                {service.durationDescriptions?.[selectedDuration] || service.fullDescription}
                             </p>
                         </section>
+
+                        {/* Highlights if available */}
+                        {service.durationHighlights?.[selectedDuration] && (
+                            <section className="bg-emerald-50/50 rounded-2xl p-8 border border-emerald-100">
+                                <h3 className="text-xl font-bold text-emerald-900 mb-6 flex items-center gap-2">
+                                    <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Tour Highlights
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {service.durationHighlights[selectedDuration].map((highlight, idx) => (
+                                        <div key={idx} className="flex items-center gap-3 text-gray-700">
+                                            <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
+                                            <span className="font-medium">{highlight}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
 
                         {/* Quick Facts */}
                         <section className="grid md:grid-cols-3 gap-6">
@@ -254,6 +292,14 @@ const ServiceDetail = () => {
                                 </div>
                             </div>
 
+                            {/* Tour Detail Header */}
+                            <div className="mb-12">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                                    {getitineraryFullTitle(selectedDuration)}
+                                </h2>
+                                <div className="w-20 h-1.5 bg-orange-500 rounded-full" />
+                            </div>
+
                             {/* Dynamically Rendered Itinerary Steps */}
                             <div className="space-y-12">
                                 {currentItineraryOptions[selectedDuration]?.map((day) => (
@@ -275,15 +321,31 @@ const ServiceDetail = () => {
                                                         {day.description}
                                                     </div>
                                                     
+                                                    {(day.accommodation || day.meals) && (
+                                                        <div className="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-4 text-sm">
+                                                            {day.accommodation && (
+                                                                <div className="flex items-center gap-1.5 text-gray-500">
+                                                                    <span className="font-semibold text-gray-700">Stay:</span> {day.accommodation}
+                                                                </div>
+                                                            )}
+                                                            {day.meals && (
+                                                                <div className="flex items-center gap-1.5 text-gray-500">
+                                                                    <span className="font-semibold text-gray-700">Meals:</span> {day.meals}
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                    )}
                                                 </div>
 
-                                                {day.image && (
+                                                {day.image && service.id !== 'private-tours' && (
                                                     <div className="flex-shrink-0 lg:w-64 xl:w-72">
-                                                        <img
-                                                            src={day.image}
-                                                            alt={day.title}
-                                                            className="w-full h-48 lg:h-56 object-cover rounded-xl"
-                                                        />
+                                                        <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+                                                            <img 
+                                                                src={day.image} 
+                                                                alt={day.title}
+                                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                            />
+                                                        </div>
                                                     </div>
                                                 )}
                                             </div>
@@ -293,7 +355,6 @@ const ServiceDetail = () => {
                             </div>
                         </section>
 
-                        {/* Inclusions, Exclusions & Notes */}
                         {/* Inclusions, Exclusions & Notes */}
                         {((service.durationInclusions?.[selectedDuration] || service.inclusions).length > 0 || 
                           (service.durationExclusions?.[selectedDuration] || service.exclusions).length > 0) && (
