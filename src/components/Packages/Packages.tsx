@@ -1,7 +1,7 @@
 const packagesData = [
     {
         tier: "Luxury Range",
-        totalPrice: "$8,340",
+        totalPrice: "$12,830",
         destinations: "Entebbe – Kibale National Park – Queen Elizabeth National Park – Bwindi – Lake Mburo National Park",
         accommodations: [
             { location: "Entebbe", place: "No.5 Boutique Hotel / Protea Hotel Entebbe" },
@@ -11,13 +11,15 @@ const packagesData = [
             { location: "Lake Mburo", place: "Mihingo Lodge" }
         ],
         pricing: [
-            { item: "Luxury Accommodation (6 Nights)", cost: "$5,000" },
-            { item: "4x4 Safari Vehicle + Fuel", cost: "$1,190" },
+            { item: "Luxury Accommodation (6 Nights)", cost: "$7,740" },
+            { item: "4x4 Safari Vehicle + Fuel", cost: "$2,100" },
             { item: "Gorilla Permit", cost: "$800" },
             { item: "Chimpanzee Permit", cost: "$250" },
             { item: "Park Entrance Fees", cost: "$300" },
             { item: "Boat Cruise (Kazinga Channel)", cost: "$40" },
-            { item: "Professional Guide (7 Days)", cost: "$560" },
+            { item: "Professional Guide (7 Days)", cost: "$1050" },
+            { item: "Community walk", cost: "$300" },
+            { item: "Pangoline", cost: "$50" },
             { item: "Meals & Drinking Water", cost: "$200" }
         ],
         highlights: [
@@ -43,7 +45,7 @@ const packagesData = [
     },
     {
         tier: "Mid-Range",
-        totalPrice: "$4,210",
+        totalPrice: "$9,740",
         destinations: "Entebbe – Kibale National Park – Queen Elizabeth National Park – Bwindi – Lake Mburo National Park",
         accommodations: [
             { location: "Entebbe", place: "2 Friends Beach Hotel / ViaVia Entebbe" },
@@ -53,14 +55,16 @@ const packagesData = [
             { location: "Lake Mburo", place: "Rwakobo Rock / Arcadia Cottages Mburo" }
         ],
         pricing: [
-            { item: "Mid-Range Accommodation (6 Nights)", cost: "$1,450" },
-            { item: "4x4 Safari Vehicle + Fuel", cost: "$840" },
+            { item: "Mid-Range Accommodation (6 Nights)", cost: "$5,000" },
+            { item: "4x4 Safari Vehicle + Fuel", cost: "$1750" },
             { item: "Gorilla Permit", cost: "$800" },
             { item: "Chimpanzee Permit", cost: "$250" },
             { item: "Park Entrance Fees", cost: "$300" },
             { item: "Boat Cruise (Kazinga Channel)", cost: "$40" },
-            { item: "Professional Guide (7 Days)", cost: "$350" },
-            { item: "Meals & Drinking Water", cost: "$180" }
+            { item: "Community Walk", cost: "$300" },
+            { item: "Professional Guide (7 Days)", cost: "$1,050" },
+            { item: "Pangoline", cost: "$50" },
+            { item: "Meals & Drinking Water", cost: "$200" }
         ],
         highlights: [
             "Gorilla trekking in Bwindi Impenetrable Forest",
@@ -86,7 +90,7 @@ const packagesData = [
     },
     {
         tier: "Budget Range",
-        totalPrice: "$3,400",
+        totalPrice: "$5,840",
         destinations: "Entebbe – Kibale National Park – Queen Elizabeth National Park – Bwindi – Lake Mburo National Park",
         accommodations: [
             { location: "Entebbe", place: "Secrets Guest House / Airport Link Guest House / Airport Guest House" },
@@ -96,13 +100,16 @@ const packagesData = [
             { location: "Lake Mburo", place: "Mburo Eagles Nest / Leopard Rest Camp" }
         ],
         pricing: [
-            { item: "Budget Accommodation (6 Nights)", cost: "$1,100" },
-            { item: "4x4 Safari Vehicle + Fuel", cost: "$700" },
+            { item: "Budget Accommodation (6 Nights)", cost: "$1,450" },
+            { item: "4x4 Safari Vehicle + Fuel", cost: "$1400" },
             { item: "Gorilla Permit", cost: "$800" },
             { item: "Chimpanzee Permit", cost: "$250" },
             { item: "Park Entrance Fees", cost: "$300" },
             { item: "Boat Cruise (Kazinga Channel)", cost: "$40" },
-            { item: "Professional Guide", cost: "$210" }
+            {item: "Community Walk", cost: "$300" },
+            { item: "Pangoline", cost: "$50" },
+            { item: "Professional Guide", cost: "$1,050" },
+            { item: "Meals & Drinking Water", cost: "$200" }
         ],
         highlights: [
             "Gorilla trekking in Bwindi Impenetrable Forest",
