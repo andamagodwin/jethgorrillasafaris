@@ -11,7 +11,7 @@
 1. In the EmailJS dashboard, go to "Email Services"
 2. Click "Add New Service"
 3. Choose your email provider (Gmail recommended)
-4. Follow the instructions to connect your email: info@eyregorillaadventures.com
+4. Follow the instructions to connect your email: info@eyregorillaadventuresltd.com
 5. Copy the **Service ID** - you'll need this later
 
 ## Step 3: Create Email Template
@@ -36,7 +36,7 @@ This email was sent from the Eyre Gorilla Adventures contact form.
 ```
 
 4. In the template settings:
-   - Set "To Email" to: info@eyregorillaadventures.com
+   - Set "To Email" to: info@eyregorillaadventuresltd.com
    - Or use: {{to_email}}
 5. Save the template and copy the **Template ID**
 
@@ -65,7 +65,7 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
 1. Go to your contact page
 2. Fill out the form
 3. Click "Send Message"
-4. Check your email at info@eyregorillaadventures.com
+4. Check your email at info@eyregorillaadventuresltd.com
 
 ## Important Notes
 

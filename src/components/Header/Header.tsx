@@ -103,11 +103,11 @@ const Header = () => {
                             <span className="sm:hidden">Call Us</span>
                         </a>
                         <a 
-                            href="mailto:info@eyregorillaadventures.com" 
+                            href="mailto:info@eyregorillaadventuresltd.com" 
                             className={`flex items-center gap-1.5 md:gap-2 transition-colors hover:text-yellow-500 ${isScrolled ? 'text-gray-600' : 'text-white/80'}`}
                         >
                             <svg className="w-3 md:w-3.5 h-3 md:h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <span className="hidden md:inline">info@eyregorillaadventures.com</span>
+                            <span className="hidden md:inline">info@eyregorillaadventuresltd.com</span>
                             <span className="md:hidden">Email</span>
                         </a>
                     </div>

@@ -102,7 +102,7 @@ const ServiceDetail = () => {
                     travelers: formData.travelers,
                     preferred_date: formData.date,
                     message: formData.message || 'No special requests',
-                    to_email: 'info@eyregorillaadventures.com',
+                    to_email: 'info@eyregorillaadventuresltd.com',
                 },
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY'
             );
@@ -587,7 +587,7 @@ const ServiceDetail = () => {
                                     {/* Error Message */}
                                     {submitStatus === 'error' && (
                                         <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
-                                            Sorry, something went wrong. Please try again or contact us directly at info@eyregorillaadventures.com
+                                            Sorry, something went wrong. Please try again or contact us directly at info@eyregorillaadventuresltd.com
                                         </div>
                                     )}
 

@@ -8,6 +8,7 @@ import Gallery from './components/Gallery'
 import Services from './components/Services'
 import Languages from './components/Languages'
 import Contact from './components/Contact'
+import GoogleReviews from './components/GoogleReviews'
 import Footer from './components/Footer'
 import ServiceDetail from './components/ServiceDetail'
 import ScrollToTopButton from './components/ScrollToTopButton'
@@ -71,6 +72,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/services/:serviceId" element={<ServiceDetail />} />
       </Routes>
+      <GoogleReviews />
       <Footer />
       <ScrollToTopButton />
     </BrowserRouter>

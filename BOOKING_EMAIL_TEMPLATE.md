@@ -158,7 +158,7 @@ Please respond within 24 hours.
 
 ### Step 3: Configure Template Settings
 
-1. **To Email:** Set to `info@eyregorillaadventures.com` or use `{{to_email}}`
+1. **To Email:** Set to `info@eyregorillaadventuresltd.com` or use `{{to_email}}`
 2. **From Name:** Set to "Eyre Gorilla Adventures Booking System"
 3. **Reply To:** Set to `{{from_email}}` (so you can reply directly to the customer)
 4. **BCC:** (Optional) Add additional team members who should receive booking notifications
@@ -201,7 +201,7 @@ All variables sent from the booking form:
 | `travelers` | Number of people | "4" |
 | `preferred_date` | Requested tour date | "2024-06-15" |
 | `message` | Special requests/questions | "We prefer morning tours" |
-| `to_email` | Your business email | "info@eyregorillaadventures.com" |
+| `to_email` | Your business email | "info@eyregorillaadventuresltd.com" |
 
 ## Testing Your Template
 
@@ -209,7 +209,7 @@ All variables sent from the booking form:
 2. Click "Test it" button
 3. Fill in sample data for all variables
 4. Send test email to verify formatting
-5. Check your inbox at info@eyregorillaadventures.com
+5. Check your inbox at info@eyregorillaadventuresltd.com
 
 ## Troubleshooting
 
@@ -241,4 +241,4 @@ All variables sent from the booking form:
 2. Either use your existing contact template OR create a new booking-specific template
 3. If you created a new template, update your `.env` file with the booking template ID
 4. Test a booking on your website
-5. Check that you receive the email at info@eyregorillaadventures.com
+5. Check that you receive the email at info@eyregorillaadventuresltd.com

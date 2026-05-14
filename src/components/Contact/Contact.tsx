@@ -36,7 +36,7 @@ const Contact = () => {
                     phone: formData.phone,
                     tour_interest: formData.subject,
                     message: formData.message,
-                    to_email: 'info@eyregorillaadventures.com',
+                    to_email: 'info@eyregorillaadventuresltd.com',
                 },
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY'
             );
@@ -97,8 +97,8 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 mb-1">Email</p>
-                                    <a href="mailto:info@eyregorillaadventures.com" className="text-gray-900 hover:text-red-600 transition-colors break-all">
-                                        info@eyregorillaadventures.com
+                                    <a href="mailto:info@eyregorillaadventuresltd.com" className="text-gray-900 hover:text-red-600 transition-colors break-all">
+                                        info@eyregorillaadventuresltd.com
                                     </a>
                                 </div>
                                 <div>
@@ -264,7 +264,7 @@ const Contact = () => {
                                 {/* Error Message */}
                                 {submitStatus === 'error' && (
                                     <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded text-red-800 text-sm">
-                                        Sorry, something went wrong. Please try again or contact us directly at info@eyregorillaadventures.com
+                                        Sorry, something went wrong. Please try again or contact us directly at info@eyregorillaadventuresltd.com
                                     </div>
                                 )}
                             </div>

@@ -156,8 +156,8 @@ const Footer = () => {
                             </li>
                             <li>
                                 <p className="text-xs text-gray-500 mb-1">Email</p>
-                                <a href="mailto:info@eyregorillaadventures.com" className="text-sm text-gray-400 hover:text-white transition-colors break-all">
-                                    info@eyregorillaadventures.com
+                                <a href="mailto:info@eyregorillaadventuresltd.com" className="text-sm text-gray-400 hover:text-white transition-colors break-all">
+                                    info@eyregorillaadventuresltd.com
                                 </a>
                             </li>
                         </ul>
