@@ -60,7 +60,7 @@ const services = [
         title: "Private Tours In the country",
         description: "Exclusive and fully customizable safari experiences with your own professional guide and private vehicle.",
         icon: "/icons/tour.png",
-        image: "/images/tour-vehicle.jpeg",
+        image: "/car01.jpeg",
         duration: "Flexible",
         price: "Custom"
     }

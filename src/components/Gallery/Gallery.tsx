@@ -51,7 +51,7 @@ const items = [
     },
     {
         id: "9",
-        img: "https://images.pexels.com/photos/913652/pexels-photo-913652.jpeg",
+        img: "/bird01.jpeg",
         url: "https://example.com/nine",
         height: 420,
     },
