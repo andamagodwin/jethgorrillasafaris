@@ -85,12 +85,6 @@ const ServiceDetail = () => {
         setSubmitStatus('idle');
 
         try {
-            // EmailJS credentials from environment variables
-            // Temporarily logging to debug
-            console.log('Service ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
-            console.log('Booking Template ID:', import.meta.env.VITE_EMAILJS_BOOKING_TEMPLATE_ID);
-            console.log('Public Key:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-
             const result = await emailjs.send(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
                 import.meta.env.VITE_EMAILJS_BOOKING_TEMPLATE_ID || 'template_xmbf09r',
@@ -107,7 +101,7 @@ const ServiceDetail = () => {
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY'
             );
 
-            console.log('Booking request sent successfully:', result);
+            void result;
             setSubmitStatus('success');
 
             // Reset form
@@ -125,7 +119,7 @@ const ServiceDetail = () => {
                 setSubmitStatus('idle');
             }, 5000);
         } catch (error) {
-            console.error('Booking request failed:', error);
+            void error;
             setSubmitStatus('error');
 
             // Clear error message after 5 seconds
@@ -163,6 +157,7 @@ const ServiceDetail = () => {
                     src={service.heroImage}
                     alt={service.title}
                     className="w-full h-full object-cover"
+                    fetchPriority="high"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
 
@@ -340,9 +335,11 @@ const ServiceDetail = () => {
                                                 {day.image && service.id !== 'private-tours' && (
                                                     <div className="flex-shrink-0 lg:w-64 xl:w-72">
                                                         <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
-                                                            <img 
-                                                                src={day.image} 
+                                                            <img
+                                                                src={day.image}
                                                                 alt={day.title}
+                                                                loading="lazy"
+                                                                decoding="async"
                                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                                             />
                                                         </div>
@@ -453,6 +450,8 @@ const ServiceDetail = () => {
                                             <img
                                                 src={image}
                                                 alt={`${service.title} ${index + 1}`}
+                                                loading="lazy"
+                                                decoding="async"
                                                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                                             />
                                         </div>

@@ -38,7 +38,7 @@ const Hero = () => {
                     muted
                     loop
                     playsInline
-                    preload="auto"
+                    preload="metadata"
                     poster="https://res.cloudinary.com/ddfpgrpdj/video/upload/so_0,f_jpg,q_auto/eyre_gorilla/videos/hero1.jpg"
                 >
                     <source src="https://res.cloudinary.com/ddfpgrpdj/video/upload/q_auto/eyre_gorilla/videos/hero1.mp4" type="video/mp4" />

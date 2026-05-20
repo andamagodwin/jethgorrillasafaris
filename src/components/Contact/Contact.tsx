@@ -41,7 +41,7 @@ const Contact = () => {
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY'
             );
 
-            console.log('Email sent successfully:', result);
+            void result;
             setSubmitStatus('success');
 
             // Reset form
@@ -58,7 +58,7 @@ const Contact = () => {
                 setSubmitStatus('idle');
             }, 5000);
         } catch (error) {
-            console.error('Email send failed:', error);
+            void error;
             setSubmitStatus('error');
 
             // Clear error message after 5 seconds
@@ -128,24 +128,30 @@ const Contact = () => {
                         {/* Visual Enhancement */}
                         <div className="pt-2 grid grid-cols-2 gap-4">
                             <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                                <img 
-                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293954/eyre_gorilla/images/tour-car-5.jpg" 
-                                    alt="Safari Tour Car" 
-                                    className="w-full h-32 md:h-40 object-cover hover:scale-110 transition-transform duration-500" 
+                                <img
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293954/eyre_gorilla/images/tour-car-5.jpg"
+                                    alt="Safari tour vehicle in Uganda"
+                                    loading="lazy"
+                                    decoding="async"
+                                    className="w-full h-32 md:h-40 object-cover hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
                             <div className="rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                                <img 
-                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293953/eyre_gorilla/images/tour-car-4.jpg" 
-                                    alt="Safari Tour Car" 
-                                    className="w-full h-32 md:h-40 object-cover hover:scale-110 transition-transform duration-500" 
+                                <img
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293953/eyre_gorilla/images/tour-car-4.jpg"
+                                    alt="Safari 4x4 vehicle ready for game drive"
+                                    loading="lazy"
+                                    decoding="async"
+                                    className="w-full h-32 md:h-40 object-cover hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
                             <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                                <img 
-                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293956/eyre_gorilla/images/tour-car.jpg" 
-                                    alt="Safari Tour Car" 
-                                    className="w-full h-40 md:h-48 object-cover object-center hover:scale-110 transition-transform duration-500" 
+                                <img
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293956/eyre_gorilla/images/tour-car.jpg"
+                                    alt="Professional safari vehicle fleet"
+                                    loading="lazy"
+                                    decoding="async"
+                                    className="w-full h-40 md:h-48 object-cover object-center hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
                         </div>

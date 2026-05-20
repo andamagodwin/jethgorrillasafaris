@@ -48,6 +48,8 @@ const About = () => {
                                 <img
                                     src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293870/eyre_gorilla/images/culture.jpg"
                                     alt="Ugandan Culture"
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
@@ -57,6 +59,8 @@ const About = () => {
                                 <img
                                     src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293925/eyre_gorilla/images/image2.jpg"
                                     alt="Wildlife"
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
@@ -66,6 +70,8 @@ const About = () => {
                                 <img
                                     src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293844/eyre_gorilla/images/adventure.jpg"
                                     alt="Adventure Safari"
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
@@ -75,6 +81,8 @@ const About = () => {
                                 <img
                                     src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293924/eyre_gorilla/images/image1.jpg"
                                     alt="Chimpanzee"
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
@@ -84,6 +92,8 @@ const About = () => {
                                 <img
                                     src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293926/eyre_gorilla/images/image4.jpg"
                                     alt="Safari Experience"
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
