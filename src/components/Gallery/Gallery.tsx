@@ -51,7 +51,7 @@ const items = [
     },
     {
         id: "9",
-        img: "/bird01.jpeg",
+        img: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/bird01_kgta1o",
         url: "https://example.com/nine",
         height: 420,
     },
