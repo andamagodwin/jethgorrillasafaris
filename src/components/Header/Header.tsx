@@ -155,7 +155,7 @@ const Header = () => {
                     {/* Logo */}
                     <a href="/" onClick={handleLogoClick} className="flex items-center gap-2 md:gap-3 group flex-shrink-0">
                         <img
-                            src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293961/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293961/eyre_gorilla/logo-no-txt.png"
+                            src="https://res.cloudinary.com/ddfpgrpdj/image/upload/q_auto/eyre_gorilla/logo-no-txt.png"
                             alt="Eyre Gorilla Adventures Ltd Logo"
                             className="w-14 h-14 md:w-24 md:h-24 object-contain transform group-hover:scale-110 transition-transform duration-300"
                         />

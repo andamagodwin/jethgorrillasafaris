@@ -1226,11 +1226,11 @@ export const services: Service[] = [
         heroImage: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293850/eyre_gorilla/images/chimp.jpg",
         gallery: [
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293850/eyre_gorilla/images/chimp.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293852/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293852/eyre_gorilla/images/chimp1.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293855/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293855/eyre_gorilla/images/chimp2.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293859/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293859/eyre_gorilla/images/chimp3.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293861/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293861/eyre_gorilla/images/chimp4.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293863/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293863/eyre_gorilla/images/chimp5.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293852/eyre_gorilla/images/chimp1.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293855/eyre_gorilla/images/chimp2.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293859/eyre_gorilla/images/chimp3.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293861/eyre_gorilla/images/chimp4.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293863/eyre_gorilla/images/chimp5.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293864/eyre_gorilla/images/chimp6.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293864/eyre_gorilla/images/chimp7.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293853/eyre_gorilla/images/chimp10.jpg"
@@ -1399,8 +1399,8 @@ export const services: Service[] = [
         gallery: [
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293870/eyre_gorilla/images/culture.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293871/eyre_gorilla/images/culture1.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293889/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293889/eyre_gorilla/images/culture2.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293906/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293906/eyre_gorilla/images/culture3.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293889/eyre_gorilla/images/culture2.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293906/eyre_gorilla/images/culture3.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293872/eyre_gorilla/images/culture10.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293873/eyre_gorilla/images/culture11.jpg",
             "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293874/eyre_gorilla/images/culture12.jpg",
@@ -1523,13 +1523,13 @@ export const services: Service[] = [
         fullDescription: "For adrenaline seekers, Uganda offers world-class adventure activities. Experience the thrill of white water rafting on the Nile, trek the legendary Rwenzori Mountains, go bungee jumping, or try zip-lining through the forest canopy.",
         duration: "2-7 Days",
         price: "From $900",
-        heroImage: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293835/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293835/eyre_gorilla/images/activity.jpg",
+        heroImage: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293835/eyre_gorilla/images/activity.jpg",
         gallery: [
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293835/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293835/eyre_gorilla/images/activity.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293836/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293836/eyre_gorilla/images/activity1.webp",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/images/activity2.jpg",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293841/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293841/eyre_gorilla/images/activity3.webp",
-            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293842/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293842/eyre_gorilla/images/activity4.webp"
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293835/eyre_gorilla/images/activity.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293836/eyre_gorilla/images/activity1.webp",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/images/activity2.jpg",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293841/eyre_gorilla/images/activity3.webp",
+            "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293842/eyre_gorilla/images/activity4.webp"
         ],
         itinerary: {
             "2 Days": [
@@ -1651,7 +1651,7 @@ export const services: Service[] = [
                 { day: 2, title: "Rhino Tracking & Murchison", description: "Meet the first of the Big Five.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293944/eyre_gorilla/images/safari4.jpg" },
                 { day: 3, title: "Elephants & Buffaloes of Murchison", description: "Game drive and boat safari.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293944/eyre_gorilla/images/safari5.jpg" },
                 { day: 4, title: "Lions & Leopards Search", description: "Morning game drive and transfer to Kibale.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293948/eyre_gorilla/images/safari8.jpg" },
-                { day: 5, title: "Primate Adventure", description: "Chimp tracking in Kibale.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293855/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293855/eyre_gorilla/images/chimp2.jpg" },
+                { day: 5, title: "Primate Adventure", description: "Chimp tracking in Kibale.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293855/eyre_gorilla/images/chimp2.jpg" },
                 { day: 6, title: "Queen Elizabeth Wildlife", description: "Game drive in Kasenyi.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293949/eyre_gorilla/images/safari9.jpg" },
                 { day: 7, title: "Tree Climbing Lions", description: "Afternoon drive in Ishasha.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293934/eyre_gorilla/images/safari11.jpg" },
                 { day: 8, title: "Bwindi Mountain Gorillas", description: "Unforgettable gorilla trek.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293916/eyre_gorilla/images/gorilla/gorilla2.jpg" },
@@ -1664,7 +1664,7 @@ export const services: Service[] = [
                 { day: 2, title: "Murchison Falls", description: "Journey north to the Nile.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293932/eyre_gorilla/images/safari1.jpg" },
                 { day: 3, title: "River Safari", description: "Boat trip and top of the falls.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293941/eyre_gorilla/images/safari2.jpg" },
                 { day: 4, title: "Fort Portal", description: "Drive to the base of the Rwenzoris.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293943/eyre_gorilla/images/safari3.jpg" },
-                { day: 5, title: "Chimps of Kibale", description: "Primate trekking experience.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293859/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293859/eyre_gorilla/images/chimp3.jpg" },
+                { day: 5, title: "Chimps of Kibale", description: "Primate trekking experience.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293859/eyre_gorilla/images/chimp3.jpg" },
                 { day: 6, title: "Queen Elizabeth NP", description: "Lions, elephants and buffaloes.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293945/eyre_gorilla/images/safari6.jpg" },
                 { day: 7, title: "Ishasha Sector", description: "Famous tree-climbing lions.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293946/eyre_gorilla/images/safari7.jpg" },
                 { day: 8, title: "Bwindi Forest", description: "Deep dive into the gorilla home.", image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293917/eyre_gorilla/images/gorilla/gorilla3.jpg" },

@@ -38,8 +38,10 @@ const Hero = () => {
                     muted
                     loop
                     playsInline
+                    preload="auto"
+                    poster="https://res.cloudinary.com/ddfpgrpdj/video/upload/so_0,f_jpg,q_auto/eyre_gorilla/videos/hero1.jpg"
                 >
-                    <source src="https://res.cloudinary.com/ddfpgrpdj/video/upload/v1779293966/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/video/upload/v1779293966/eyre_gorilla/videos/hero1.mp4" type="video/mp4" />
+                    <source src="https://res.cloudinary.com/ddfpgrpdj/video/upload/q_auto/eyre_gorilla/videos/hero1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 {/* Dark Overlay for Better Text Readability */}

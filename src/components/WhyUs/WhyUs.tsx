@@ -13,7 +13,7 @@ const features = [
         title: "Eco-Friendly",
         description: "We practice sustainable tourism to protect Uganda's natural beauty for future generations.",
         color: "#0f0f0f",
-        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/images/activity2.jpg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/images/activity2.jpg"
     },
     {
         icon: "/icons/adjust.png",
