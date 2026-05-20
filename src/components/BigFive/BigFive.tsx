@@ -3,31 +3,31 @@ const bigFiveAnimals = [
         name: "Lion",
         subtitle: "King of the Savannah",
         description: "Spot the majestic lions and rare tree-climbing lions of the Ishasha sector in Queen Elizabeth National Park.",
-        image: "/images/safari10.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293933/eyre_gorilla/images/safari10.jpg"
     },
     {
         name: "Leopard",
         subtitle: "The Elusive Shadow",
         description: "Track the stealthy leopard through the dense forests and open plains of Uganda's premier national parks.",
-        image: "/images/Leopard.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293832/eyre_gorilla/images/Leopard.jpg"
     },
     {
         name: "Elephant",
         subtitle: "The Gentle Giant",
         description: "Witness herds of African elephants roaming freely across the savannahs of Queen Elizabeth and Murchison Falls.",
-        image: "/images/elephant.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293911/eyre_gorilla/images/elephant.jpg"
     },
     {
         name: "Buffalo",
         subtitle: "The Unpredictable Force",
         description: "Encounter massive herds of Cape buffalo grazing on the open plains and along the Kazinga Channel.",
-        image: "/images/buffalo.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293849/eyre_gorilla/images/buffalo.jpg"
     },
     {
         name: "Rhino",
         subtitle: "The Armoured One",
         description: "Visit Ziwa Rhino Sanctuary, the only place in Uganda where you can track Southern White Rhinos on foot.",
-        image: "/images/safari7.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293946/eyre_gorilla/images/safari7.jpg"
     }
 ];
 

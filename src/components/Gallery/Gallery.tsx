@@ -39,7 +39,7 @@ const items = [
     },
     {
         id: "7",
-        img: "/images/chimp6.jpeg",
+        img: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293864/eyre_gorilla/images/chimp6.jpg",
         url: "https://example.com/seven",
         height: 500,
     },
@@ -69,7 +69,7 @@ const items = [
     },
     {
         id: "12",
-        img: "/images/chimp7.jpeg",
+        img: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293864/eyre_gorilla/images/chimp7.jpg",
         url: "https://example.com/twelve",
         height: 480,
     },

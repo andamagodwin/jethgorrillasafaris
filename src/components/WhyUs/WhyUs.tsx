@@ -6,42 +6,42 @@ const features = [
         title: "Expert Guides",
         description: "Our experienced guides have decades of knowledge about Uganda's wildlife and ecosystems.",
         color: "#0f0f0f",
-        image: "/images/guide.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293923/eyre_gorilla/images/guide.jpg"
     },
     {
         icon: "/icons/ecology.png",
         title: "Eco-Friendly",
         description: "We practice sustainable tourism to protect Uganda's natural beauty for future generations.",
         color: "#0f0f0f",
-        image: "/images/activity2.jpg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293838/eyre_gorilla/images/activity2.jpg"
     },
     {
         icon: "/icons/adjust.png",
         title: "Personalized Tours",
         description: "Every safari is tailored to your interests, ensuring a unique and memorable experience.",
         color: "#0f0f0f",
-        image: "/images/safari2.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293941/eyre_gorilla/images/safari2.jpg"
     },
     {
         icon: "/icons/crown.png",
         title: "Premium Comfort",
         description: "Stay in carefully selected lodges and camps that blend luxury with authentic safari experiences.",
         color: "#0f0f0f",
-        image: "/images/tour-car-2.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293952/eyre_gorilla/images/tour-car-2.jpg"
     },
     {
         icon: "/icons/image.png",
         title: "Photo Opportunities",
         description: "We know the best spots and times for capturing stunning wildlife and landscape photography.",
         color: "#0f0f0f",
-        image: "/images/photo.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293931/eyre_gorilla/images/photo.jpg"
     },
     {
         icon: "/icons/shield.png",
         title: "Safety First",
         description: "Your safety is our priority with comprehensive insurance and experienced safety protocols.",
         color: "#0f0f0f",
-        image: "/car-1.jpeg"
+        image: "https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293829/eyre_gorilla/car-1.jpg"
     }
 ];
 

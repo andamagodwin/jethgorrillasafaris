@@ -48,7 +48,7 @@ const Footer = () => {
                     <div className="lg:col-span-4">
                         <a href="/" onClick={handleLogoClick} className="inline-flex items-center gap-3 mb-4 group">
                             <img
-                                src="/logo-no-txt.png"
+                                src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293961/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293961/eyre_gorilla/logo-no-txt.png"
                                 alt="Eyre Gorilla Adventures Ltd"
                                 className="w-16 h-16 object-contain transform group-hover:scale-105 transition-transform"
                             />

@@ -46,7 +46,7 @@ const About = () => {
                             {/* Main tall image - left of collage */}
                             <div className="absolute left-0 top-0 w-[58%] h-[75%] overflow-hidden rounded-3xl shadow-2xl">
                                 <img
-                                    src="/images/culture.jpeg"
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293870/eyre_gorilla/images/culture.jpg"
                                     alt="Ugandan Culture"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
@@ -55,7 +55,7 @@ const About = () => {
                             {/* Top-right small image */}
                             <div className="absolute right-0 top-0 w-[38%] h-[36%] overflow-hidden rounded-3xl shadow-xl">
                                 <img
-                                    src="/images/image2.jpeg"
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293925/eyre_gorilla/images/image2.jpg"
                                     alt="Wildlife"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
@@ -64,7 +64,7 @@ const About = () => {
                             {/* Mid-right image */}
                             <div className="absolute right-0 top-[40%] w-[38%] h-[32%] overflow-hidden rounded-3xl shadow-xl">
                                 <img
-                                    src="/images/adventure.jpeg"
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293844/eyre_gorilla/images/adventure.jpg"
                                     alt="Adventure Safari"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
@@ -73,7 +73,7 @@ const About = () => {
                             {/* Bottom-left image — overlaps the main image slightly */}
                             <div className="absolute left-[5%] bottom-0 w-[42%] h-[30%] overflow-hidden rounded-3xl shadow-xl border-4 border-white">
                                 <img
-                                    src="/images/image1.jpeg"
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293924/eyre_gorilla/images/image1.jpg"
                                     alt="Chimpanzee"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                                 />
@@ -82,7 +82,7 @@ const About = () => {
                             {/* Bottom-right image */}
                             <div className="absolute right-0 bottom-0 w-[55%] h-[26%] overflow-hidden rounded-3xl shadow-xl border-4 border-white">
                                 <img
-                                    src="/images/image4.jpeg"
+                                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293926/eyre_gorilla/images/image4.jpg"
                                     alt="Safari Experience"
                                     className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                                 />

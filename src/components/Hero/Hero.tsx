@@ -39,7 +39,7 @@ const Hero = () => {
                     loop
                     playsInline
                 >
-                    <source src="/videos/hero1.mp4" type="video/mp4" />
+                    <source src="https://res.cloudinary.com/ddfpgrpdj/video/upload/v1779293966/eyre_gorilla/https://res.cloudinary.com/ddfpgrpdj/video/upload/v1779293966/eyre_gorilla/videos/hero1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 {/* Dark Overlay for Better Text Readability */}
