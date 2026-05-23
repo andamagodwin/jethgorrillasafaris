@@ -7,10 +7,6 @@ const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    if (location.pathname === '/connect') {
-        return null;
-    }
-
     useEffect(() => {
         let ticking = false;
         const handleScroll = () => {
@@ -47,6 +43,10 @@ const Header = () => {
             }, 100);
         }
     }, [location]);
+
+    if (location.pathname === '/connect') {
+        return null;
+    }
 
     const navLinks = [
         { name: 'Home', href: '#hero' },
