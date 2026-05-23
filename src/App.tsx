@@ -14,6 +14,7 @@ import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import Packages from './components/Packages'
 import BigFive from './components/BigFive'
+import Connect from './components/Connect'
 
 const ServiceDetail = lazy(() => import('./components/ServiceDetail'))
 
@@ -37,6 +38,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/connect" element={<Connect />} />
         <Route path="/services/:serviceId" element={
           <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-8 h-8 border-4 border-orange-500 border-t-transparent rounded-full animate-spin" /></div>}>
             <ServiceDetail />

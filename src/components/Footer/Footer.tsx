@@ -5,6 +5,10 @@ const Footer = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
+    if (location.pathname === '/connect') {
+        return null;
+    }
+
     const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
 

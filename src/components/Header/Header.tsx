@@ -7,6 +7,10 @@ const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
+    if (location.pathname === '/connect') {
+        return null;
+    }
+
     useEffect(() => {
         let ticking = false;
         const handleScroll = () => {
