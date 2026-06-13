@@ -68,16 +68,16 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="relative bg-zinc-50 py-16 px-6 md:px-12 lg:px-20 z-10">
+        <section id="services" className="relative bg-zinc-50 py-12 md:py-16 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <span
-                        className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide mb-4 inline-block font-['Campuni']"
+                        className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest mb-4 inline-block font-['Campuni']"
                     >
                         Our Services
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 leading-tight">
                         Tailored Safari Experiences
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">

@@ -157,7 +157,7 @@ const Footer = () => {
                     {/* Contact Info */}
                     <div className="lg:col-span-3">
                         <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 selectable">
                             <li>
                                 <p className="text-xs text-gray-500 mb-1">Address</p>
                                 <p className="text-sm text-gray-400">P.O BOX 203725</p>
@@ -185,17 +185,7 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
                         <p>© {currentYear} Eyre Gorilla Adventures Ltd. All rights reserved.</p>
-                        <div className="flex gap-6">
-                            <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="hover:text-gray-400 transition-colors">
-                                Privacy Policy
-                            </a>
-                            <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="hover:text-gray-400 transition-colors">
-                                Terms of Service
-                            </a>
-                            <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="hover:text-gray-400 transition-colors">
-                                Cookie Policy
-                            </a>
-                        </div>
+                        <p>Expert-guided safaris across Uganda.</p>
                     </div>
                 </div>
             </div>

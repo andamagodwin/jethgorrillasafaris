@@ -40,7 +40,7 @@ const BigFive = () => {
                     <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-4 block">
                         Africa's Iconic Wildlife
                     </span>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
                         The Big Five
                     </h2>
                     <p className="text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">

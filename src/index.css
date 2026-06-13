@@ -38,6 +38,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Keep form fields and anything opted-in via .selectable usable/copyable */
+input,
+textarea,
+select,
+.selectable,
+.selectable * {
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 #root {

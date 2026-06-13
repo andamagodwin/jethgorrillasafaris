@@ -8,13 +8,17 @@ import WhyUs from './components/WhyUs'
 import Gallery from './components/Gallery'
 import Services from './components/Services'
 import Languages from './components/Languages'
+import BestTimeToVisit from './components/BestTimeToVisit'
 import Contact from './components/Contact'
 import GoogleReviews from './components/GoogleReviews'
 import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
+import WhatsAppButton from './components/WhatsAppButton'
 import Packages from './components/Packages'
 import BigFive from './components/BigFive'
 import Connect from './components/Connect'
+import FAQ from './components/FAQ/FAQ'
+import MapSection from './components/MapSection'
 
 const ServiceDetail = lazy(() => import('./components/ServiceDetail'))
 
@@ -25,6 +29,9 @@ const HomePage = () => (
     <WhyUs />
     <Gallery />
     <Languages />
+    <BestTimeToVisit />
+    <FAQ />
+    <MapSection />
     <Services />
     <BigFive />
     <Packages />
@@ -47,6 +54,7 @@ function App() {
       </Routes>
       <GoogleReviews />
       <Footer />
+      <WhatsAppButton />
       <ScrollToTopButton />
     </BrowserRouter>
   )

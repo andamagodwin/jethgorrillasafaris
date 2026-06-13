@@ -1,12 +1,3 @@
-// import Stack from '../Stack';
-
-// const images = [
-//     { id: 1, img: "https://images.pexels.com/photos/27056094/pexels-photo-27056094.png" },
-//     { id: 2, img: "https://images.pexels.com/photos/8026840/pexels-photo-8026840.jpeg" },
-//     { id: 3, img: "https://images.pexels.com/photos/6233528/pexels-photo-6233528.jpeg" },
-//     { id: 4, img: "https://images.pexels.com/photos/27674975/pexels-photo-27674975.jpeg" }
-// ];
-
 const About = () => {
     return (
         <section id="about" className="relative bg-white -mt-1 z-10">
@@ -18,17 +9,17 @@ const About = () => {
                         <div className="space-y-6">
                             <div className="inline-block">
                                 <span
-                                    className="text-orange-500 font-bold text-2xl md:text-3xl capitalize tracking-wide font-['Campuni']"
+                                    className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest font-['Campuni']"
                                 >
                                     About Eyre Gorilla Adventures Ltd
                                 </span>
                             </div>
 
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                                 Experience the Magic of Uganda
                             </h2>
 
-                            <p className="text-md text-gray-600 leading-relaxed">
+                            <p className="text-lg text-gray-600 leading-relaxed">
                                 Embark on an extraordinary journey through Uganda's pristine wilderness.
                                 From the misty mountains where mountain gorillas roam to the vast savannas
                                 teeming with wildlife, every moment is an adventure waiting to unfold.

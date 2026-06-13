@@ -73,17 +73,17 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto px-4 sm:px-0">
                         <button
                             onClick={() => scrollToSection('services')}
-                            className="group relative px-8 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-full bg-gradient-to-r from-yellow-500 to-red-600 text-white uppercase tracking-wider overflow-hidden transition-all duration-300 hover:scale-95 shadow-[0_10px_30px_rgba(234,179,8,0.2)] flex items-center justify-center gap-3 h-14 sm:h-16 border border-yellow-400/30"
+                            className="group relative px-8 sm:px-10 py-4 text-base sm:text-lg font-semibold rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white uppercase tracking-wider overflow-hidden transition-all duration-300 hover:scale-95 shadow-[0_10px_30px_rgba(249,115,22,0.3)] flex items-center justify-center gap-3 h-14 sm:h-16 border border-orange-400/30"
                         >
                             {/* Animated Bubbles - hidden on mobile to prevent overflow */}
-                            <div className="hidden sm:block absolute right-32 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-yellow-900"></div>
-                            <div className="hidden sm:block absolute right-2 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-32 h-32 rounded-full group-hover:scale-150 duration-500 bg-orange-600"></div>
-                            <div className="hidden sm:block absolute -right-12 top-4 group-hover:top-1 group-hover:right-2 z-0 w-24 h-24 rounded-full group-hover:scale-150 duration-500 bg-red-700"></div>
-                            <div className="hidden sm:block absolute right-20 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-16 h-16 rounded-full group-hover:scale-150 duration-500 bg-red-600"></div>
+                            <div className="hidden sm:block absolute right-32 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-orange-900"></div>
+                            <div className="hidden sm:block absolute right-2 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-32 h-32 rounded-full group-hover:scale-150 duration-500 bg-orange-700"></div>
+                            <div className="hidden sm:block absolute -right-12 top-4 group-hover:top-1 group-hover:right-2 z-0 w-24 h-24 rounded-full group-hover:scale-150 duration-500 bg-orange-800"></div>
+                            <div className="hidden sm:block absolute right-20 -top-4 group-hover:top-1 group-hover:right-2 z-0 w-16 h-16 rounded-full group-hover:scale-150 duration-500 bg-orange-600"></div>
 
                             {/* Content */}
                             <img src="/icons/gorilla.png" alt="Gorilla" className="w-5 h-5 sm:w-6 sm:h-6 relative z-10" />
-                            <span className="relative z-10">Lets Goooo</span>
+                            <span className="relative z-10">Explore Tours</span>
                         </button>
 
                         <button

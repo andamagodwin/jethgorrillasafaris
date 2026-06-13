@@ -32,10 +32,10 @@ const owner = {
 
 const Connect = () => {
     return (
-        <main className="relative min-h-screen bg-gradient-to-br from-amber-50 via-white to-emerald-50 pt-32 pb-20 px-6 md:px-12 lg:px-20">
+        <main className="relative min-h-screen bg-gradient-to-br from-amber-50 via-white to-orange-50 pt-32 pb-20 px-6 md:px-12 lg:px-20">
             <div className="max-w-4xl mx-auto">
                 <section className="rounded-3xl border border-amber-100 bg-white/90 backdrop-blur-sm shadow-2xl overflow-hidden">
-                    <div className="bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-600 p-8 md:p-12 text-white">
+                    <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 p-8 md:p-12 text-white">
                         <div className="inline-flex items-center gap-3 mb-5 rounded-2xl bg-white/10 px-3 py-2">
                             <img
                                 src="https://res.cloudinary.com/ddfpgrpdj/image/upload/q_auto/eyre_gorilla/logo-no-txt.png"
@@ -44,11 +44,11 @@ const Connect = () => {
                             />
                             <span className="text-sm md:text-base font-semibold tracking-wide">Eyre Gorilla Adventures Ltd</span>
                         </div>
-                        <p className="uppercase tracking-[0.22em] text-[11px] md:text-xs font-semibold text-emerald-100 mb-3">
+                        <p className="uppercase tracking-[0.22em] text-[11px] md:text-xs font-semibold text-orange-100 mb-3">
                             Quick Contact Card
                         </p>
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight">Connect with Eyre Gorilla Adventures</h1>
-                        <p className="mt-3 text-emerald-50 max-w-2xl">
+                        <p className="mt-3 text-orange-50 max-w-2xl">
                             Save the owner&apos;s contact in one tap, chat on WhatsApp, and jump back to our safari packages.
                         </p>
                     </div>
@@ -57,13 +57,13 @@ const Connect = () => {
                         <div>
                             <p className="text-xs uppercase tracking-[0.18em] text-gray-400 font-semibold mb-2">Owner Contact</p>
                             <h2 className="text-3xl font-bold text-gray-900">{owner.name}</h2>
-                            <p className="text-lg text-emerald-700 font-semibold mt-1">{owner.title}</p>
+                            <p className="text-lg text-orange-600 font-semibold mt-1">{owner.title}</p>
 
-                            <div className="mt-6 space-y-3 text-gray-700">
-                                <a href={`tel:${owner.phoneDial}`} className="block hover:text-emerald-700 transition-colors">
+                            <div className="mt-6 space-y-3 text-gray-700 selectable">
+                                <a href={`tel:${owner.phoneDial}`} className="block hover:text-orange-600 transition-colors">
                                     <span className="text-sm text-gray-500">Phone:</span> {owner.phoneDisplay}
                                 </a>
-                                <a href={`mailto:${owner.email}`} className="block hover:text-emerald-700 transition-colors break-all">
+                                <a href={`mailto:${owner.email}`} className="block hover:text-orange-600 transition-colors break-all">
                                     <span className="text-sm text-gray-500">Email:</span> {owner.email}
                                 </a>
                                 <div className="pt-2">
@@ -82,7 +82,7 @@ const Connect = () => {
                                             href={social.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 hover:border-emerald-300 hover:text-emerald-700 transition-colors"
+                                            className="inline-flex items-center rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 hover:border-orange-300 hover:text-orange-600 transition-colors"
                                         >
                                             {social.label}
                                         </a>
@@ -110,7 +110,7 @@ const Connect = () => {
 
                             <Link
                                 to="/#packages"
-                                className="inline-flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-4 text-base font-bold text-gray-900 hover:border-emerald-300 hover:text-emerald-700 transition-colors"
+                                className="inline-flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-4 text-base font-bold text-gray-900 hover:border-orange-300 hover:text-orange-600 transition-colors"
                             >
                                 View Tour Packages
                             </Link>

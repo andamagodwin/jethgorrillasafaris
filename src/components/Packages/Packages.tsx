@@ -156,7 +156,7 @@ const Packages = () => {
                     <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-4 block">
                         General Pricing
                     </span>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
                         Uganda Safari Packages
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">

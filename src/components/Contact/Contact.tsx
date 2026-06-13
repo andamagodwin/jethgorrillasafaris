@@ -71,14 +71,17 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="relative bg-white py-20 px-6 md:px-12 lg:px-20 z-10">
+        <section id="contact" className="relative bg-white py-12 md:py-16 px-6 md:px-12 lg:px-20 z-10">
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
-                <div className="mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <div className="text-center mb-16">
+                    <span className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest mb-4 inline-block font-['Campuni']">
+                        Get In Touch
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 leading-tight">
                         Contact Us
                     </h2>
-                    <p className="text-gray-600 max-w-2xl">
+                    <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
                         Have questions about our safari tours? We're here to help plan your adventure.
                     </p>
                 </div>
@@ -88,16 +91,16 @@ const Contact = () => {
                     <div className="lg:col-span-1 space-y-8">
                         <div>
                             <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Contact Details</h3>
-                            <div className="space-y-4">
+                            <div className="space-y-4 selectable">
                                 <div>
                                     <p className="text-sm text-gray-500 mb-1">Phone</p>
-                                    <a href="tel:0750537127" className="text-gray-900 hover:text-red-600 transition-colors">
+                                    <a href="tel:0750537127" className="text-gray-900 hover:text-orange-600 transition-colors">
                                         0750 537 127
                                     </a>
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 mb-1">Email</p>
-                                    <a href="mailto:info@eyregorillaadventuresltd.com" className="text-gray-900 hover:text-red-600 transition-colors break-all">
+                                    <a href="mailto:info@eyregorillaadventuresltd.com" className="text-gray-900 hover:text-orange-600 transition-colors break-all">
                                         info@eyregorillaadventuresltd.com
                                     </a>
                                 </div>
@@ -173,7 +176,7 @@ const Contact = () => {
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none"
                                     />
                                 </div>
 
@@ -189,7 +192,7 @@ const Contact = () => {
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none"
                                     />
                                 </div>
                             </div>
@@ -206,7 +209,7 @@ const Contact = () => {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none"
                                     />
                                 </div>
 
@@ -221,7 +224,7 @@ const Contact = () => {
                                         value={formData.subject}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none"
                                     >
                                         <option value="">Select a tour</option>
                                         <option value="gorilla-trekking">Gorilla Trekking</option>
@@ -245,7 +248,7 @@ const Contact = () => {
                                     onChange={handleChange}
                                     required
                                     rows={6}
-                                    className="w-full px-4 py-3 border border-black rounded focus:ring-1 focus:ring-gray-900 focus:border-gray-900 outline-none resize-none"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none resize-none"
                                 ></textarea>
                             </div>
 
@@ -254,7 +257,7 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`px-8 py-3 bg-gray-900 text-white font-medium rounded transition-colors ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-800'
+                                    className={`px-8 py-3 bg-orange-500 text-white font-medium rounded transition-colors ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-orange-600'
                                         }`}
                                 >
                                     {isSubmitting ? 'Sending...' : 'Send Message'}
