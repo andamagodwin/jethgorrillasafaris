@@ -44,7 +44,7 @@ const BigFive = () => {
                         The Big Five
                     </h2>
                     <p className="text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">
-                        Encounter the legendary Big Five on an unforgettable Ugandan safari.
+                        Track the Big Five across Uganda's national parks.
                     </p>
                 </div>
 

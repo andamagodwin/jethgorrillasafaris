@@ -102,7 +102,7 @@ const Gallery = () => {
                         Moments from the Wild
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-                        Explore stunning captures from our unforgettable safari adventures across Uganda's breathtaking landscapes.
+                        A few moments from our safaris across Uganda.
                     </p>
                 </div>
 

@@ -54,7 +54,7 @@ const parks = [
         name: 'Kidepo Valley NP',
         lat: 3.8333, lng: 33.7500,
         type: 'wildlife',
-        description: 'Remote wilderness — lions, cheetahs & more',
+        description: 'Remote wilderness with lions, cheetahs and more',
         highlight: false,
     },
     {
@@ -184,7 +184,7 @@ const MapSection = () => {
                         Safari Routes &amp; Game Parks
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
-                        From the gorilla forests of Bwindi to the sweeping plains of Murchison Falls — discover Uganda's best wildlife destinations in one journey.
+                        See where each of our destinations sits, from the gorilla forests of Bwindi to the plains of Murchison Falls.
                     </p>
                 </div>
 

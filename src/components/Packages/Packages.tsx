@@ -2,7 +2,7 @@ const packagesData = [
     {
         tier: "Luxury Range",
         totalPrice: "$12,830",
-        destinations: "Entebbe – Kibale National Park – Queen Elizabeth National Park – Bwindi – Lake Mburo National Park",
+        destinations: "Entebbe → Kibale National Park → Queen Elizabeth National Park → Bwindi → Lake Mburo National Park",
         accommodations: [
             { location: "Entebbe", place: "No.5 Boutique Hotel / Protea Hotel Entebbe" },
             { location: "Kibale", place: "Primate Lodge Kibale / Kyaninga Lodge" },
@@ -46,7 +46,7 @@ const packagesData = [
     {
         tier: "Mid-Range",
         totalPrice: "$9,740",
-        destinations: "Entebbe – Kibale National Park – Queen Elizabeth National Park – Bwindi – Lake Mburo National Park",
+        destinations: "Entebbe → Kibale National Park → Queen Elizabeth National Park → Bwindi → Lake Mburo National Park",
         accommodations: [
             { location: "Entebbe", place: "2 Friends Beach Hotel / ViaVia Entebbe" },
             { location: "Kibale", place: "Turaco Treetops / Chimpanzee Forest Lodge" },
@@ -91,7 +91,7 @@ const packagesData = [
     {
         tier: "Budget Range",
         totalPrice: "$5,840",
-        destinations: "Entebbe – Kibale National Park – Queen Elizabeth National Park – Bwindi – Lake Mburo National Park",
+        destinations: "Entebbe → Kibale National Park → Queen Elizabeth National Park → Bwindi → Lake Mburo National Park",
         accommodations: [
             { location: "Entebbe", place: "Secrets Guest House / Airport Link Guest House / Airport Guest House" },
             { location: "Kibale", place: "Kalitusi Natural Resort / Kibale Forest Lodge / Kibale Echo Lodge" },
@@ -160,7 +160,7 @@ const Packages = () => {
                         Uganda Safari Packages
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                        Choose the perfect style for your adventure. Whether you seek ultimate luxury or incredible budget value, we ensure a life-changing experience in the Pearl of Africa.
+                        Pick the style that suits you, from full luxury to good-value budget trips across Uganda.
                     </p>
                 </div>
 

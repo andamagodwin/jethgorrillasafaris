@@ -3,7 +3,7 @@ const months = [
     { name: 'February',  rating: 'Excellent',  rainfall: 'Low',             note: 'Driest month in some years' },
     { name: 'March',     rating: 'Good',       rainfall: 'Moderate',        note: 'Rains begin, mostly afternoons' },
     { name: 'April',     rating: 'Fair',       rainfall: 'High',            note: 'Heaviest rainfall month' },
-    { name: 'May',       rating: 'Good',       rainfall: 'Moderate–High',   note: 'Decreasing through the month' },
+    { name: 'May',       rating: 'Good',       rainfall: 'Moderate to High', note: 'Decreasing through the month' },
     { name: 'June',      rating: 'Excellent',  rainfall: 'Low',             note: 'Dry season begins' },
     { name: 'July',      rating: 'Excellent',  rainfall: 'Very Low',        note: 'Driest period' },
     { name: 'August',    rating: 'Excellent',  rainfall: 'Very Low',        note: 'Dry season continues' },
@@ -48,7 +48,7 @@ const BestTimeToVisit = () => {
                         When to Go: Month-by-Month Guide
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
-                        Gorilla trekking runs every day of the year — but which month is best for you?
+                        Gorilla trekking runs all year round, but some months are better than others. Here's how they compare.
                     </p>
 
                     {/* Legend */}
@@ -82,7 +82,7 @@ const BestTimeToVisit = () => {
                                 </span>
                                 <p className="text-sm text-gray-500 leading-snug">
                                     <span className="font-semibold text-gray-700">{m.rainfall}</span>
-                                    {' — '}
+                                    {': '}
                                     {m.note}
                                 </p>
                             </div>
@@ -93,7 +93,7 @@ const BestTimeToVisit = () => {
                 {/* Peak season note */}
                 <div className="mt-14 text-center">
                     <p className="text-gray-600 text-lg">
-                        Peak season is <span className="font-semibold text-gray-900">June – September</span> &amp; <span className="font-semibold text-gray-900">December – February</span>. Book early — permits sell out fast.
+                        Peak season is <span className="font-semibold text-gray-900">June to September</span> and <span className="font-semibold text-gray-900">December to February</span>. Book early, as permits sell out fast.
                     </p>
                 </div>
             </div>

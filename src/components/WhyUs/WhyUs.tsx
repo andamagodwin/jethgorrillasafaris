@@ -60,7 +60,7 @@ const WhyUs = () => {
                         Your Adventure, Our Expertise
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
-                        We combine local knowledge, passion for wildlife, and commitment to excellence to create unforgettable safari experiences.
+                        We know Uganda's parks and wildlife well, and we put that into every trip we plan.
                     </p>
                 </div>
 

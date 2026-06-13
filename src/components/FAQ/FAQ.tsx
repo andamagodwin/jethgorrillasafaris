@@ -19,7 +19,7 @@ const faqs = [
     },
     {
         question: "Are gorilla trekking permits included in the package?",
-        answer: "Yes, gorilla trekking permits are included in our safari packages. We handle all permit bookings and logistics to ensure a seamless experience for you."
+        answer: "Yes, gorilla trekking permits are included in our safari packages. We handle all the permit bookings and logistics so it's sorted before you arrive."
     },
     {
         question: "What is the age limit for gorilla trekking?",

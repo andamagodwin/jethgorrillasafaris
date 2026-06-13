@@ -20,14 +20,14 @@ const About = () => {
                             </h2>
 
                             <p className="text-lg text-gray-600 leading-relaxed">
-                                Embark on an extraordinary journey through Uganda's pristine wilderness.
-                                From the misty mountains where mountain gorillas roam to the vast savannas
-                                teeming with wildlife, every moment is an adventure waiting to unfold.
+                                Uganda packs a huge range of landscapes into one country.
+                                From the misty mountains where gorillas live to the wide savannas full of wildlife,
+                                there's always something new to see.
                             </p>
 
                             <p className="text-lg text-gray-600 leading-relaxed">
-                                Our expert guides bring decades of experience, ensuring you witness nature's
-                                most spectacular moments while traveling in comfort and safety.
+                                Our guides have spent years in these parks and know them well, so you travel
+                                in good hands and in comfort.
                             </p>
                         </div>
 
@@ -67,7 +67,7 @@ const About = () => {
                                 />
                             </div>
 
-                            {/* Bottom-left image — overlaps the main image slightly */}
+                            {/* Bottom-left image, overlaps the main image slightly */}
                             <div className="absolute left-[5%] bottom-0 w-[42%] h-[30%] overflow-hidden rounded-3xl shadow-xl border-4 border-white">
                                 <img
                                     src="https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1779293924/eyre_gorilla/images/image1.jpg"

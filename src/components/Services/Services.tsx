@@ -81,7 +81,7 @@ const Services = () => {
                         Tailored Safari Experiences
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
-                        Choose from our curated selection of safari packages, each designed to give you an unforgettable adventure in Uganda's wild beauty.
+                        Browse our safari packages, each built to show you a different side of Uganda.
                     </p>
                 </div>
 

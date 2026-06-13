@@ -141,10 +141,10 @@ const ServiceDetail = () => {
             "4 Days Mt Elgon Safari": "4 Days Mountain Elgon National Park",
             "7 Days North": "7 Days Nothern Uganda Safari",
             "9 Days Wildlife": "9 Days Uganda Wildlife Safari",
-            "10 Days Adventure": "10 Days Uganda Safari – Gorillas, Chimps & Wildlife Adventure",
-            "11 Days Big Five": "11 Days Uganda Safari – Gorillas, Chimpanzees & Big Five Adventure",
-            "12 Days Experience": "12 Days Uganda Safari – Gorillas, Chimpanzees, Big Five & Lake Bunyonyi Experience",
-            "15 Days Grand Safari": "15 Days Uganda Safari – Gorillas, Chimpanzees, Big Five, Waterfalls & Culture"
+            "10 Days Adventure": "10 Days Uganda Safari: Gorillas, Chimps & Wildlife Adventure",
+            "11 Days Big Five": "11 Days Uganda Safari: Gorillas, Chimpanzees & Big Five Adventure",
+            "12 Days Experience": "12 Days Uganda Safari: Gorillas, Chimpanzees, Big Five & Lake Bunyonyi Experience",
+            "15 Days Grand Safari": "15 Days Uganda Safari: Gorillas, Chimpanzees, Big Five, Waterfalls & Culture"
         };
         return titles[key] || key;
     };

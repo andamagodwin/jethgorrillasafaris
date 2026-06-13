@@ -22,7 +22,7 @@ const Languages = () => {
                         We Speak Your Language
                     </h2>
                     <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
-                        To ensure your safari experience is as seamless and comfortable as possible, our team includes expert linguists fluent in major global and local languages. Communication is never a barrier to your adventure.
+                        Our team speaks the main international and local languages, so communication is never a barrier on your trip.
                     </p>
                 </div>
 

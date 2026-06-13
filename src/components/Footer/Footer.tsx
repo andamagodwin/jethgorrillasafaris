@@ -63,7 +63,7 @@ const Footer = () => {
                             </div>
                         </a>
                         <p className="text-sm text-gray-400 leading-relaxed mb-6">
-                            Experience the wild beauty of Uganda with expert-guided safari tours. Creating unforgettable memories since 2010.
+                            Expert-guided safari tours across Uganda, run by a local team since 2010.
                         </p>
                         <div className="flex gap-3">
                             <a href="https://www.facebook.com/share/1FK9hLGhQV/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-gray-800 hover:bg-gray-700 rounded flex items-center justify-center transition-colors">
