@@ -106,11 +106,11 @@ const Header = () => {
                 <div className="max-w-7xl mx-auto px-4 md:px-12 lg:px-20 h-8 md:h-10 flex items-center justify-between text-[10px] md:text-[11px] font-medium tracking-wider uppercase">
                     <div className="flex items-center gap-4 md:gap-6">
                         <a 
-                            href="tel:0750537127" 
+                            href="tel: +256 770 615 882" 
                             className={`flex items-center gap-1.5 md:gap-2 transition-colors hover:text-orange-500 ${isScrolled ? 'text-gray-600' : 'text-white/80'}`}
                         >
                             <svg className="w-3 md:w-3.5 h-3 md:h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            <span className="hidden sm:inline">0750 537 127</span>
+                            <span className="hidden sm:inline">+256 770 615 882</span>
                             <span className="sm:hidden">Call Us</span>
                         </a>
                         <a 

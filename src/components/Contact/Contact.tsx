@@ -93,10 +93,8 @@ const Contact = () => {
                             <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Contact Details</h3>
                             <div className="space-y-4 selectable">
                                 <div>
-                                    <p className="text-sm text-gray-500 mb-1">Phone</p>
-                                    <a href="tel:0750537127" className="text-gray-900 hover:text-orange-600 transition-colors">
-                                        0750 537 127
-                                    </a>
+                                    <p className="text-sm text-black">Tel: +256 770 615 882</p>
+                                    <p className="text-sm text-black">WhatsApp: +256 750 537 127</p>
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 mb-1">Email</p>

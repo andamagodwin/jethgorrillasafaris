@@ -164,11 +164,10 @@ const Footer = () => {
                                 <p className="text-sm text-gray-400">Kampala GPO, Uganda</p>
                             </li>
                             <li>
-                                <p className="text-xs text-gray-500 mb-1">Phone</p>
-                                <a href="tel:0750537127" className="text-sm text-gray-400 hover:text-white transition-colors">
-                                    0750 537 127
-                                </a>
-                            </li>
+                               <p className="text-sm text-gray-400">Tel: +256 770 615 882</p>
+                               <p className="text-sm text-gray-400">WhatsApp: +256 750 537 127</p>
+                                
+                            </li> 
                             <li>
                                 <p className="text-xs text-gray-500 mb-1">Email</p>
                                 <a href="mailto:info@eyregorillaadventuresltd.com" className="text-sm text-gray-400 hover:text-white transition-colors break-all">
