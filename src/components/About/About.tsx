@@ -7,6 +7,14 @@ const About = () => {
                     <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* Left Content */}
                         <div className="space-y-6">
+                            <div className="inline-block">
+                                <span
+                                    className="text-orange-500 font-bold text-sm md:text-base uppercase font-['Campuni']"
+                                >
+                                    About Eyre Gorilla Adventures Ltd
+                                </span>
+                            </div>
+
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                                 Experience the Magic of Uganda
                             </h2>

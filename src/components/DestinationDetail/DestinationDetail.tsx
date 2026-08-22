@@ -177,6 +177,9 @@ const DestinationDetail = () => {
                 <section className="mt-24 pt-16 border-t border-gray-100">
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                         <div>
+                            <span className="text-orange-500 font-bold text-sm uppercase mb-3 block">
+                                Continue Exploring
+                            </span>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                                 Other Destinations
                             </h2>

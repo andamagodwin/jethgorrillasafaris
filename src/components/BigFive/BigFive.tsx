@@ -37,6 +37,9 @@ const BigFive = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
+                    <span className="text-orange-500 font-bold text-sm uppercase mb-4 block">
+                        Africa's Iconic Wildlife
+                    </span>
                     <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                         The Big Five
                     </h2>

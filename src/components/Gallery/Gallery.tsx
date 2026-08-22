@@ -93,7 +93,12 @@ const Gallery = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                    <span
+                        className="text-orange-500 font-bold text-sm md:text-base uppercase mb-4 inline-block font-['Campuni']"
+                    >
+                        Safari Gallery
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
                         Moments from the Wild
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">

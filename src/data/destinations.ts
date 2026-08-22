@@ -21,10 +21,11 @@ export interface Destination {
 
 /*
  * NOTE ON IMAGERY
- * All photographs below come from the existing Uganda library on Cloudinary.
- * The Uganda entry uses them accurately. Rwanda, Kenya and Tanzania reuse them
- * as visual placeholders, so swap in real photos from those countries before
- * treating those pages as final.
+ * The Uganda and Rwanda card images were supplied directly. Everything else
+ * comes from the existing Uganda library on Cloudinary, which the Uganda entry
+ * uses accurately. The Rwanda, Kenya and Tanzania park and hero shots are still
+ * Uganda photos standing in as placeholders, so swap in real photos from those
+ * countries before treating those pages as final.
  */
 
 const IMG = 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/';
@@ -34,7 +35,7 @@ export const destinations: Destination[] = [
         id: 'uganda',
         name: 'Uganda',
         tagline: 'The Pearl of Africa',
-        cardImage: `${IMG}v1779293926/eyre_gorilla/images/image3.jpg`,
+        cardImage: `${IMG}v1787422220/WhatsApp_Image_2026-08-22_at_20.59.59_faxt8j.jpg`,
         heroImage: `${IMG}v1779293922/eyre_gorilla/images/gorilla11.jpg`,
         summary: 'Mountain gorillas, chimpanzees and the Big Five within a single country, and short enough drives to see them on one trip.',
         intro: 'Uganda is our home country and the one we know best. Roughly half the world\'s mountain gorillas live in Bwindi Impenetrable Forest, Kibale holds one of the densest chimpanzee populations in Africa, and the savannah parks carry lions, elephants, buffalo and leopard. Because the parks sit relatively close together, you can combine forest trekking and classic game drives without long transfers or extra flights.',
@@ -88,7 +89,7 @@ export const destinations: Destination[] = [
         id: 'rwanda',
         name: 'Rwanda',
         tagline: 'Land of a Thousand Hills',
-        cardImage: `${IMG}v1779293919/eyre_gorilla/images/gorilla/gorilla5.jpg`,
+        cardImage: `${IMG}v1787422223/WhatsApp_Image_2026-08-22_at_21.01.14_h20p5y.jpg`,
         heroImage: `${IMG}v1779293917/eyre_gorilla/images/gorilla/gorilla3.jpg`,
         summary: 'The short trip option. Kigali to the gorillas in about three hours, with good roads the whole way.',
         intro: 'Rwanda suits travellers who are short on time. The country is small, the roads are in good condition, and Volcanoes National Park is roughly a three hour drive from the airport in Kigali, so a gorilla trek is realistic on a three or four day trip. Permits cost more than in Uganda, but the trekking is generally shorter and the logistics are simpler. Rwanda also pairs well with Uganda if you want both countries on one itinerary.',

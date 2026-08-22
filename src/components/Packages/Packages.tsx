@@ -153,6 +153,9 @@ const Packages = () => {
             <div className="max-w-7xl mx-auto md:max-w-2xl lg:max-w-7xl relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
+                    <span className="text-orange-500 font-bold text-sm uppercase mb-4 block">
+                        General Pricing
+                    </span>
                     <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                         Uganda Safari Packages
                     </h2>
