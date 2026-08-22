@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const owner = {
     name: 'Ahebwa Evans',
-    title: 'Owner & Safari Director',
+    title: 'Managing Director',
     phoneDisplay: '+256 750 537 127',
     phoneDial: '+256750537127',
     email: 'info@eyregorillaadventuresltd.com',
