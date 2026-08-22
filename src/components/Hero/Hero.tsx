@@ -1,17 +1,8 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import VariableProximity from '../VariableProximity';
 
 const Hero = () => {
-    const videoRef = useRef<HTMLVideoElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.play().catch(error => {
-                console.log('Video autoplay failed:', error);
-            });
-        }
-    }, []);
 
     const scrollToSection = (sectionId: string) => {
         const targetElement = document.getElementById(sectionId);
@@ -29,23 +20,15 @@ const Hero = () => {
 
     return (
         <section id="hero" className="relative w-full h-screen overflow-hidden flex items-center justify-center">
-            {/* Video Background */}
+            {/* Image Background */}
             <div className="absolute top-0 left-0 w-full h-full z-[1]">
-                <video
-                    ref={videoRef}
+                <img
+                    src="https://res.cloudinary.com/ddfpgrpdj/image/upload/v1786795085/WhatsApp_Image_2026-08-15_at_14.53.11_qdtgp5.jpg"
+                    alt="Uganda gorilla safari"
                     className="w-full h-full object-cover object-center"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                    poster="https://res.cloudinary.com/ddfpgrpdj/video/upload/so_0,f_jpg,q_auto/eyre_gorilla/videos/hero1.jpg"
-                >
-                    <source src="https://res.cloudinary.com/ddfpgrpdj/video/upload/q_auto/eyre_gorilla/videos/hero1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                />
                 {/* Dark Overlay for Better Text Readability */}
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/30 via-black/50 to-black/70 z-[2]"></div>
+                {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/30 via-black/50 to-black/70 z-[2]"></div> */}
             </div>
 
             {/* Hero Content */}
