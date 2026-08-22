@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import ManagingDirector from './components/ManagingDirector'
 import About from './components/About'
 import WhyUs from './components/WhyUs'
 import HowItWorks from './components/HowitWorks'
@@ -28,6 +29,7 @@ const DestinationDetail = lazy(() => import('./components/DestinationDetail'))
 const HomePage = () => (
   <>
     <Hero />
+    <ManagingDirector />
     <About />
     <Destinations />
     <WhyUs />
