@@ -92,7 +92,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="lg:col-span-2">
-                        <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Quick Links</h4>
+                        <h4 className="text-sm font-semibold text-white uppercase mb-4">Quick Links</h4>
                         <ul className="space-y-2">
                             <li>
                                 <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="text-sm text-gray-400 hover:text-white transition-colors">
@@ -124,7 +124,7 @@ const Footer = () => {
 
                     {/* Safari Tours */}
                     <div className="lg:col-span-3">
-                        <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Safari Tours</h4>
+                        <h4 className="text-sm font-semibold text-white uppercase mb-4">Safari Tours</h4>
                         <ul className="space-y-2">
                             <li>
                                 <a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="text-sm text-gray-400 hover:text-white transition-colors">
@@ -156,7 +156,7 @@ const Footer = () => {
 
                     {/* Contact Info */}
                     <div className="lg:col-span-3">
-                        <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+                        <h4 className="text-sm font-semibold text-white uppercase mb-4">Contact</h4>
                         <ul className="space-y-3 selectable">
                             <li>
                                 <p className="text-xs text-gray-500 mb-1">Address</p>

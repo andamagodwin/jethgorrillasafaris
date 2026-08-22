@@ -7,10 +7,7 @@ const Destinations = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <span className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest inline-block font-['Campuni']">
-                        Destinations
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                         Where We Take You
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
@@ -38,10 +35,10 @@ const Destinations = () => {
                             {/* Content */}
                             <div className="relative h-full p-6 flex flex-col justify-end text-white z-10">
                                 <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                                    <span className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2 block">
+                                    <span className="text-xs font-bold text-orange-400 uppercase mb-2 block">
                                         {destination.tagline}
                                     </span>
-                                    <h3 className="text-2xl font-bold tracking-tight mb-2 font-['Campuni']">
+                                    <h3 className="text-2xl font-bold mb-2 font-['Campuni']">
                                         {destination.name}
                                     </h3>
                                     <p className="text-sm text-gray-200 leading-relaxed line-clamp-3">

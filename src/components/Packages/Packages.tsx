@@ -153,10 +153,7 @@ const Packages = () => {
             <div className="max-w-7xl mx-auto md:max-w-2xl lg:max-w-7xl relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-4 block">
-                        General Pricing
-                    </span>
-                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                         Uganda Safari Packages
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -191,7 +188,7 @@ const Packages = () => {
                             <div className="flex-1 space-y-8">
                                 {/* Destinations */}
                                 <div>
-                                    <h4 className={`text-xs font-bold uppercase tracking-wider mb-3 ${pkg.labelColor}`}>
+                                    <h4 className={`text-xs font-bold uppercase mb-3 ${pkg.labelColor}`}>
                                         Destinations Covered
                                     </h4>
                                     <p className="text-sm leading-relaxed font-medium">
@@ -201,7 +198,7 @@ const Packages = () => {
 
                                 {/* Pricing Table */}
                                 <div>
-                                    <h4 className={`text-xs font-bold uppercase tracking-wider mb-3 ${pkg.labelColor}`}>
+                                    <h4 className={`text-xs font-bold uppercase mb-3 ${pkg.labelColor}`}>
                                         Detailed Costing Per Person (USD)
                                     </h4>
                                     <div className="rounded-xl overflow-hidden">
@@ -224,7 +221,7 @@ const Packages = () => {
 
                                 {/* Accommodations */}
                                 <div>
-                                    <h4 className={`text-xs font-bold uppercase tracking-wider mb-3 ${pkg.labelColor}`}>
+                                    <h4 className={`text-xs font-bold uppercase mb-3 ${pkg.labelColor}`}>
                                         Accommodation Options
                                     </h4>
                                     <ul className="space-y-3">
@@ -239,7 +236,7 @@ const Packages = () => {
 
                                 {/* Highlights */}
                                 <div className={`pt-6 border-t ${pkg.dividerClass}`}>
-                                    <h4 className={`text-xs font-bold uppercase tracking-wider mb-4 ${pkg.labelColor}`}>
+                                    <h4 className={`text-xs font-bold uppercase mb-4 ${pkg.labelColor}`}>
                                         Safari Highlights
                                     </h4>
                                     <ul className="space-y-3">
@@ -256,7 +253,7 @@ const Packages = () => {
 
                                 {/* Why Choose */}
                                 <div className={`p-4 rounded-xl ${pkg.whyBg}`}>
-                                    <h4 className={`text-xs font-bold uppercase tracking-wider mb-2 ${pkg.labelColor}`}>
+                                    <h4 className={`text-xs font-bold uppercase mb-2 ${pkg.labelColor}`}>
                                         Why Choose This Safari
                                     </h4>
                                     <p className="text-sm leading-relaxed italic opacity-90">

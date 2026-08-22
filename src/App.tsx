@@ -29,6 +29,7 @@ const HomePage = () => (
   <>
     <Hero />
     <About />
+    <Destinations />
     <WhyUs />
     <HowItWorks />
     <Gallery />
@@ -36,7 +37,6 @@ const HomePage = () => (
     <BestTimeToVisit />
     <FAQ />
     <MapSection />
-    <Destinations />
     <Services />
     <BigFive />
     <Packages />

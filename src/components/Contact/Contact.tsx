@@ -75,10 +75,7 @@ const Contact = () => {
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <span className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest mb-4 inline-block font-['Campuni']">
-                        Get In Touch
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                         Contact Us
                     </h2>
                     <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto leading-relaxed">
@@ -90,7 +87,7 @@ const Contact = () => {
                     {/* Contact Information */}
                     <div className="lg:col-span-1 space-y-8">
                         <div>
-                            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Contact Details</h3>
+                            <h3 className="text-sm font-semibold text-gray-500 uppercase mb-4">Contact Details</h3>
                             <div className="space-y-4 selectable">
                                 <div>
                                     <p className="text-sm text-black">Tel: +256 770 615 882</p>
@@ -111,7 +108,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Follow Us</h3>
+                            <h3 className="text-sm font-semibold text-gray-500 uppercase mb-4">Follow Us</h3>
                             <div className="flex gap-3">
                                 <a href="https://www.facebook.com/share/1FK9hLGhQV/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 hover:bg-gray-900 rounded flex items-center justify-center transition-colors group">
                                     <svg className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">

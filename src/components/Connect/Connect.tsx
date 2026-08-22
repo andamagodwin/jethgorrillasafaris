@@ -44,7 +44,7 @@ const Connect = () => {
                             />
                             <span className="text-sm md:text-base font-semibold tracking-wide">Eyre Gorilla Adventures Ltd</span>
                         </div>
-                        <p className="uppercase tracking-[0.22em] text-[11px] md:text-xs font-semibold text-orange-100 mb-3">
+                        <p className="uppercase text-[11px] md:text-xs font-semibold text-orange-100 mb-3">
                             Quick Contact Card
                         </p>
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight">Connect with Eyre Gorilla Adventures</h1>
@@ -55,7 +55,7 @@ const Connect = () => {
 
                     <div className="p-8 md:p-12 grid gap-10 md:grid-cols-[1.2fr_1fr]">
                         <div>
-                            <p className="text-xs uppercase tracking-[0.18em] text-gray-400 font-semibold mb-2">Owner Contact</p>
+                            <p className="text-xs uppercase text-gray-400 font-semibold mb-2">Owner Contact</p>
                             <h2 className="text-3xl font-bold text-gray-900">{owner.name}</h2>
                             <p className="text-lg text-orange-600 font-semibold mt-1">{owner.title}</p>
 

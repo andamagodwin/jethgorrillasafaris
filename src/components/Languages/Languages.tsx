@@ -13,12 +13,7 @@ const Languages = () => {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
                 {/* Left side: Text */}
                 <div className="flex-1 text-center md:text-left">
-                    <span
-                        className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest mb-4 inline-block font-['Campuni']"
-                    >
-                        Global Connection
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 leading-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
                         We Speak Your Language
                     </h2>
                     <p className="text-lg text-gray-600 max-w-xl leading-relaxed">

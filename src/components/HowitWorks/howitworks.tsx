@@ -25,10 +25,7 @@ const HowItWorks = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-16">
-                    <span className="text-orange-500 font-bold text-sm md:text-base uppercase tracking-widest inline-block font-['Campuni']">
-                        How It Works
-                    </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                         Three steps, start to finish
                     </h2>
                 </div>
@@ -37,7 +34,7 @@ const HowItWorks = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
                     {steps.map((step, index) => (
                         <div key={step.title} className="border border-gray-200 rounded-2xl p-6 lg:p-7">
-                            <span className="block text-xs font-semibold tracking-[0.2em] text-gray-400">
+                            <span className="block text-xs font-semibold text-gray-400">
                                 {String(index + 1).padStart(2, '0')}
                             </span>
 

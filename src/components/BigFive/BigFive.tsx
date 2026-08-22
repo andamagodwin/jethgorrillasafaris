@@ -37,10 +37,7 @@ const BigFive = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-4 block">
-                        Africa's Iconic Wildlife
-                    </span>
-                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                         The Big Five
                     </h2>
                     <p className="text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">
@@ -72,7 +69,7 @@ const BigFive = () => {
                             {/* Content */}
                             <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
                                 <div className="transform transition-all duration-500 group-hover:-translate-y-2">
-                                    <span className="text-orange-400 text-xs font-bold uppercase tracking-widest block mb-2">
+                                    <span className="text-orange-400 text-xs font-bold uppercase block mb-2">
                                         {animal.subtitle}
                                     </span>
                                     <h3 className="text-3xl font-bold mb-3 font-['Campuni']">

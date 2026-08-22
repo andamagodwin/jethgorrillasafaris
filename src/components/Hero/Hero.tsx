@@ -38,7 +38,7 @@ const Hero = () => {
                     <div ref={containerRef} style={{ position: 'relative' }}>
                         <VariableProximity
                             label="Discover the Wild Beauty of Uganda"
-                            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight px-4"
+                            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white leading-tight px-4"
                             fromFontVariationSettings="'wght' 400, 'opsz' 9"
                             toFontVariationSettings="'wght' 1000, 'opsz' 40"
                             containerRef={containerRef}

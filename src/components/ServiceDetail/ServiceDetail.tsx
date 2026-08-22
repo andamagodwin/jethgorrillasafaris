@@ -244,7 +244,7 @@ const ServiceDetail = () => {
                             {/* Country Selector Pills */}
                             {availableCountries && availableCountries.length > 0 && (
                                 <div className="mb-6">
-                                    <span className="text-sm font-bold text-gray-400 uppercase tracking-widest block mb-3">
+                                    <span className="text-sm font-bold text-gray-400 uppercase block mb-3">
                                         Select Country
                                     </span>
                                     <div className="flex flex-wrap gap-3">
@@ -267,7 +267,7 @@ const ServiceDetail = () => {
 
                             {/* Duration Selector Pills */}
                             <div className="mb-8">
-                                <span className="text-sm font-bold text-gray-400 uppercase tracking-widest block mb-3">
+                                <span className="text-sm font-bold text-gray-400 uppercase block mb-3">
                                     Select Duration
                                 </span>
                                 <div className="flex flex-wrap gap-3">
@@ -300,7 +300,7 @@ const ServiceDetail = () => {
                                 {currentItineraryOptions[selectedDuration]?.map((day) => (
                                     <div key={day.day} className="flex flex-col md:flex-row gap-4 md:gap-8 group">
                                         <div className="flex-shrink-0 md:w-32 pt-1">
-                                            <span className="text-gray-400 font-bold uppercase tracking-wider text-sm block mb-1">
+                                            <span className="text-gray-400 font-bold uppercase text-sm block mb-1">
                                                 Day {day.day}
                                             </span>
                                         </div>
@@ -603,9 +603,6 @@ const ServiceDetail = () => {
                 <section className="mt-24 pt-16 border-t border-gray-100">
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                         <div>
-                            <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-3 block">
-                                Continue Exploring
-                            </span>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                                 You May Also Like
                             </h2>
@@ -643,7 +640,7 @@ const ServiceDetail = () => {
                                     {/* Content */}
                                     <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
                                         <div className="transform transition-all duration-500 group-hover:-translate-y-2">
-                                            <span className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2 block">
+                                            <span className="text-xs font-bold text-orange-400 uppercase mb-2 block">
                                                 {otherService.duration}
                                             </span>
                                             <h3 className="text-xl font-bold mb-1">

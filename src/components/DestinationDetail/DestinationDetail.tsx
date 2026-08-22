@@ -40,7 +40,7 @@ const DestinationDetail = () => {
 
                 <div className="absolute inset-0 flex items-center justify-center text-center px-6">
                     <div>
-                        <span className="text-orange-400 font-bold text-sm uppercase tracking-[0.2em] mb-4 block">
+                        <span className="text-orange-400 font-bold text-sm uppercase mb-4 block">
                             {destination.tagline}
                         </span>
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 font-['Campuni']">
@@ -128,7 +128,7 @@ const DestinationDetail = () => {
                             <dl className="space-y-4">
                                 {destination.quickFacts.map((fact) => (
                                     <div key={fact.label}>
-                                        <dt className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">
+                                        <dt className="text-xs font-bold text-gray-400 uppercase mb-1">
                                             {fact.label}
                                         </dt>
                                         <dd className="text-gray-800 font-medium leading-snug">
@@ -177,9 +177,6 @@ const DestinationDetail = () => {
                 <section className="mt-24 pt-16 border-t border-gray-100">
                     <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                         <div>
-                            <span className="text-orange-500 font-bold text-sm uppercase tracking-[0.2em] mb-3 block">
-                                Continue Exploring
-                            </span>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                                 Other Destinations
                             </h2>
@@ -201,7 +198,7 @@ const DestinationDetail = () => {
 
                                 <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10">
                                     <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                                        <span className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2 block">
+                                        <span className="text-xs font-bold text-orange-400 uppercase mb-2 block">
                                             {other.tagline}
                                         </span>
                                         <h3 className="text-xl font-bold mb-1 font-['Campuni']">
