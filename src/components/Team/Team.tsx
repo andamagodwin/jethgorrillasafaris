@@ -12,10 +12,22 @@ const teamMembers = [
         photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787577883/WhatsApp_Image_2026-08-24_at_16.24.01_thiubw.jpg',
     },
     {
+        initials: 'MB',
+        name: 'Matej Benko',
+        role: 'Booking Agent',
+        photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787578097/WhatsApp_Image_2026-08-24_at_16.25.31_p2hydo.jpg',
+    },
+    {
         initials: 'BD',
         name: 'Betty Davis',
         role: 'Operations',
         photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787578690/WhatsApp_Image_2026-08-24_at_16.36.37_xrxhvm.jpg',
+    },
+    {
+        initials: 'OE',
+        name: 'Owomuhangi Elina',
+        role: 'Guest Relations',
+        photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787581334/WhatsApp_Image_2026-08-24_at_17.19.34_x8cfsc.jpg',
     },
     {
         initials: 'AD',
@@ -36,16 +48,28 @@ const teamMembers = [
         photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787578312/WhatsApp_Image_2026-08-24_at_16.31.27_vmheci.jpg',
     },
     {
+        initials: 'NO',
+        name: 'Nasasira Orick',
+        role: 'Driver-Guide',
+        photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787580482/WhatsApp_Image_2026-08-24_at_17.05.37_2_wcbpvz.jpg',
+    },
+    {
+        initials: 'NJ',
+        name: 'Ngabirano Jasper',
+        role: 'Driver-Guide',
+        photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787581129/WhatsApp_Image_2026-08-24_at_17.07.30_qdke7f.jpg',
+    },
+    {
+        initials: 'HA',
+        name: 'Habasa Anthony',
+        role: 'Driver',
+        photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787581952/WhatsApp_Image_2026-08-24_at_17.31.23_ipfyti.jpg',
+    },
+    {
         initials: 'AK',
         name: 'Akankwasa Kevin',
         role: 'Field Guide',
         photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787580146/WhatsApp_Image_2026-08-24_at_17.01.38_zu7kwv.jpg',
-    },
-    {
-        initials: 'MB',
-        name: 'Matej Benko',
-        role: 'Booking Agent',
-        photo: 'https://res.cloudinary.com/ddfpgrpdj/image/upload/f_auto,q_auto/v1787578097/WhatsApp_Image_2026-08-24_at_16.25.31_p2hydo.jpg',
     },
 ];
 
