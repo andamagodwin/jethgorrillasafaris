@@ -24,6 +24,7 @@ import MapSection from './components/MapSection'
 import Destinations from './components/Destinations'
 import Stats from './components/Stats'
 import MedicalAssurance from './components/MedicalAssurance'
+import TrekkingChecklist from './components/TrekkingChecklist'
 
 const ServiceDetail = lazy(() => import('./components/ServiceDetail'))
 const DestinationDetail = lazy(() => import('./components/DestinationDetail'))
@@ -36,6 +37,7 @@ const HomePage = () => (
     <Destinations />
     <WhyUs />
     <HowItWorks />
+    <TrekkingChecklist />
     <Gallery />
     <Languages />
     <BestTimeToVisit />
