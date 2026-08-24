@@ -26,6 +26,7 @@ import Stats from './components/Stats'
 import MedicalAssurance from './components/MedicalAssurance'
 import TrekkingChecklist from './components/TrekkingChecklist'
 import Mission from './components/Mission'
+import Team from './components/Team'
 
 const ServiceDetail = lazy(() => import('./components/ServiceDetail'))
 const DestinationDetail = lazy(() => import('./components/DestinationDetail'))
@@ -51,6 +52,7 @@ const HomePage = () => (
     <MedicalAssurance />
     <Stats />
     <Contact />
+    <Team />
   </>
 );
 

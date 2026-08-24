@@ -36,7 +36,7 @@ const HowItWorks = () => {
                 {/* Steps */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
                     {steps.map((step, index) => (
-                        <div key={step.title} className="border border-gray-200 rounded-2xl p-6 lg:p-7">
+                        <div key={step.title} className="border border-black rounded-2xl p-6 lg:p-7">
                             <span className="block text-xs font-semibold text-gray-400">
                                 {String(index + 1).padStart(2, '0')}
                             </span>
