@@ -22,6 +22,7 @@ import Connect from './components/Connect'
 import FAQ from './components/FAQ/FAQ'
 import MapSection from './components/MapSection'
 import Destinations from './components/Destinations'
+import Stats from './components/Stats'
 
 const ServiceDetail = lazy(() => import('./components/ServiceDetail'))
 const DestinationDetail = lazy(() => import('./components/DestinationDetail'))
@@ -42,6 +43,7 @@ const HomePage = () => (
     <Services />
     <BigFive />
     <Packages />
+    <Stats />
     <Contact />
   </>
 );

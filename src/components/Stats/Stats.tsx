@@ -1,18 +1,15 @@
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Route01Icon, Calendar03Icon, UserGroupIcon, GlobalIcon } from '@hugeicons/core-free-icons';
-import { destinations } from '../../data/destinations';
 
 /*
  * The first three figures are placeholders carried over from the reference
- * layout. Replace them with the real numbers before this goes live. The
- * destination count is derived from the destinations data, so it stays correct
- * on its own.
+ * layout. Replace them with the real numbers before this goes live.
  */
 const stats = [
     {
         icon: Route01Icon,
         label: 'Tours Completed',
-        value: '19+',
+        value: '40+',
         iconClass: 'text-amber-600',
         cardClass: 'bg-[#f5f0e8] border-[#e8e0d0]',
     },
@@ -26,14 +23,14 @@ const stats = [
     {
         icon: UserGroupIcon,
         label: 'Happy Travellers',
-        value: '22+',
+        value: '50+',
         iconClass: 'text-emerald-600',
         cardClass: 'bg-orange-50 border-orange-100',
     },
     {
         icon: GlobalIcon,
         label: 'Destinations Covered',
-        value: String(destinations.length),
+        value: '25+',
         iconClass: 'text-sky-700',
         cardClass: 'bg-white border-gray-200',
     },
