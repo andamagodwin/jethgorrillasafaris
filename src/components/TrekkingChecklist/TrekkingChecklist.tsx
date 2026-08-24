@@ -8,6 +8,9 @@ const categories = [
         items: [
             'Passport',
             'Gorilla trekking permit',
+            'Travel insurance',
+            'Visa, if required',
+            'Booking/itinerary confirmation',
             'Emergency contact details',
         ],
     },
